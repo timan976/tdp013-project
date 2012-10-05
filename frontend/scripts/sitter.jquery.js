@@ -126,6 +126,21 @@ function load_messages() {
 	});
 }
 
+function validate_username(element) {
+	var username = $(this).val();
+	if(username == "boerworz") {
+		$("#register_control_group").addClass("error");
+		$("form#register input[type='submit']").attr("disabled", "disabled");
+		$("#username_icon").addClass("icon-minus-sign");
+		$("#username_icon").removeClass("icon-ok-sign");
+	} else {
+		$("#register_control_group").removeClass("error");
+		$("form#register input[type='submit']").removeAttr("disabled");
+		$("#username_icon").removeClass("icon-minus-sign");
+		$("#username_icon").addClass("icon-ok-sign");
+	}
+}
+
 $(document).ready(function() {
 	load_messages();
 
@@ -161,6 +176,9 @@ $(document).ready(function() {
 	$("textarea[name=message]").keyup(function() {
 		update_character_count();
 	});
+
+	$("#register_username").keyup(validate_username);
+	$("#register_username").change(validate_username);
 
 	$("input[name=send]").click(function() {
 		post_message();

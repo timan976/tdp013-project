@@ -39,11 +39,38 @@ body {
 }
 
 .container.welcome {
-	width: 600;
+	margin-top: 60px;
 }
 
 .container.welcome > h1 {
 	text-align: center;
+}
+
+input[type="text"], input[type="password"] {
+	height: 30px;
+	line-height: 30px;
+}
+
+form#register > .control-group > label.control-label,
+form#login > .control-group > label.control-label {
+	width: 80px;
+}
+
+div#login_container {
+	margin-right: 20px;
+}
+
+form#register > .control-group > .controls {
+	margin-left: 100px;
+}
+
+form#register > .control-group > .controls, 
+form#login > .control-group > .controls {
+	margin-left: 100px;
+	display: block;
+}
+
+form#register > .control-group > .controls > .add-on {
 }
 
 .main_nav {
