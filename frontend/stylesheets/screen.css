@@ -40,6 +40,7 @@ body {
 
 .container.welcome {
 	margin-top: 60px;
+	padding: 0px 20px 0px 20px;
 }
 
 .container.welcome > h1 {
@@ -64,10 +65,14 @@ form#register > .control-group > .controls {
 	margin-left: 100px;
 }
 
-form#register > .control-group > .controls, 
-form#login > .control-group > .controls {
+form#register > .control-group > .controls {
 	margin-left: 100px;
 	display: block;
+}
+
+form#login > .control-group > .controls {
+	display: block;
+	margin-left: 0px;
 }
 
 form#register > .control-group > .controls > .add-on {
