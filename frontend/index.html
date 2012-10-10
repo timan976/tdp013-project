@@ -20,26 +20,26 @@
 			</p>
 
 			<div class="span5">
-				<form name="register" action="#" class="form-horizontal" id="register">
+				<form name="register" method="POST" action="http://localhost:8888/register" class="form-horizontal" id="register">
 					<legend>Become a member!</legend>
 					<div class="control-group">
-						<label class="control-label" for="firstName">First Name</label>
+						<label class="control-label" for="first_name">First Name</label>
 						<div class="controls">
-							<input type="text" id="firstName" placeholder="John" />
+							<input type="text" name="first_name" id="first_name" placeholder="John" />
 						</div>
 					</div>
 
 					<div class="control-group">
-						<label class="control-label" for="lastName">Last Name</label>
+						<label class="control-label" for="last_name">Last Name</label>
 						<div class="controls">
-							<input type="text" id="lastName" placeholder="Doe" />
+							<input type="text" name="last_name" id="last_name" placeholder="Doe" />
 						</div>
 					</div>
 
 					<div class="control-group" id="register_control_group">
 						<label class="control-label" for="register_username">Username</label>
 						<div class="controls input-append">
-								<input type="text" id="register_username" placeholder="john_doe" /> 
+								<input type="text" name="username" id="register_username" placeholder="john_doe" /> 
 								<span class="add-on"><i class="icon-minus-sign" id="username_icon"></i></span>
 						</div>
 					</div>
@@ -47,18 +47,18 @@
 					<div class="control-group" id="register_control_group">
 						<label class="control-label" for="register_password">Password</label>
 						<div class="controls">
-								<input type="password" id="register_password" placeholder="Password" /> 
+								<input type="password" name="password" id="register_password" placeholder="Password" /> 
 						</div>
 						<br />
 						<div class="controls">
-								<input type="password" id="register_password" placeholder="Repeat password" /> 
+								<input type="password" name="password_repeat" id="password_repeat" placeholder="Repeat password" /> 
 						</div>
 					</div>
 
 					<div class="control-group">
 						<label class="control-label" for="email">E-mail</label>
 						<div class="controls">
-							<input type="text" id="email" placeholder="john_doe@example.com" />
+							<input type="text" name="email" id="email" placeholder="john_doe@example.com" />
 						</div>
 					</div>
 

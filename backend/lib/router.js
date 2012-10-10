@@ -1,7 +1,9 @@
 
 function route(handlers, pathname, request, response) {
 	var handler = handlers[pathname];
-	if(handler == undefined || typeof handler['callback'] != 'function') {
+	var method = request.method;
+
+	if(handler == undefined) {
 		console.log("No request handler found for " + pathname);
 		response.writeHead(404, {'Content-Type': 'text/html'});
 		response.write("404 Not Found");
@@ -18,7 +20,7 @@ function route(handlers, pathname, request, response) {
 		response.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS");
 	}
 
-	if(request.method != "OPTIONS" && handler['method'] != request.method) {
+	if(request.method != "OPTIONS" && typeof handler[method] != "function") {
 		response.writeHead(405);
 		response.end();
 		return;
@@ -27,7 +29,7 @@ function route(handlers, pathname, request, response) {
 	if(request.method == "OPTIONS")
 		request.end();
 	else
-		handler['callback'](request, response);
+		handler[method](request, response);
 }
 
 exports.route = route;
