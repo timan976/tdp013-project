@@ -25,6 +25,22 @@ function valid(text) {
 	return text != undefined && text.length > 0;
 }
 
+function valid_username(request, response) {
+	var q = url.parse(request.url, true).query;
+	if(typeof q["username"] == "undefined") {
+		response.writeHead(200, {'Content-Type': 'application/json'});
+		response.write(JSON.stringify({valid: false}));
+		response.end();
+		return;
+	}
+
+	model.username_exists(db, q.username, function(exists) {
+		response.writeHead(200, {'Content-Type': 'application/json'});
+		response.write(JSON.stringify({valid: !exists}));
+		response.end();
+	});
+}
+
 // User registration
 function validate_register_input(fields, callback) {
 	if(!valid(fields.first_name)) return callback(false);
@@ -75,7 +91,6 @@ function register(request, response) {
 						response.write(JSON.stringify({success: false}));
 						response.end();
 					} else {
-						console.log("Registered user");
 						response.writeHead(200, {'Content-Type': 'application/json'});
 						response.write(JSON.stringify({success: true}));
 						response.end();
@@ -99,15 +114,18 @@ function login(request, response) {
 		var salt = crypto.createHash('sha1').update(user.username).digest('hex');
 		user.password = crypto.createHash('sha1').update(user.password + salt).digest('hex');
 
-        model.login(db, fields, function(error, record) {
-            if(error) {
-				response.writeHead(500, {'Content-Type': 'application/json'});
+        model.validate_login(db, user, function(success) {
+            if(!success) {
+				response.writeHead(200, {'Content-Type': 'application/json'});
 				response.write(JSON.stringify({success: false}));
 				response.end();
 			} else {
-				response.writeHead(200, {'Content-Type': 'application/json'});
-				response.write(JSON.stringify({success: true}));
-				response.end();
+				// Update the database
+				model.login_user(db, user, function(error) {
+					response.writeHead(200, {'Content-Type': 'application/json'});
+					response.write(JSON.stringify({success: !error, error: error}));
+					response.end();
+				});
 		    }
         });
     });
@@ -149,7 +167,9 @@ function flag_message(req, res) {
 	if(typeof msg_id == 'undefined' || msg_id.length != 24) {
 		res.writeHead(400, {'Content-Type': 'text/html'});
 		res.write("400 Bad Request");
-		res.end();
+		res.end();findOne({username: user.username}, function(error, dbUser) {
+			callback(dbUser != null && user.password == dbUser.password);
+        })
 		return;
 	}
 
@@ -157,8 +177,6 @@ function flag_message(req, res) {
 	db.collection("message", function(e, c) {
 		c.update({_id: msg_id}, {$set: {read: true}}, function(find_err, msg_doc) {
 			if(find_err) {
-				console.log(find_err);
-				console.log(msg_doc);
 				res.writeHead(500, {'Content-Type': 'text/html'});
 				res.write("500 Internal Server Error");
 			} else {
@@ -187,3 +205,4 @@ function messages(req, res) {
 exports.index = index;
 exports.register = register;
 exports.login = login;
+exports.valid_username = valid_username;

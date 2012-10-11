@@ -126,19 +126,32 @@ function load_messages() {
 	});
 }
 
-function validate_username(element) {
-	var username = $(this).val();
-	if(username == "boerworz") {
-		$("#register_control_group").addClass("error");
-		$("form#register input[type='submit']").attr("disabled", "disabled");
-		$("#username_icon").addClass("icon-minus-sign");
-		$("#username_icon").removeClass("icon-ok-sign");
-	} else {
-		$("#register_control_group").removeClass("error");
-		$("form#register input[type='submit']").removeAttr("disabled");
-		$("#username_icon").removeClass("icon-minus-sign");
-		$("#username_icon").addClass("icon-ok-sign");
+validate_username_timeout = undefined;
+function validate_username() {
+
+	validate = function(username) {
+		console.log("Validating " + username);
+		$.get('http://localhost:8888/valid_username', {username: username}, function(res) {
+			if(!res.valid) {
+				$("#register_control_group").addClass("error");
+				$("form#register input[type='submit']").attr("disabled", "disabled");
+				$("#username_icon").addClass("icon-minus-sign");
+				$("#username_icon").removeClass("icon-ok-sign");
+			} else {
+				$("#register_control_group").removeClass("error");
+				$("form#register input[type='submit']").removeAttr("disabled");
+				$("#username_icon").removeClass("icon-minus-sign");
+				$("#username_icon").addClass("icon-ok-sign");
+			}
+		}, "json");
 	}
+
+	// We wait 0.15 seconds to see if the user continues
+	// to type more characters before we validate the username
+	if(validate_username_timeout)
+		clearTimeout(validate_username_timeout);
+	var elm = $(this);
+	validate_username_timeout = setTimeout(function() { validate(elm.val()) }, 150);
 }
 
 $(document).ready(function() {

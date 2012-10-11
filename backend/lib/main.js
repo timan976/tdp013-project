@@ -14,6 +14,11 @@ var handlers = {
    	'/login': {
 		'POST': requestHandlers.login,
 		'cors_enabled': true
+	},
+
+	'/valid_username': {
+		'GET': requestHandlers.valid_username,
+		'cors_enabled': true
 	}
 };
 
