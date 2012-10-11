@@ -86,6 +86,33 @@ function register(request, response) {
 	});
 }
 
+function login(request, response) {
+    var body = "";
+    request.on("data", function(chunk) {
+        body += chunk;
+    });
+    
+    request.on("end", function() {
+        var fields = url.parse("/login?" + body, true).query;
+        
+        var user = fields;
+		var salt = crypto.createHash('sha1').update(user.username).digest('hex');
+		user.password = crypto.createHash('sha1').update(user.password + salt).digest('hex');
+
+        model.login(db, fields, function(error, record) {
+            if(error) {
+				response.writeHead(500, {'Content-Type': 'application/json'});
+				response.write(JSON.stringify({success: false}));
+				response.end();
+			} else {
+				response.writeHead(200, {'Content-Type': 'application/json'});
+				response.write(JSON.stringify({success: true}));
+				response.end();
+		    }
+        });
+    });
+}
+
 function save_message(req, res) {
 	var msg = url.parse(req.url, true).query['message'];
 	if(typeof msg == 'undefined') {
@@ -159,3 +186,4 @@ function messages(req, res) {
 
 exports.index = index;
 exports.register = register;
+exports.login = login;

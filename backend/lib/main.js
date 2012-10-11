@@ -11,6 +11,10 @@ var handlers = {
 		'POST': requestHandlers.register,
 		'cors_enabled': true
 	},
+   	'/login': {
+		'POST': requestHandlers.login,
+		'cors_enabled': true
+	}
 };
 
 server.start(router.route, handlers);
