@@ -26,20 +26,20 @@ function valid(text) {
 }
 
 // User registration
-function valid_register_input(fields) {
-	// TODO: Check if the username already exists
-	
-	if(!valid(fields.first_name)) return false;
-	if(!valid(fields.last_name)) return false;
-	if(!valid(fields.username)) return false;
-	if(!valid(fields.password)) return false;
-	if(!valid(fields.password_repeat)) return false;
-	if(!valid(fields.email)) return false;
+function validate_register_input(fields, callback) {
+	if(!valid(fields.first_name)) return callback(false);
+	if(!valid(fields.last_name)) return callback(false);
+	if(!valid(fields.username)) return callback(false);
+	if(!valid(fields.password)) return callback(false);
+	if(!valid(fields.password_repeat)) return callback(false);
+	if(!valid(fields.email)) return callback(false);
 
 	if(fields.password != fields.password_repeat)
-		return false;
+		return callback(false);
 
-	return true;
+	model.username_exists(db, fields.username, function(exists) {
+		callback(!exists);
+	});
 }
 
 function register(request, response) {
@@ -49,30 +49,38 @@ function register(request, response) {
 	});
 
 	request.on("end", function() {
-		// Register user
+		// Validate form
 		var fields = url.parse("/register?" + body, true).query;
-		if(!valid_register_input(fields)) {
-			response.end();
-			return;
-		}
-		
-		var user = fields;
-		delete user["password_repeat"];
-
-		// Hash the users password
-		var salt = crypto.createHash('sha1').update(user.username).digest('hex');
-		user.password = crypto.createHash('sha1').update(user.password + salt).digest('hex');
-
-		model.register_user(db, fields, function(error, record) {
-			if(error) {
-				response.writeHead(500, {'Content-Type': 'application/json'});
+		validate_register_input(fields, function(valid) {
+			if(!valid) {
+				response.writeHead(200, {'Content-Type': 'application/json'});
 				response.write(JSON.stringify({success: false}));
 				response.end();
 			} else {
-				console.log("Registered user");
-				response.writeHead(200, {'Content-Type': 'application/json'});
-				response.write(JSON.stringify({success: true}));
-				response.end();
+				// Save user
+				var user = fields;
+				delete user["password_repeat"];
+
+				// Hash the users password
+				var salt = crypto.createHash('sha1').update(user.username).digest('hex');
+				user.password = crypto.createHash('sha1').update(user.password + salt).digest('hex');
+
+				// Add a logged in flag to the user
+				user["logged_in"] = false;
+
+				// Insert the user in the database
+				model.register_user(db, fields, function(error, record) {
+					if(error) {
+						response.writeHead(200, {'Content-Type': 'application/json'});
+						response.write(JSON.stringify({success: false}));
+						response.end();
+					} else {
+						console.log("Registered user");
+						response.writeHead(200, {'Content-Type': 'application/json'});
+						response.write(JSON.stringify({success: true}));
+						response.end();
+					}
+				});
 			}
 		});
 	});
