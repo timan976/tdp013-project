@@ -1,0 +1,80 @@
+<div class="container welcome well">
+	<h1>Welcome to cumonu!</h1>
+	<p>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at eros justo. Proin tortor urna, interdum sed aliquam eu, varius eu tellus. Donec commodo sapien vitae ante sagittis vitae blandit turpis viverra. Duis id nunc nec dolor semper congue. Proin leo dolor, semper vel pulvinar eu, euismod eget tortor. In rhoncus tellus a tellus luctus feugiat. Praesent nec turpis augue, eget aliquam tellus. Duis dictum rutrum diam, et euismod nisi posuere ut. In sed neque dolor, ac consectetur sapien. Nunc nec nulla velit. In ipsum est, sagittis et varius faucibus, commodo eu est. Integer rhoncus, nulla quis sollicitudin sollicitudin, ante eros feugiat purus, at iaculis est lorem sed elit. Nam molestie ultrices consequat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+	</p>
+
+	<div class="span5">
+		<form name="register" method="POST" action="http://localhost:8888/register" class="form-horizontal" id="register">
+			<legend>Become a member!</legend>
+			<div class="control-group">
+				<label class="control-label" for="first_name">First Name</label>
+				<div class="controls">
+					<input type="text" name="first_name" id="first_name" placeholder="John" />
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label class="control-label" for="last_name">Last Name</label>
+				<div class="controls">
+					<input type="text" name="last_name" id="last_name" placeholder="Doe" />
+				</div>
+			</div>
+
+			<div class="control-group" id="register_control_group">
+				<label class="control-label" for="register_username">Username</label>
+				<div class="controls input-append">
+						<input type="text" name="username" id="register_username" placeholder="john_doe" /> 
+						<span class="add-on"><i class="icon-minus-sign" id="username_icon"></i></span>
+				</div>
+			</div>
+
+			<div class="control-group" id="register_control_group">			
+				<label class="control-label" for="register_password">Password</label>
+				<div class="controls">                             
+						<input type="password" name="password" id="register_password" placeholder="Password" /> 
+				</div>                                             
+				<br />                                             
+				<div class="controls">                             
+						<input type="password" name="password_repeat" id="password_repeat" placeholder="Repeat password" /> 
+				</div>                                             
+			</div>                                                 
+                                                                   
+			<div class="control-group">                            
+				<label class="control-label" for="email">E-mail</label>
+				<div class="controls">                             
+					<input type="text" name="email" id="email" placeholder="john_doe@example.com" />
+				</div>                                             
+			</div>                                                 
+                                                                   
+			<div class="control-group">                            
+				<div class="controls">                             
+					<input type="submit" class="btn btn-primary" id="register_button" value="Register" />
+				</div>                                             
+			</div>                                                 
+                                                                   
+		</form>                                                    
+	</div>                                                         
+	<div class="span4 pull-right" id="login_container">            
+		<form name="login" class="form-horizontal" action="#" id="login">
+			<legend>Login</legend>                                 
+			<div class="control-group">                            
+				<div class="controls">                             
+					<input type="text" name="username" id="username" placeholder="Username" />
+				</div>                                             
+			</div>                                                 
+                                                                   
+			<div class="control-group">                            
+				<div class="controls">                             
+					<input type="password" name="password" id="password" placeholder="Password" />
+				</div>                                             
+			</div>                                                 
+                                                                   
+			<div class="control-group">                            
+				<div class="controls">                             
+					<input type="submit" class="btn btn-primary" id="login_button" value="Login" />
+				</div>                                             
+			</div>                                                 
+		</form>                                                    
+	</div>                                                         
+</div>                                                             	

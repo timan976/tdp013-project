@@ -1,3 +1,5 @@
+var mongo = require('mongodb');
+
 function register_user(db, user, callback) {
 	db.collection("user", function(error, collection) {
 		collection.insert(user, function(error, record) {
@@ -17,7 +19,7 @@ function username_exists(db, username, callback) {
 function validate_login(db, user, callback) {
     db.collection("user", function(error, collection) {
         collection.findOne({username: user.username}, function(error, dbUser) {
-			callback(dbUser != null && user.password == dbUser.password);
+			callback(dbUser != null && user.password == dbUser.password, dbUser);
         });
     });
 }
@@ -30,7 +32,28 @@ function login_user(db, user, callback) {
     });
 }
 
+function logout_user(db, user_id, callback) {
+    db.collection("user", function(error, collection) {
+		var id = new mongo.BSONPure.ObjectID(user_id);
+        collection.update({_id: id}, {$set: {logged_in: false}}, function(update_error, doc) {
+			console.log("logged out " + id);
+			callback(error);
+		});
+    });
+}
+
+function find_user_by_id(db, user_id, callback) {
+	db.collection("user", function(error, collection) {
+		var id = new mongo.BSONPure.ObjectID(user_id);
+		collection.findOne({_id: id}, function(user_error, user_doc) {
+			callback(!error, user_doc);
+		});
+	});
+}
+
 exports.register_user = register_user;
 exports.validate_login = validate_login;
 exports.username_exists = username_exists;
 exports.login_user = login_user;
+exports.logout_user = logout_user;
+exports.find_user_by_id = find_user_by_id;

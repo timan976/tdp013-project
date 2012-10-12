@@ -2,6 +2,9 @@ var mongo = require('mongodb');
 var util = require('util');
 var model = require('./model');
 var crypto = require('crypto');
+var mu = require('mu2');
+var url = require('url');
+mu.root = __dirname + '../../../frontend/templates';
 
 var mongo_server = new mongo.Server('localhost', 27017);
 var db = new mongo.Db('tdp013-project', mongo_server);
@@ -13,12 +16,30 @@ db.open(function(err, db) {
 	}
 });
 
-var url = require('url');
+function parse_post_data(request, callback) {
+	var body = "";
+	request.on("data", function(data) {
+		body += data;
+	});
+
+	request.on("end", function() {
+		var post_data = url.parse(request.url + "?" + body, true).query;
+		callback(post_data);
+	});
+}
+
+function base(req, res) {
+	mu.clearCache();
+	res.writeHead(200, {'Content-Type': 'text/html'});
+	var stream = mu.compileAndRender("base.html");
+	stream.pipe(res);
+}
 
 function index(req, res) {
+	mu.clearCache();
 	res.writeHead(200, {'Content-Type': 'text/html'});
-	res.write("Hello, World!");
-	res.end();
+	var stream = mu.compileAndRender("index.html");
+	stream.pipe(res);
 }
 
 function valid(text) {
@@ -59,14 +80,8 @@ function validate_register_input(fields, callback) {
 }
 
 function register(request, response) {
-	var body = "";
-	request.on("data", function(chunk) {
-		body += chunk;
-	});
-
-	request.on("end", function() {
+	parse_post_data(request, function(fields) {
 		// Validate form
-		var fields = url.parse("/register?" + body, true).query;
 		validate_register_input(fields, function(valid) {
 			if(!valid) {
 				response.writeHead(200, {'Content-Type': 'application/json'});
@@ -102,19 +117,12 @@ function register(request, response) {
 }
 
 function login(request, response) {
-    var body = "";
-    request.on("data", function(chunk) {
-        body += chunk;
-    });
-    
-    request.on("end", function() {
-        var fields = url.parse("/login?" + body, true).query;
-        
-        var user = fields;
+    parse_post_data(request, function(post_data) {
+        var user = post_data;
 		var salt = crypto.createHash('sha1').update(user.username).digest('hex');
 		user.password = crypto.createHash('sha1').update(user.password + salt).digest('hex');
 
-        model.validate_login(db, user, function(success) {
+        model.validate_login(db, user, function(success, user_document) {
             if(!success) {
 				response.writeHead(200, {'Content-Type': 'application/json'});
 				response.write(JSON.stringify({success: false}));
@@ -123,12 +131,78 @@ function login(request, response) {
 				// Update the database
 				model.login_user(db, user, function(error) {
 					response.writeHead(200, {'Content-Type': 'application/json'});
-					response.write(JSON.stringify({success: !error, error: error}));
+					response.write(JSON.stringify({
+						success: !error,
+						error: error,
+						user_id: user_document._id
+					}));
 					response.end();
 				});
 		    }
         });
     });
+}
+
+function logout(request, response) {
+	parse_post_data(request, function(post_data) {
+		var user_id = post_data.user_id;
+		console.log("logging out " + user_id);
+		model.logout_user(db, user_id, function(error) {
+			response.writeHead(200, {'Content-Type': 'application/json'});
+			response.write(JSON.stringify({success: !error}));
+			response.end();
+		});
+	});
+}
+
+function profile_page(request, response) {
+	mu.clearCache();
+
+	// Get user
+	var user_id = url.parse(request.url, true).query["user_id"];
+	model.find_user_by_id(db, user_id, function(success, user) {
+		if(!success) {
+			response.writeHead(500);
+			response.end();
+			return;
+		}
+
+		response.writeHead(200, {'Content-Type': 'text/html'});
+		var stream = mu.compileAndRender('logged_in.html', {user: user});
+		stream.pipe(response);
+	});
+}
+
+function wallposts(request, response) {
+	mu.clearCache();
+
+	// Get user
+	var params = url.parse(request.url, true).query;
+	var user_id;
+	if(params["user_id"] != undefined)
+		user_id = params["user_id"];
+	else
+		user_id = params["viewer_id"];
+
+	model.find_user_by_id(db, user_id, function(success, user) {
+		if(!success) {
+			response.writeHead(500);
+			response.end();
+			return;
+		}
+
+		response.writeHead(200, {'Content-Type': 'text/html'});
+		var can_post = user_id != params["viewer_id"];
+		console.log("can_post: " + can_post);
+		var stream = mu.compileAndRender('wallposts.mustache', {can_post: can_post});
+		stream.pipe(response);
+	});
+}
+
+function search_form(request, response) {
+	response.writeHead(200, {'Content-Type': 'text/html'});
+	var stream = mu.compileAndRender('search.mustache');
+	stream.pipe(response);
 }
 
 function save_message(req, res) {
@@ -202,7 +276,12 @@ function messages(req, res) {
 	});
 }
 
+exports.base = base;
 exports.index = index;
 exports.register = register;
 exports.login = login;
+exports.logout = logout;
 exports.valid_username = valid_username;
+exports.profile_page = profile_page;
+exports.wallposts = wallposts;
+exports.search_form = search_form;
