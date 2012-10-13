@@ -200,9 +200,32 @@ function wallposts(request, response) {
 }
 
 function search_form(request, response) {
+	mu.clearCache();
 	response.writeHead(200, {'Content-Type': 'text/html'});
 	var stream = mu.compileAndRender('search.mustache');
 	stream.pipe(response);
+}
+
+function search(request, response) {
+	parse_post_data(request, function(post_data) {
+		var query = post_data.query;
+		if(!query) {
+			response.writeHead(400);
+			response.end();
+			return;
+		}
+
+		model.search_users(db, query, function(error, results) {
+			var vars = {
+				users: results,
+				query: query,
+				count: results.length
+			};
+			response.writeHead(200, {'Content-Type': 'text/html'});
+			var stream = mu.compileAndRender('search_results.mustache', vars);
+			stream.pipe(response);
+		});
+	});
 }
 
 function save_message(req, res) {
@@ -285,3 +308,4 @@ exports.valid_username = valid_username;
 exports.profile_page = profile_page;
 exports.wallposts = wallposts;
 exports.search_form = search_form;
+exports.search = search;

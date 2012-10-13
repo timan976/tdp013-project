@@ -1,0 +1,12 @@
+{{#count}}
+<h4>{{count}} results for "{{query}}"</h4>
+{{/count}}
+
+{{#users}}
+* {{first_name}} {{last_name}} ({{username}})<br />
+{{/users}}
+
+
+{{^count}}
+<h4>No results for "{{query}}".</h4>
+{{/count}}

@@ -52,6 +52,12 @@ var handlers = {
 	'/content/search': {
 		'GET': requestHandlers.search_form,
 		'cors_enabled': true
+	},
+
+	'/search': {
+		'GET': requestHandlers.base,
+		'POST': requestHandlers.search,
+		'cors_enabled': true
 	}
 };
 

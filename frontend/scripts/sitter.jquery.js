@@ -50,20 +50,35 @@ function validate_username() {
 
 // Pages
 
-function display_wallposts(user_id) {
-	console.log("wall");
+function display_wallposts(push_state, user_id) {
+	console.log("display_wallposts");
+
+	$("li.active").removeClass("active");
+	$("a#wallposts").parent().addClass("active");
+
 	$("#content").load_content("/content/wallposts", {
 		viewer_id: sessionStorage["user_id"],
 		user_id: user_id
 	});
-	return false;
+
+	if(push_state)
+		window.history.pushState({page: '/'}, "Wallposts", "/");
 }
 
-function display_search() {
+function display_search(push_state) {
+	console.log("Displaying search");
+	$("li.active").removeClass("active");
+	$("a#search").parent().addClass("active");
+
 	$("#content").load_content("/content/search");
+
+	if(push_state)
+		window.history.pushState({page: '/search'}, "Search", "/search");
 }
 
 function load_startpage() {
+	console.log("load_startpage()");
+
 	var user_id = sessionStorage["user_id"];
 	if(user_id != undefined) {
 		$("#page").load_content("/template/profile_page", {user_id: user_id}, function() {
@@ -72,23 +87,14 @@ function load_startpage() {
 	} else {
 		$("#page").load_content("/template/index");
 	}
-	//window.history.pushState({}, "Your profile", "/profile_page");
 }
 
 $(document).ready(function() {
+	$("#register_username").keyup(validate_username);
+	$("#register_username").change(validate_username);
 
-	window.onpopstate = function() {
-		var pathname = window.location.pathname;
-		if(pathname == '/') {
-			load_startpage();
-		}
-	}
-
-	$(document).on("click", ".main_nav a", function() {
-		console.log("click");
-		$("li.active").removeClass("active");
-		$(this).parent().addClass("active");
-		return false;
+	$(document).on("click", "#login_error > .close", function() {
+		$("#login_error").hide();
 	});
 
 	$(document).on("submit", "#login", function() {
@@ -106,11 +112,41 @@ $(document).ready(function() {
 
 				// Load profile page
 				load_startpage();
+			} else {
+				$("#login_error").show();
 			}
 		}, "json");
 
 		return false;
 	});
+
+	$(document).on("submit", "#search_form", function() {
+		var query = $("input[name=query]").val();
+		var data = {query: query};
+		$.post("/search", data, function(response) {
+			$("#search_results").html(response);
+		}, "html");
+		return false;
+	});
+
+	var page_map = {
+		'/search': display_search,
+		'/': display_wallposts
+	};
+
+	window.onpopstate = function(e) {
+		var page = document.location.pathname;
+		if(e.state)
+			page = e.state.page;
+
+		var user_id = sessionStorage["user_id"];
+		$("#page").load_content("/template/profile_page", {user_id: user_id}, function() {
+			var page_func = page_map[page];
+			if(page_func != undefined) {
+				page_func(false);
+			}
+		});
+	}
 
 	$(document).on("click", "a#logout", function() {
 		$.post("/logout", {user_id: sessionStorage.user_id}, function(response) {
@@ -120,10 +156,15 @@ $(document).ready(function() {
 		return false;
 	});
 
-	$(document).on("click", "a#wallposts", function() { display_wallposts() });
-	$(document).on("click", "a#search", function() { display_search() });
+	$(document).on("click", "a#wallposts", function() { display_wallposts(true); return false; });
+	$(document).on("click", "a#search", function() { display_search(true); return false; });
 
-	$("#register_username").keyup(validate_username);
-	$("#register_username").change(validate_username);
+	if(sessionStorage["user_id"] == undefined) {
+		// Redirect to index
+		console.log("not logged in");
+		$("#page").load_content("/template/index");
+		return;
+	}
+
 });
 
