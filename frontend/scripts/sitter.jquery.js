@@ -21,6 +21,39 @@ jQuery.fn.load_content = function() {
 	}, "html");
 }
 
+function match(handlers, request_path) {
+	for(var route_path in handlers) {
+		if(route_path.indexOf('*') != -1) {
+			var regex_string = route_path.replace("**", "(([a-zA-Z._-]+/?)+)").replace(/\*/g, "([a-zA-Z._-]+)");
+			var regex = new RegExp(regex_string, "i");
+			var matches = request_path.match(regex);
+
+			if(!matches)
+				continue;
+
+			if(matches[0] == request_path) {
+				var params = [];
+				if(matches.length > 2)
+					params = matches.slice(1, matches.length - 1);
+				else
+					params = [matches[1]];
+				return {
+					handler: handlers[route_path],
+					params: params
+				};
+			}
+		} else {
+			if(route_path == request_path) {
+				return {
+					handler: handlers[route_path],
+					params: []
+				};
+			}
+		}
+	}
+	return false;
+}
+
 validate_username_timeout = undefined;
 function validate_username() {
 
@@ -49,16 +82,19 @@ function validate_username() {
 }
 
 // Pages
-
-function display_wallposts(push_state, user_id) {
-	console.log("display_wallposts");
+function display_wall(push_state) {
+	// The logged in users wall
+	
+	console.log("display_wall");
 
 	$("li.active").removeClass("active");
-	$("a#wallposts").parent().addClass("active");
+	$("a[href='/']").parent().addClass("active");
 
-	$("#content").load_content("/content/wallposts", {
-		viewer_id: sessionStorage["user_id"],
-		user_id: user_id
+	$.ajax('/content/wall', {
+		headers: {"user-id": sessionStorage["user_id"]},
+		dataType: 'html'
+	}).done(function(response) {
+		$("#content").html(response);
 	});
 
 	if(push_state)
@@ -66,9 +102,11 @@ function display_wallposts(push_state, user_id) {
 }
 
 function display_search(push_state) {
+	// Search page
+	
 	console.log("Displaying search");
 	$("li.active").removeClass("active");
-	$("a#search").parent().addClass("active");
+	$("a[href='/search']").parent().addClass("active");
 
 	$("#content").load_content("/content/search");
 
@@ -76,20 +114,85 @@ function display_search(push_state) {
 		window.history.pushState({page: '/search'}, "Search", "/search");
 }
 
-function load_startpage() {
-	console.log("load_startpage()");
+function display_user_page(username, push_state) {
+	// A users page
+	
+	$("li.active").removeClass("active");
+
+	var url = '/content/user/' + username;
+	$.ajax(url, {
+		headers: {'user-id': sessionStorage.user_id},
+		dataType: 'html'
+	}).done(function(response) {
+		$("#content").html(response);
+	});
+
+	if(push_state)
+		window.history.pushState({page: '/user/' + username}, "User page", '/user/' + username);
+}
+
+function display_friends(push_state) {
+	$("li.active").removeClass("active");
+	$("a[href='/friends']").parent().addClass("active");
+
+	$.ajax('/content/friends', {
+		headers: {'user-id': sessionStorage.user_id},
+		dataType: 'html'
+	}).done(function(response) {
+		$("#content").html(response);
+	});
+
+	if(push_state)
+		window.history.pushState({page: '/friends'}, "Friends", '/friends');
+}
+
+// Loads the base template, which depends on if the
+// user is logged in or not.
+function load_base(callback) {
+	console.log("load_base()");
 
 	var user_id = sessionStorage["user_id"];
 	if(user_id != undefined) {
-		$("#page").load_content("/template/profile_page", {user_id: user_id}, function() {
-			display_wallposts();
+		$.ajax("/template/home", {
+			headers: {"user-id": user_id},
+			dataType: "html"
+		}).done(function(response) {
+			$("#page").html(response);
+			console.log("loaded base");
+			if(callback != undefined)
+				callback();
 		});
 	} else {
 		$("#page").load_content("/template/index");
 	}
 }
 
+// Loads the correct content for the path.
+// load_base needs to be called once before 
+// this function is called.
+var page_map = {
+	'/user/*': display_user_page,
+	'/search': display_search,
+	'/friends': display_friends,
+	'/': display_wall
+};
+
+function load_content(page) {
+	var user_id = sessionStorage["user_id"];
+	var m = match(page_map, page);
+	if(!m) return;
+
+	var page_func = m.handler;
+	var params = m.params;
+	params.push(false);
+	if(page_func != undefined)
+		page_func.apply(this, params);
+}
+
 $(document).ready(function() {
+	load_base();
+	console.log("ready");
+
 	$(document).on("keyup", "#register_username", validate_username);
 	$(document).on("change", "#register_username", validate_username);
 
@@ -99,11 +202,11 @@ $(document).ready(function() {
 
 	$(document).on("submit", "#login", function() {
 		var username = $("#username").val();
-		var credentials = {
+		var credentials = {	
 			username: username,
 			password: $("#password").val()
-		};
-
+		};                 	
+                           	
 		$.post("http://localhost:8888/login", credentials, function(response) {
 			if(response.success) {
 				// Create a session
@@ -111,10 +214,13 @@ $(document).ready(function() {
 				sessionStorage.user_id = response.user_id;
 
 				// Load profile page
-				load_startpage();
+				load_base(function() {
+					console.log("Loading content");
+					load_content("/");
+				});
 			} else {
 				$("#login_error").show();
-			}
+			}Offline
 		}, "json");
 
 		return false;
@@ -129,46 +235,74 @@ $(document).ready(function() {
 		return false;
 	});
 
-	var page_map = {
-		'/search': display_search,
-		'/': display_wallposts
-	};
 
 	window.onpopstate = function(e) {
-		var page = document.location.pathname;
-		if(e.state)
+		if(sessionStorage["user_id"] == undefined) 
+			return;
+		
+		var page = window.location.pathname;
+		if(e.state != undefined)
 			page = e.state.page;
 
-		var user_id = sessionStorage["user_id"];
-		$("#page").load_content("/template/profile_page", {user_id: user_id}, function() {
-			var page_func = page_map[page];
-			if(page_func != undefined) {
-				page_func(false);
-			}
-		});
+		load_content(page);
 	}
+
+	$(document).on("click", "a[href='/']", function() { display_wall(true); return false; });
+	$(document).on("click", "a[href='/search']", function() { display_search(true); return false; });
+	$(document).on("click", "a[href='/friends']", function() { display_friends(true); return false; });
+	$(document).on("click", "a[href^='/user/']", function() {
+		var username = $(this).attr("href").substring(6);
+		display_user_page(username, true);
+		return false;
+	});
 
 	$(document).on("click", "a#logout", function() {
 		$.post("/logout", {user_id: sessionStorage.user_id}, function(response) {
 			sessionStorage.clear();
-			load_startpage();
+			load_base();
 		});
 		return false;
 	});
 
-	$(document).on("click", "a#wallposts", function() { display_wallposts(true); return false; });
-	$(document).on("click", "a#search", function() { display_search(true); return false; });
+	$(document).on("click", "#friend_button.add", function() {
+		console.log("Adding friend");
+		var data = {friend_id: $(this).attr("data-friend-id")};
+		$.ajax('/add_friend', {
+			headers: {'user-id': sessionStorage.user_id},
+			type: 'POST',
+			data: data,
+			dataType: 'json'
+		}).done(function(response) {
+			if(response.success)
+				$("#friend_button.add").hide();
+		});
+		return false;
+	});
 
-	$(document).on("click", "a[href^='/user/']", function() {
-		var url = "/content" + $(this).attr("href");
-		$("#content").load_content(url);
+	// Wallpost form
+	$(document).on("submit", "#wallpost_form", function() {
+		var data = {
+			to_id: $("input[name='to_id']").val(),
+			post: $("textarea[name='post']").val()
+		};
+
+		$.ajax('/save_wallpost', {
+			headers: {'user-id': sessionStorage.user_id},
+			dataType: 'html',
+			data: data,
+			type: 'POST'
+		}).done(function(response) {
+			$("#wallposts > #notice").hide();
+			$("#content").append(response);
+		});
+
 		return false;
 	});
 
 	if(sessionStorage["user_id"] == undefined) {
-		// Redirect to index
-		console.log("not logged in");
+		// Show homepage
 		$("#page").load_content("/template/index");
+		window.history.pushState(null, "cumonu", "/");
 		return;
 	}
 

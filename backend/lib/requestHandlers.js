@@ -146,7 +146,6 @@ function login(request, response) {
 function logout(request, response) {
 	parse_post_data(request, function(post_data) {
 		var user_id = post_data.user_id;
-		console.log("logging out " + user_id);
 		model.logout_user(db, user_id, function(error) {
 			response.writeHead(200, {'Content-Type': 'application/json'});
 			response.write(JSON.stringify({success: !error}));
@@ -155,11 +154,11 @@ function logout(request, response) {
 	});
 }
 
-function profile_page(request, response) {
+function homepage(request, response) {
 	mu.clearCache();
 
 	// Get user
-	var user_id = url.parse(request.url, true).query["user_id"];
+	var user_id = request.headers["user-id"];
 	model.find_user_by_id(db, user_id, function(success, user) {
 		if(!success) {
 			response.writeHead(500);
@@ -168,22 +167,17 @@ function profile_page(request, response) {
 		}
 
 		response.writeHead(200, {'Content-Type': 'text/html'});
-		var stream = mu.compileAndRender('logged_in.html', {user: user});
+		var stream = mu.compileAndRender('homepage.mustache', {user: user});
 		stream.pipe(response);
 	});
 }
 
-function wallposts(request, response) {
+// The logged in users wall
+function wall(request, response) {
 	mu.clearCache();
 
 	// Get user
-	var params = url.parse(request.url, true).query;
-	var user_id;
-	if(params["user_id"] != undefined)
-		user_id = params["user_id"];
-	else
-		user_id = params["viewer_id"];
-
+	var user_id = request.headers["user-id"];
 	model.find_user_by_id(db, user_id, function(success, user) {
 		if(!success) {
 			response.writeHead(500);
@@ -191,11 +185,18 @@ function wallposts(request, response) {
 			return;
 		}
 
-		response.writeHead(200, {'Content-Type': 'text/html'});
-		var can_post = user_id != params["viewer_id"];
-		console.log("can_post: " + can_post);
-		var stream = mu.compileAndRender('wallposts.mustache', {can_post: can_post});
-		stream.pipe(response);
+		// Get wallposts
+		model.find_wallposts_to_user(db, user, function(success, wallposts) {
+			if(!success) {
+				response.writeHead(500);
+				response.end();
+				return;
+			}
+
+			response.writeHead(200, {'Content-Type': 'text/html'});
+			var stream = mu.compileAndRender('wall.mustache', {wallposts: wallposts});
+			stream.pipe(response);
+		});
 	});
 }
 
@@ -229,13 +230,13 @@ function search(request, response) {
 }
 
 function show_user(request, response, username) {
-	console.log(username);
 	if(!username) {
 		response.writeHead(400);
 		response.end();
 		return;
 	}
 
+	var viewer_id = request.headers["user-id"];
 	model.find_user_by_username(db, username, function(success, user) {
 		if(!success) {
 			response.writeHead(500);
@@ -243,81 +244,94 @@ function show_user(request, response, username) {
 			return;
 		}
 
+		// Fetch viewer so we can check if the two people
+		// are friends
+		model.find_user_by_id(db, viewer_id, function(success, viewer) {
+			if(!success) {
+				response.writeHead(500);
+				response.end();
+				return;
+			}
+
+			var is_friend = false;
+			for(var index in viewer.friends) {
+				var friend = viewer.friends[index];
+				if(friend.user_id.equals(user._id)) {
+					is_friend = true;
+					break;
+				}
+			}
+
+			// Fetch wallposts
+			model.find_wallposts_to_user(db, user, function(success, wallposts) {
+				if(!success) {
+					response.writeHead(500);
+					response.end();
+					return;
+				}
+
+				var can_post = viewer_id != user._id;
+				var vars = {
+					user: user,
+					wallposts: wallposts,
+					can_post: can_post,
+					is_friend: is_friend
+				};
+				response.writeHead(200, {'Content-Type': 'text/html'});
+				var stream = mu.compileAndRender('user_page.mustache', vars);
+				stream.pipe(response);
+			});
+		});
+
+	});
+
+}
+
+function save_wallpost(request, response) {
+	parse_post_data(request, function(post_data) {
+		var from_id = request.headers["user-id"];
+		var to_id = post_data["to_id"];
+		var post = post_data["post"];
+
+		model.add_wallpost(db, from_id, to_id, post, function(success, wallpost) {
+			if(!success) {
+				response.writeHead(500);
+				response.end();
+				return;
+			}
+
+			response.writeHead(200, {'Content-Type': 'text/html'});
+			var stream = mu.compileAndRender('wallpost.mustache', wallpost);
+			stream.pipe(response);
+		});
+	});
+}
+
+function add_friend(request, response) {
+	parse_post_data(request, function(post_data) {
+		var user_id = request.headers["user-id"];
+		var friend_id = post_data["friend_id"];
+
+		model.add_friend(db, user_id, friend_id, function(success) {
+			response.writeHead(200, {'Content-Type': 'application/json'});
+			response.write(JSON.stringify({success: success}));
+			response.end();
+		});
+	});
+}
+
+function friends(request, response) {
+	var user_id = request.headers["user-id"];
+	model.find_user_by_id(db, user_id, function(success, user) {
+		if(!success) {
+			response.writeHead(500);
+			response.end();
+			return;
+		}
+
 		response.writeHead(200, {'Content-Type': 'text/html'});
-		response.write(user.first_name);
-		response.end();
-	});
-
-}
-
-function save_message(req, res) {
-	var msg = url.parse(req.url, true).query['message'];
-	if(typeof msg == 'undefined') {
-		res.writeHead(400, {'Content-Type': 'text/html'});
-		res.write("400 Bad Request - No message specified");
-		res.end();
-		return;
-	}
-
-	if(msg.length > 140) {
-		res.writeHead(400, {'Content-Type': 'text/html'});
-		res.write("400 Bad Request - Message too long");
-		res.end();
-		return;
-	}
-
-	db.collection("message", function(e, c) {
-		c.insert({'message': msg, 'read': false}, function(e, result) {
-			if(e) {
-				res.writeHead(500, {'Content-Type': 'text/html'});
-				res.write("500 Internal Server Error");
-			} else {
-				res.writeHead(200);
-				var resp = JSON.stringify(result[0]);
-				res.write(resp);
-			}
-			res.end();
-		});
-	});
-}
-
-function flag_message(req, res) {
-	var msg_id = url.parse(req.url, true).query['id'];
-	if(typeof msg_id == 'undefined' || msg_id.length != 24) {
-		res.writeHead(400, {'Content-Type': 'text/html'});
-		res.write("400 Bad Request");
-		res.end();findOne({username: user.username}, function(error, dbUser) {
-			callback(dbUser != null && user.password == dbUser.password);
-        })
-		return;
-	}
-
-	msg_id = new mongo.BSONPure.ObjectID(msg_id);
-	db.collection("message", function(e, c) {
-		c.update({_id: msg_id}, {$set: {read: true}}, function(find_err, msg_doc) {
-			if(find_err) {
-				res.writeHead(500, {'Content-Type': 'text/html'});
-				res.write("500 Internal Server Error");
-			} else {
-				res.writeHead(200);
-			}
-			res.end();
-		});
-	});
-}
-
-function messages(req, res) {
-	db.collection("message", function(e, c) {
-		c.find().toArray(function(err, docs) {
-			if(err) {
-				res.writeHead(500, {'Content-Type': 'text/html'});
-				res.write("500 Internal Server Error");
-			} else {
-				res.writeHead(200, {'Content-Type': 'application/json'});
-				res.write(JSON.stringify(docs));
-			}
-			res.end();
-		});
+		var stream = mu.compileAndRender("friends.mustache", {friends: user.friends});
+		stream.pipe(response);
 	});
 }
 
@@ -327,8 +341,11 @@ exports.register = register;
 exports.login = login;
 exports.logout = logout;
 exports.valid_username = valid_username;
-exports.profile_page = profile_page;
-exports.wallposts = wallposts;
+exports.homepage = homepage;
+exports.wall = wall;
 exports.search_form = search_form;
 exports.search = search;
 exports.show_user = show_user;
+exports.save_wallpost = save_wallpost;
+exports.add_friend = add_friend;
+exports.friends = friends;

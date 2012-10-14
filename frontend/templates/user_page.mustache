@@ -1,0 +1,32 @@
+<h3>{{user.first_name}} {{user.last_name}} ({{user.username}})</h3>
+<div class="online_indicator {{#user.logged_in}}online{{/user.logged_in}}"></div>
+{{#user.logged_in}}Online{{/user.logged_in}}
+{{^user.logged_in}}Offline{{/user.logged_in}}
+
+{{#can_post}}
+{{^is_friend}}
+<span id="friend_button" class="add" data-friend-id="{{user._id}}">
+	<i class="icon-plus icon-white"></i>
+	Add as friend
+</span>
+{{/is_friend}}
+
+<form id="wallpost_form">
+	<legend>Make a wallpost</legend>
+	<textarea name="post" rows="3" placeholder="Say something..."></textarea>
+	<input type="hidden" name="to_id" value="{{user._id}}" />
+	<br />
+	<input type="submit" value="Post" class="btn btn-primary" />
+</form>
+{{/can_post}}
+
+<h4>{{user.first_name}}'s wall</h4>
+<div id="wallposts">
+	{{^wallposts}}
+		<span id="notice">Nobody has posted on {{user.first_name}}'s wall, yet.</span>
+	{{/wallposts}}
+	
+	{{#wallposts}}
+		{{> wallpost.mustache}}
+	{{/wallposts}}
+</div>

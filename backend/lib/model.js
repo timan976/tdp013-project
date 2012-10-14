@@ -36,7 +36,6 @@ function logout_user(db, user_id, callback) {
     db.collection("user", function(error, collection) {
 		var id = new mongo.BSONPure.ObjectID(user_id);
         collection.update({_id: id}, {$set: {logged_in: false}}, function(update_error, doc) {
-			console.log("logged out " + id);
 			callback(error);
 		});
     });
@@ -78,6 +77,91 @@ function search_users(db, query, callback) {
 	});
 }
 
+function find_wallposts_to_user(db, user, callback) {
+	db.collection("wallpost", function(error, collection) {
+		collection.find({to_id: user._id}, function(find_error, documents) {
+			if(find_error) {
+					callback(false, []);
+			} else {
+				documents.toArray(function(err, res) {
+					callback(true, res);
+				});
+			}
+		});
+	});
+}
+
+function add_wallpost(db, from_id, to_id, post, callback) {
+	db.collection("wallpost", function(error, collection) {
+		// Wallposts also contain the username of the sender
+		// so we need to fetch that before inserting the wallpost.
+		find_user_by_id(db, from_id, function(success, user) {
+			if(!success) {
+				callback(false, undefined);
+				return;
+			}
+
+			to_id = new mongo.BSONPure.ObjectID(to_id);
+			from_id = new mongo.BSONPure.ObjectID(from_id);
+			var name = user.first_name + " " + user.last_name;
+			var wallpost_record = {
+				from: name,
+				from_username: user.username,
+				from_id: from_id,
+				to_id: to_id,
+				post: post,
+				date: new Date()
+			};
+
+			collection.insert(wallpost_record, function(post_error, wallpost_doc) {
+				callback(!post_error, wallpost_doc);
+			});
+		})
+	})
+}
+
+function add_friend(db, user_id, friend_id, callback) {
+	user_id = new mongo.BSONPure.ObjectID(user_id);
+	friend_id = new mongo.BSONPure.ObjectID(friend_id);
+	db.collection("user", function(error, collection) {
+		// Make sure the user exists
+		collection.findOne({_id: user_id}, function(user_error, user) {
+			if(user_error || !user) {
+				callback(false);
+				return;
+			}
+
+			// Make sure the friend exists
+			collection.findOne({_id: friend_id}, function(friend_error, friend_user) {
+				if(friend_error || !friend_user) {
+					callback(false);
+					return;
+				}
+
+				var friends = user.friends;
+				var friend = {
+					user_id: friend_user._id,
+					username: friend_user.username,
+					name: friend_user.first_name + " " + friend_user.last_name
+				};
+
+				// Make sure the two people aren't already friends
+				collection.findOne({_id: user_id, friends: {$elemMatch: {user_id: friend_id}}}, function(find_error, match) {
+					if(match) {
+						callback(false);
+						return;
+					}
+
+					// Finally add the friend to the users friends-list
+					collection.update(user, {$addToSet: {friends: friend}}, function(update_error) {
+						callback(!update_error);
+					});
+				})
+			});
+		});
+	});
+}
+
 exports.register_user = register_user;
 exports.validate_login = validate_login;
 exports.username_exists = username_exists;
@@ -87,3 +171,6 @@ exports.find_user_by_id = find_user_by_id;
 exports.find_user_by_username = find_user_by_username;
 exports.find_user = find_user;
 exports.search_users = search_users;
+exports.find_wallposts_to_user = find_wallposts_to_user;
+exports.add_wallpost = add_wallpost;
+exports.add_friend = add_friend;

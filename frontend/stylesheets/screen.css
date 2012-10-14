@@ -112,153 +112,49 @@ form#register > .control-group > .controls > .add-on {
 	padding: 0px 20px;
 }
 
-textarea[name="message"] {
-	border-radius: 3px;
-	border: 1px solid #bbbbbb;
-	outline: 0;
-	box-shadow: inset 0px 1px 1px #eaeaea;
-	padding: 5px;
-}
-
-textarea[name="message"]:focus {
-	border-color: rgba(82, 168, 236, 0.8);
-	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),0 0 4px rgba(82, 168, 236, 0.6);
-}
-
-.placeholder {
-	color: #aaaaaa;
-}
-
-#compose_area {
-	border-bottom: 1px dashed #eaeaea;
-	padding: 10px;
-}
-
-#compose_controls {
-	display: none;
-}
-
-#compose_controls > input[name=send] {
-	width: 65px;
-	margin-top: 10px;
-	margin-left: 2px;
-
-	border: 1px solid #e71b09;
-	border-radius: 3px;
-
-	box-shadow: inset 0px 1px 1px #ff806d;
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ff715b), to(#ff5741));
-	background: -moz-linear-gradient(top, #ff715b, #ff5741);
-
-	color: #ffffff;
-	font-weight: bold;
-	font-size: 12px;
-	text-shadow: 0px 1px #505050;
-}
-
-#compose_controls > input[name=send]:active {
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ff5741), to(#ff715b));
-	background: -moz-linear-gradient(top, #ff5741, #ff715b);
-}
-
-#compose_controls > .character_count {
-	color: #dddddd;
-	float: right;
-	margin-top: 12px;
-	font-size: 18px;
-	font-weight: bold;
-}
-
-.limit_reached {
-	color: #ba2339 !important;
-}
-
-#flash {
-	display: none;
-	padding: 5px;
-	color: #ffffff;
-	margin: 10px 2px 0px 2px;
-	font-weight: bold;
-	font-size: 12px;
-	text-shadow: 0px 1px #808080;
-}
-
-#flash.error {
-	background-color: #ff6565;
-	border: 2px solid #ff0e19;
-}
-
-#flash.success {
-	background-color: #00d000;
-	border: 2px solid #008000;
-}
-
-#flash.notice {
-	background-color: #ffbc37;
-	border: 2px solid #ce972c;
-}
-
-#messages {
-}
-
-.message {
-	border-bottom: 1px dashed #eaeaea;
-	font-size: 12px;
-	padding: 10px;
-	overflow: auto;
-}
-
-.message > .timestamp {
-	color: #cccccc;
-	font-size: 10px;
-	margin-top: 5px;
-	float: left;
-}
-
 @-webkit-keyframes pulsate {
-	0% {
-		background-color: #ffffff;
-	}
-
-	100% {
-		background-color: #fff7b7;
-	}
+	0% { -webkit-box-shadow: 0px 0px 5px #99FA23; }
+	100% { -webkit-box-shadow: 0px 0px 0px #99FA23; }
 }
 
-@-moz-keyframes pulsate {
-	0% {
-		background-color: #ffffff;
-	}
-
-	100% {
-		background-color: #fff7b7;
-	}
+.online_indicator {
+	height: 10px;
+	width: 10px;
+	border-radius: 5px;
+	float: left;
+	margin-right: 6px;
+	margin-top: 4px;
+	background-color: red;
 }
 
-.message.unread {
-	border-bottom: 1px dashed #ff5741;
-	-webkit-animation-name: pulsate;
-	-webkit-animation-duration: 1s;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-direction: alternate;
-	-webkit-animation-timing-function: ease-in-out;
-	-moz-animation-name: pulsate;
-	-moz-animation-duration: 1s;
-	-moz-animation-iteration-count: infinite;
-	-moz-animation-direction: alternate;
-	-moz-animation-timing-function: ease-in-out;
+.online {
+	background-color: #87E01B;
+	-webkit-animation: pulsate 2s linear 0s infinite alternate;
+}
+
+#friend_button {
+	margin-left: 10px;
+	padding: 6px 7px 4px 4px;
+	height: 20px;
+	border-radius: 3px;
+
+	color: #FFFFFF;
+	font-size: 10px;
+	font-weight: bold;
+
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+
 	cursor: pointer;
 }
 
-.message > .notice {
-	display: none;
-	color: #cccccc;
-	font-size: 10px;
-	margin-top: 5px;
-	font-style: italic;
-	float: right;
+#friend_button.add:hover {
+	background-color: #83D61E;
 }
 
-.message.unread:hover > .notice {
-	display: block;
+#friend_button > .icon-plus {
+	margin: -3px 2px 0px 2px;
+}
+
+#friend_button.add {
+	background-color: #87E01B;
 }

@@ -6,63 +6,71 @@ var static_handler = require('./static_handler');
 var handlers = {
 	'/static/**': {
 		'GET': static_handler.serve_static,
-		'cors_enabled': true
 	},
 
 	'/': {
 		'GET': requestHandlers.base,
-		'cors_enabled': true
 	},
 
 	'/template/index': {
 		'GET': requestHandlers.index,
-		'cors_enabled': true
 	},
 
 	'/register': {
 		'POST': requestHandlers.register,
-		'cors_enabled': true
 	},
 
    	'/login': {
 		'POST': requestHandlers.login,
-		'cors_enabled': true
 	},
 
    	'/logout': {
 		'POST': requestHandlers.logout,
-		'cors_enabled': true
 	},
 
 	'/valid_username': {
 		'GET': requestHandlers.valid_username,
-		'cors_enabled': true
 	},
 
-	'/template/profile_page': {
-		'GET': requestHandlers.profile_page,
-		'cors_enabled': true
+	'/template/home': {
+		'GET': requestHandlers.homepage,
 	},
 
-	'/content/wallposts': {
-		'GET': requestHandlers.wallposts,
-		'cors_enabled': true
+	'/content/wall': {
+		'GET': requestHandlers.wall,
 	},
 
 	'/content/search': {
 		'GET': requestHandlers.search_form,
-		'cors_enabled': true
 	},
 
 	'/search': {
 		'GET': requestHandlers.base,
 		'POST': requestHandlers.search,
-		'cors_enabled': true
 	},
 
 	'/content/user/*': {
 		'GET': requestHandlers.show_user,
-		'cors_enabled': true
+	},
+
+	'/user/*': {
+		'GET': requestHandlers.base
+	},
+
+	'/save_wallpost': {
+		'POST': requestHandlers.save_wallpost
+	},
+
+	'/add_friend': {
+		'POST': requestHandlers.add_friend
+	},
+
+	'/friends': {
+		'GET': requestHandlers.base
+	},
+
+	'/content/friends': {
+		'GET': requestHandlers.friends
 	}
 };
 

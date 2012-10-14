@@ -11,7 +11,6 @@ function match(handlers, request_path) {
 				continue;
 
 			if(matches[0] == request_path) {
-				console.log(matches);
 				var params = [];
 				if(matches.length > 2)
 					params = matches.slice(1, matches.length - 1);
@@ -54,7 +53,7 @@ function route(handlers, pathname, request, response) {
 	console.log("[" + date.toString() + "] " + request.method + " " + pathname);
 
 	// Enable CORS
-	if(handler.cors_enabled == true) {
+	if(handler["cors_enabled"] == true) {
 		response.setHeader("Access-Control-Allow-Origin", "*");
 		response.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS");
 	}
