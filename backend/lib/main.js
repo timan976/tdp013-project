@@ -58,6 +58,11 @@ var handlers = {
 		'GET': requestHandlers.base,
 		'POST': requestHandlers.search,
 		'cors_enabled': true
+	},
+
+	'/content/user/*': {
+		'GET': requestHandlers.show_user,
+		'cors_enabled': true
 	}
 };
 

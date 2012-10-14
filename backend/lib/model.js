@@ -42,13 +42,21 @@ function logout_user(db, user_id, callback) {
     });
 }
 
-function find_user_by_id(db, user_id, callback) {
+function find_user(db, criteria, callback) {
 	db.collection("user", function(error, collection) {
-		var id = new mongo.BSONPure.ObjectID(user_id);
-		collection.findOne({_id: id}, function(user_error, user_doc) {
+		collection.findOne(criteria, function(user_error, user_doc) {
 			callback(!error, user_doc);
 		});
 	});
+}
+
+function find_user_by_id(db, user_id, callback) {
+	var id = new mongo.BSONPure.ObjectID(user_id);
+	find_user(db, {_id: id}, callback);
+}
+
+function find_user_by_username(db, username, callback) {
+	find_user(db, {username: username}, callback);
 }
 
 function search_users(db, query, callback) {
@@ -76,4 +84,6 @@ exports.username_exists = username_exists;
 exports.login_user = login_user;
 exports.logout_user = logout_user;
 exports.find_user_by_id = find_user_by_id;
+exports.find_user_by_username = find_user_by_username;
+exports.find_user = find_user;
 exports.search_users = search_users;

@@ -11,7 +11,12 @@ function match(handlers, request_path) {
 				continue;
 
 			if(matches[0] == request_path) {
-				var params = matches.slice(1, matches.length - 1);
+				console.log(matches);
+				var params = [];
+				if(matches.length > 2)
+					params = matches.slice(1, matches.length - 1);
+				else
+					params = [matches[1]];
 				return {
 					handler: handlers[route_path],
 					params: params

@@ -18,7 +18,7 @@ jQuery.fn.load_content = function() {
 	$.get(resource, data, function(response) {
 		element.html(response);
 		callback();
-	});
+	}, "html");
 }
 
 validate_username_timeout = undefined;
@@ -90,8 +90,8 @@ function load_startpage() {
 }
 
 $(document).ready(function() {
-	$("#register_username").keyup(validate_username);
-	$("#register_username").change(validate_username);
+	$(document).on("keyup", "#register_username", validate_username);
+	$(document).on("change", "#register_username", validate_username);
 
 	$(document).on("click", "#login_error > .close", function() {
 		$("#login_error").hide();
@@ -158,6 +158,12 @@ $(document).ready(function() {
 
 	$(document).on("click", "a#wallposts", function() { display_wallposts(true); return false; });
 	$(document).on("click", "a#search", function() { display_search(true); return false; });
+
+	$(document).on("click", "a[href^='/user/']", function() {
+		var url = "/content" + $(this).attr("href");
+		$("#content").load_content(url);
+		return false;
+	});
 
 	if(sessionStorage["user_id"] == undefined) {
 		// Redirect to index

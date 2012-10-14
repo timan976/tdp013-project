@@ -228,6 +228,28 @@ function search(request, response) {
 	});
 }
 
+function show_user(request, response, username) {
+	console.log(username);
+	if(!username) {
+		response.writeHead(400);
+		response.end();
+		return;
+	}
+
+	model.find_user_by_username(db, username, function(success, user) {
+		if(!success) {
+			response.writeHead(500);
+			response.end();
+			return;
+		}
+
+		response.writeHead(200, {'Content-Type': 'text/html'});
+		response.write(user.first_name);
+		response.end();
+	});
+
+}
+
 function save_message(req, res) {
 	var msg = url.parse(req.url, true).query['message'];
 	if(typeof msg == 'undefined') {
@@ -309,3 +331,4 @@ exports.profile_page = profile_page;
 exports.wallposts = wallposts;
 exports.search_form = search_form;
 exports.search = search;
+exports.show_user = show_user;
