@@ -223,9 +223,54 @@ function search(request, response) {
 				count: results.length
 			};
 			response.writeHead(200, {'Content-Type': 'text/html'});
+			console.log(response);
 			var stream = mu.compileAndRender('search_results.mustache', vars);
 			stream.pipe(response);
 		});
+	});
+}
+
+// Gets the wallposts to a specified user
+function wallposts(request, response) {
+	var params = url.parse(request.url, true).query;
+	var user_id = params["user_id"];
+	var ignore_user_id = params["ignore"];
+	var last_updated = request.headers["if-modified-since"];
+	
+	var criteria = {
+		to_id: new mongo.BSONPure.ObjectID(user_id),
+		date: {$gt: new Date(last_updated)}
+	};
+
+	if(ignore_user_id != undefined) {
+		criteria["from_id"] = {$ne: new mongo.BSONPure.ObjectID(ignore_user_id)};
+	}
+
+	model.find_wallposts(db, criteria, function(success, wallposts) {
+		if(!success) {
+			response.writeHead(500);
+			response.end();
+			return;
+		}
+
+		if(wallposts.length) {
+			var content = "";
+			mu.compileAndRender('wallposts.mustache', {wallposts: wallposts}).on('data', function(data) {
+				content += data;
+			}).on('end', function() {
+				var last_updated = wallposts[wallposts.length - 1].date;
+				var data = {
+					content: content,
+					last_updated: last_updated
+				};
+
+				response.writeHead(200, {'Content-Type': 'application/json'});
+				response.write(JSON.stringify(data));
+				response.end();
+			});
+		} else {
+			response.end();
+		}
 	});
 }
 
@@ -277,9 +322,19 @@ function show_user(request, response, username) {
 					can_post: can_post,
 					is_friend: is_friend
 				};
-				response.writeHead(200, {'Content-Type': 'text/html'});
-				var stream = mu.compileAndRender('user_page.mustache', vars);
-				stream.pipe(response);
+
+				var html = "";
+				mu.compileAndRender('user_page.mustache', vars).on('data', function(data) {
+					html += data.toString();
+				}).on('end', function() {
+					response.writeHead(200, {'Content-Type': 'application/json'});
+					var data = {
+						content: html,
+						user_id: user._id
+					};
+					response.write(JSON.stringify(data));
+					response.end();
+				});
 			});
 		});
 
@@ -347,5 +402,6 @@ exports.search_form = search_form;
 exports.search = search;
 exports.show_user = show_user;
 exports.save_wallpost = save_wallpost;
+exports.wallposts = wallposts;
 exports.add_friend = add_friend;
 exports.friends = friends;

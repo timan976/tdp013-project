@@ -57,6 +57,10 @@ var handlers = {
 		'GET': requestHandlers.base
 	},
 
+	'/content/wallposts': {
+		'GET': requestHandlers.wallposts
+	},
+
 	'/save_wallpost': {
 		'POST': requestHandlers.save_wallpost
 	},

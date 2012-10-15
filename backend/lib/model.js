@@ -77,9 +77,9 @@ function search_users(db, query, callback) {
 	});
 }
 
-function find_wallposts_to_user(db, user, callback) {
+function find_wallposts(db, criteria, callback) {
 	db.collection("wallpost", function(error, collection) {
-		collection.find({to_id: user._id}, function(find_error, documents) {
+		collection.find(criteria, function(find_error, documents) {
 			if(find_error) {
 					callback(false, []);
 			} else {
@@ -89,6 +89,10 @@ function find_wallposts_to_user(db, user, callback) {
 			}
 		});
 	});
+}
+
+function find_wallposts_to_user(db, user, callback) {
+	find_wallposts(db, {to_id: user._id}, callback);
 }
 
 function add_wallpost(db, from_id, to_id, post, callback) {
@@ -172,5 +176,6 @@ exports.find_user_by_username = find_user_by_username;
 exports.find_user = find_user;
 exports.search_users = search_users;
 exports.find_wallposts_to_user = find_wallposts_to_user;
+exports.find_wallposts = find_wallposts;
 exports.add_wallpost = add_wallpost;
 exports.add_friend = add_friend;
