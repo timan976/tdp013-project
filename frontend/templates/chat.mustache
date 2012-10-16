@@ -1,0 +1,51 @@
+<bold>CoolChat&trade;</bold><br />
+<small>
+with 
+	<span class="member_list">
+		{{#member_list}}
+		<a href="/user/{{username}}">{{name}}</a>{{^is_last}}, {{/is_last}}
+		{{/member_list}}
+	</span>
+</small>
+
+<div id="messages">
+{{#chat.messages}}
+{{> chat_message.mustache}}<br />
+{{/chat.messages}}
+
+{{^chat.messages}}
+<small><em>No messages.</em></small>
+{{/chat.messages}}
+</div>
+
+<div id="chat_controls">
+	<form id="chat_form">
+		<div class="control-group">
+			<div class="input-append">
+				<input type="hidden" name="chat_id" value="{{chat._id}}" />
+				<input type="text" name="message" placeholder="Say something..." />
+				<input type="submit" class="btn" value="Send" />
+			</div>
+		</divwed>
+	</form>
+	
+	{{#has_friends}}
+	<div class="add_user">
+		<h5>Add friend to conversation</h5>
+
+		<div id="chat_friends">
+				<form id="add_to_chat_form">
+					<div class="control-group">
+						<select name="user" data-chat-id="{{chat._id}}">
+						{{#friends}}
+							<option data-user-id="{{user_id}}" data-username="{{username}}">{{name}}</option>
+						{{/friends}}
+						</select>
+						<br />
+						<button type="button" class="btn btn-primary">Add</button>
+					</div>
+				</form>
+		</div>
+	</div>
+	{{/has_friends}}
+</div>

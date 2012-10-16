@@ -1,5 +1,6 @@
 var http = require("http")
 var url = require("url")
+var socket_server = require("./socket_server");
 
 function start(route, handlers) {
 	function onRequest(request, response) {
@@ -7,8 +8,9 @@ function start(route, handlers) {
 		route(handlers, pathname, request, response);
 	}
 
-	http.createServer(onRequest).listen(8888);
-	console.log("Server started on http://localhost:8888/");
+	var server = http.createServer(onRequest).listen(80);
+	socket_server.bind(server);
+	console.log("Server started on http://localhost/");
 }
 
 exports.start = start;

@@ -132,7 +132,7 @@ form#register > .control-group > .controls > .add-on {
 	-webkit-animation: pulsate 2s linear 0s infinite alternate;
 }
 
-#friend_button {
+.user_action_button {
 	margin-left: 10px;
 	padding: 6px 7px 4px 4px;
 	height: 20px;
@@ -147,14 +147,43 @@ form#register > .control-group > .controls > .add-on {
 	cursor: pointer;
 }
 
-#friend_button.add:hover {
-	background-color: #83D61E;
-}
-
-#friend_button > .icon-plus {
+.user_action_button > .icon-white {
 	margin: -3px 2px 0px 2px;
 }
 
-#friend_button.add {
+#friend_button {
 	background-color: #87E01B;
+}
+
+#friend_button:hover {
+	background-color: #83D61E;
+}
+
+#start_chat {
+	background-color: #1BB5E0;
+}
+
+#start_chat:hover {
+	background-color: #17A9D1;
+}
+
+#messages {
+	margin-top: 20px;
+}
+
+#chat_controls {
+	margin-top: 20px;
+}
+
+#flash {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	width: 250px;
+	margin: 0 auto;
+	display: none
+}
+
+.add_user {
+	margin-top: 40px;
 }
