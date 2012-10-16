@@ -3,7 +3,7 @@
 function match(handlers, request_path) {
 	for(var route_path in handlers) {
 		if(route_path.indexOf('*') != -1) {
-			var regex_string = route_path.replace("**", "(([a-zA-Z._-]+/?)+)").replace(/\*/g, "([a-zA-Z._-]+)");
+			var regex_string = route_path.replace("**", "(([0-9a-zA-Z._-]+/?)+)").replace(/\*/g, "([0-9a-zA-Z._-]+)");
 			var regex = new RegExp(regex_string, "i");
 			var matches = request_path.match(regex);
 
@@ -34,6 +34,8 @@ function match(handlers, request_path) {
 }
 
 function route(handlers, pathname, request, response) {
+	if(pathname.substring(0, 10) == "/socket.io") return;
+
 	var m = match(handlers, pathname);
 
 	if(!m) {

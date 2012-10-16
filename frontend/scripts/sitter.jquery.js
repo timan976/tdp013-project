@@ -1,8 +1,5 @@
-FLASH_ERROR = "error";
-FLASH_SUCCESS = "success";
-FLASH_NOTICE = "notice";
-
-_flash_timeout_id = undefined;
+// Pardon the global object
+socket = undefined;
 
 // Add some functions to the jQuery objects
 jQuery.fn.load_content = function() {
@@ -24,7 +21,7 @@ jQuery.fn.load_content = function() {
 function match(handlers, request_path) {
 	for(var route_path in handlers) {
 		if(route_path.indexOf('*') != -1) {
-			var regex_string = route_path.replace("**", "(([a-zA-Z._-]+/?)+)").replace(/\*/g, "([a-zA-Z._-]+)");
+			var regex_string = route_path.replace("**", "(([0-9a-zA-Z._-]+/?)+)").replace(/\*/g, "([0-9a-zA-Z._-]+)");
 			var regex = new RegExp(regex_string, "i");
 			var matches = request_path.match(regex);
 
@@ -58,7 +55,7 @@ validate_username_timeout = undefined;
 function validate_username() {
 
 	validate = function(username) {
-		$.get('http://localhost:8888/valid_username', {username: username}, function(res) {
+		$.get('/valid_username', {username: username}, function(res) {
 			if(!res.valid) {
 				$("#register_control_group").addClass("error");
 				$("form#register input[type='submit']").attr("disabled", "disabled");
@@ -85,8 +82,6 @@ function validate_username() {
 function display_wall(push_state) {
 	// The logged in users wall
 	
-	console.log("display_wall");
-
 	$("li.active").removeClass("active");
 	$("a[href='/']").parent().addClass("active");
 
@@ -105,7 +100,6 @@ function display_wall(push_state) {
 function display_search(push_state) {
 	// Search page
 	
-	console.log("Displaying search");
 	$("li.active").removeClass("active");
 	$("a[href='/search']").parent().addClass("active");
 
@@ -148,11 +142,31 @@ function display_friends(push_state) {
 		window.history.pushState({page: '/friends'}, "Friends", '/friends');
 }
 
+function display_chat(chat_id, push_state) {
+	$("li.active").removeClass("active");
+	$("a[href='/messages']").parent().addClass("active");
+	
+	if(socket) {
+		socket.emit("rejoin", {
+			chat_id: chat_id
+		});
+	}
+
+	var url = '/content/chat/' + chat_id;
+	$.ajax(url, {
+		headers: {'user-id': sessionStorage.user_id},
+		dataType: 'html'
+	}).done(function(response) {
+		$("#content").html(response);
+	});
+
+	if(push_state)
+		window.history.pushState({page: '/chat/' + chat_id}, "Messages", '/chat/' + chat_id);
+}
+
 // Loads the base template, which depends on if the
 // user is logged in or not.
 function load_base(callback) {
-	console.log("load_base()");
-
 	var user_id = sessionStorage["user_id"];
 	if(user_id != undefined) {
 		$.ajax("/template/home", {
@@ -160,7 +174,6 @@ function load_base(callback) {
 			dataType: "html"
 		}).done(function(response) {
 			$("#page").html(response);
-			console.log("loaded base");
 			if(callback != undefined)
 				callback();
 		});
@@ -174,6 +187,7 @@ function load_base(callback) {
 // this function is called.
 var page_map = {
 	'/user/*': display_user_page,
+	'/chat/*': display_chat,
 	'/search': display_search,
 	'/friends': display_friends,
 	'/': display_wall
@@ -209,9 +223,31 @@ function poll_wallposts(user_id, ignore_user_id) {
 	});
 }
 
+function create_socket() {
+	socket = io.connect("http://localhost");
+	socket.emit("init", {user_id: sessionStorage.user_id});
+
+	socket.on("created", function(chat_id) {
+		// Load the page for the new chat
+		display_chat(chat_id, true);
+	});
+
+	socket.on("added", function(chat_id) {
+		// The user was added to a chat
+		$("#flash > .message").html("You were added to a <a href='/chat/" + chat_id + "'>chat</a>!");
+		$("#flash").show();
+	});
+
+	socket.on("message", function(data) {
+		var count = $("#messages > .chat_message").size();
+		if(count == 0)
+			$("#messages").html("");
+		$("#messages").append(data.content + "<br />");
+	});
+}
+
 $(document).ready(function() {
 	load_base();
-	console.log("ready");
 
 	$(document).on("keyup", "#register_username", validate_username);
 	$(document).on("change", "#register_username", validate_username);
@@ -227,7 +263,7 @@ $(document).ready(function() {
 			password: $("#password").val()
 		};                 	
                            	
-		$.post("http://localhost:8888/login", credentials, function(response) {
+		$.post("/login", credentials, function(response) {
 			if(response.success) {
 				// Create a session
 				sessionStorage.username = username;
@@ -235,8 +271,8 @@ $(document).ready(function() {
 
 				// Load profile page
 				load_base(function() {
-					console.log("Loading content");
 					load_content("/");
+					create_socket();
 				});
 			} else {
 				$("#login_error").show();
@@ -254,7 +290,6 @@ $(document).ready(function() {
 		}, "html");
 		return false;
 	});
-
 
 	window.onpopstate = function(e) {
 		if(sessionStorage["user_id"] == undefined) 
@@ -284,8 +319,7 @@ $(document).ready(function() {
 		return false;
 	});
 
-	$(document).on("click", "#friend_button.add", function() {
-		console.log("Adding friend");
+	$(document).on("click", "#friend_button", function() {
 		var data = {friend_id: $(this).attr("data-friend-id")};
 		$.ajax('/add_friend', {
 			headers: {'user-id': sessionStorage.user_id},
@@ -294,9 +328,17 @@ $(document).ready(function() {
 			dataType: 'json'
 		}).done(function(response) {
 			if(response.success)
-				$("#friend_button.add").hide();
+				$("#friend_button").hide();
 		});
 		return false;
+	});
+
+	$(document).on("click", "#start_chat", function() {
+		var data = {
+			user_id: sessionStorage.user_id,
+			partner_id: $(this).attr("data-partner-id")
+		};
+		socket.emit("create", data);
 	});
 
 	// Wallpost form
@@ -323,11 +365,46 @@ $(document).ready(function() {
 		return false;
 	});
 
+	$(document).on("submit", "#chat_form", function() {
+		// Post a chat message
+		var message = $("#chat_form input[name='message']").val().trim();
+		if(message.length == 0) 
+			return false;
+		var chat_id = $("#chat_form input[name='chat_id']").val();
+		var user_id = sessionStorage.user_id;
+
+		if(!socket)
+			return false;
+
+		socket.emit("message", {
+			message: message,
+			chat_id: chat_id,
+			user_id: user_id
+		});
+
+		$("#chat_form input[name='message']").val("");
+
+		return false;
+	});
+
+	$(document).on("click", "a[href^='/chat/']", function() {
+		var chat_id = $(this).attr("href").substring(6);
+		display_chat(chat_id, true);
+		return false;
+	});
+
+	$(document).on("click", "#flash .close", function() {
+		$("#flash").hide();
+	});
+
 	if(sessionStorage["user_id"] == undefined) {
 		// Show homepage
 		$("#page").load_content("/template/index");
-		window.history.pushState(null, "cumonu", "/");
+		window.history.pushState(null, "bookster", "/");
 		return;
 	}
+
+	// Chat
+	create_socket();
 });
 

@@ -6,16 +6,6 @@ var mu = require('mu2');
 var url = require('url');
 mu.root = __dirname + '../../../frontend/templates';
 
-var mongo_server = new mongo.Server('localhost', 27017);
-var db = new mongo.Db('tdp013-project', mongo_server);
-
-// Open a connection to the database
-db.open(function(err, db) {
-	if(err) {
-		console.log("Error connecting to database:\n" + err);
-	}
-});
-
 function parse_post_data(request, callback) {
 	var body = "";
 	request.on("data", function(data) {
@@ -55,7 +45,7 @@ function valid_username(request, response) {
 		return;
 	}
 
-	model.username_exists(db, q.username, function(exists) {
+	model.username_exists(q.username, function(exists) {
 		response.writeHead(200, {'Content-Type': 'application/json'});
 		response.write(JSON.stringify({valid: !exists}));
 		response.end();
@@ -74,7 +64,7 @@ function validate_register_input(fields, callback) {
 	if(fields.password != fields.password_repeat)
 		return callback(false);
 
-	model.username_exists(db, fields.username, function(exists) {
+	model.username_exists(fields.username, function(exists) {
 		callback(!exists);
 	});
 }
@@ -100,7 +90,7 @@ function register(request, response) {
 				user["logged_in"] = false;
 
 				// Insert the user in the database
-				model.register_user(db, fields, function(error, record) {
+				model.register_user(fields, function(error, record) {
 					if(error) {
 						response.writeHead(200, {'Content-Type': 'application/json'});
 						response.write(JSON.stringify({success: false}));
@@ -122,14 +112,14 @@ function login(request, response) {
 		var salt = crypto.createHash('sha1').update(user.username).digest('hex');
 		user.password = crypto.createHash('sha1').update(user.password + salt).digest('hex');
 
-        model.validate_login(db, user, function(success, user_document) {
+        model.validate_login(user, function(success, user_document) {
             if(!success) {
 				response.writeHead(200, {'Content-Type': 'application/json'});
 				response.write(JSON.stringify({success: false}));
 				response.end();
 			} else {
 				// Update the database
-				model.login_user(db, user, function(error) {
+				model.login_user(user, function(error) {
 					response.writeHead(200, {'Content-Type': 'application/json'});
 					response.write(JSON.stringify({
 						success: !error,
@@ -146,7 +136,7 @@ function login(request, response) {
 function logout(request, response) {
 	parse_post_data(request, function(post_data) {
 		var user_id = post_data.user_id;
-		model.logout_user(db, user_id, function(error) {
+		model.logout_user(user_id, function(error) {
 			response.writeHead(200, {'Content-Type': 'application/json'});
 			response.write(JSON.stringify({success: !error}));
 			response.end();
@@ -159,7 +149,7 @@ function homepage(request, response) {
 
 	// Get user
 	var user_id = request.headers["user-id"];
-	model.find_user_by_id(db, user_id, function(success, user) {
+	model.find_user_by_id(user_id, function(success, user) {
 		if(!success) {
 			response.writeHead(500);
 			response.end();
@@ -178,7 +168,7 @@ function wall(request, response) {
 
 	// Get user
 	var user_id = request.headers["user-id"];
-	model.find_user_by_id(db, user_id, function(success, user) {
+	model.find_user_by_id(user_id, function(success, user) {
 		if(!success) {
 			response.writeHead(500);
 			response.end();
@@ -186,7 +176,7 @@ function wall(request, response) {
 		}
 
 		// Get wallposts
-		model.find_wallposts_to_user(db, user, function(success, wallposts) {
+		model.find_wallposts_to_user(user, function(success, wallposts) {
 			if(!success) {
 				response.writeHead(500);
 				response.end();
@@ -216,14 +206,13 @@ function search(request, response) {
 			return;
 		}
 
-		model.search_users(db, query, function(error, results) {
+		model.search_users(query, function(error, results) {
 			var vars = {
 				users: results,
 				query: query,
 				count: results.length
 			};
 			response.writeHead(200, {'Content-Type': 'text/html'});
-			console.log(response);
 			var stream = mu.compileAndRender('search_results.mustache', vars);
 			stream.pipe(response);
 		});
@@ -246,7 +235,7 @@ function wallposts(request, response) {
 		criteria["from_id"] = {$ne: new mongo.BSONPure.ObjectID(ignore_user_id)};
 	}
 
-	model.find_wallposts(db, criteria, function(success, wallposts) {
+	model.find_wallposts(criteria, function(success, wallposts) {
 		if(!success) {
 			response.writeHead(500);
 			response.end();
@@ -282,7 +271,7 @@ function show_user(request, response, username) {
 	}
 
 	var viewer_id = request.headers["user-id"];
-	model.find_user_by_username(db, username, function(success, user) {
+	model.find_user_by_username(username, function(success, user) {
 		if(!success) {
 			response.writeHead(500);
 			response.end();
@@ -291,7 +280,7 @@ function show_user(request, response, username) {
 
 		// Fetch viewer so we can check if the two people
 		// are friends
-		model.find_user_by_id(db, viewer_id, function(success, viewer) {
+		model.find_user_by_id(viewer_id, function(success, viewer) {
 			if(!success) {
 				response.writeHead(500);
 				response.end();
@@ -308,7 +297,7 @@ function show_user(request, response, username) {
 			}
 
 			// Fetch wallposts
-			model.find_wallposts_to_user(db, user, function(success, wallposts) {
+			model.find_wallposts_to_user(user, function(success, wallposts) {
 				if(!success) {
 					response.writeHead(500);
 					response.end();
@@ -348,7 +337,7 @@ function save_wallpost(request, response) {
 		var to_id = post_data["to_id"];
 		var post = post_data["post"];
 
-		model.add_wallpost(db, from_id, to_id, post, function(success, wallpost) {
+		model.add_wallpost(from_id, to_id, post, function(success, wallpost) {
 			if(!success) {
 				response.writeHead(500);
 				response.end();
@@ -367,7 +356,7 @@ function add_friend(request, response) {
 		var user_id = request.headers["user-id"];
 		var friend_id = post_data["friend_id"];
 
-		model.add_friend(db, user_id, friend_id, function(success) {
+		model.add_friend(user_id, friend_id, function(success) {
 			response.writeHead(200, {'Content-Type': 'application/json'});
 			response.write(JSON.stringify({success: success}));
 			response.end();
@@ -377,7 +366,7 @@ function add_friend(request, response) {
 
 function friends(request, response) {
 	var user_id = request.headers["user-id"];
-	model.find_user_by_id(db, user_id, function(success, user) {
+	model.find_user_by_id(user_id, function(success, user) {
 		if(!success) {
 			response.writeHead(500);
 			response.end();
@@ -387,6 +376,37 @@ function friends(request, response) {
 		response.writeHead(200, {'Content-Type': 'text/html'});
 		var stream = mu.compileAndRender("friends.mustache", {friends: user.friends});
 		stream.pipe(response);
+	});
+}
+
+function chat(request, response, chat_id) {
+	if(!chat_id) {
+		response.writeHead(500);
+		return response.end();
+	}
+
+	model.find_chat_by_id(chat_id, function(success, chat) {
+		if(!success) {
+			response.writeHead(500);
+			return response.end();
+		}
+
+		var user_id = request.headers["user-id"];
+		model.find_user_by_id(user_id, function(success, user) {
+			var member_list = [];
+			for(var k in chat.members)
+				member_list.push(chat.members[k]);
+			member_list[member_list.length - 1].is_last = true;
+
+			var data = {
+				chat: chat,
+				member_list: member_list,
+				friends: user.friends
+			};
+
+			var stream = mu.compileAndRender("chat.mustache", data);
+			stream.pipe(response);
+		});
 	});
 }
 
@@ -405,3 +425,4 @@ exports.save_wallpost = save_wallpost;
 exports.wallposts = wallposts;
 exports.add_friend = add_friend;
 exports.friends = friends;
+exports.chat = chat;

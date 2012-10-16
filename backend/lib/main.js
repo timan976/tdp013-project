@@ -75,6 +75,14 @@ var handlers = {
 
 	'/content/friends': {
 		'GET': requestHandlers.friends
+	},
+
+	'/content/chat/*': {
+		'GET': requestHandlers.chat
+	},
+
+	'/chat/*': {
+		'GET': requestHandlers.base
 	}
 };
 

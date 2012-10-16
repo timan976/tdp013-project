@@ -5,11 +5,16 @@
 
 {{#can_post}}
 {{^is_friend}}
-<span id="friend_button" class="add" data-friend-id="{{user._id}}">
+<span id="friend_button" class="user_action_button" data-friend-id="{{user._id}}">
 	<i class="icon-plus icon-white"></i>
 	Add as friend
 </span>
 {{/is_friend}}
+
+<span id="start_chat" class="user_action_button" data-partner-id="{{user._id}}">
+	<i class="icon-comment icon-white"></i>
+	Start chat
+</span>
 
 <form id="wallpost_form">
 	<legend>Make a wallpost</legend>

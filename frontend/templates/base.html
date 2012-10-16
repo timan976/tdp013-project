@@ -1,17 +1,22 @@
 <!DOCTYPE html5>
 <html lang="en">
 	<head>
-		<title>cumonu</title>
+		<title>bookster</title>
 		<link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="/static/stylesheets/screen.css" />
 		<script src="http://code.jquery.com/jquery-latest.js"></script>
  		<script src="/static/bootstrap/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="/static/scripts/sitter.jquery.js"></script>
+		<script type="text/javascript" src="/socket.io/socket.io.js"></script>
 	</head>
 	<body>
 		<div id="header">
-			<span class="title">cumonu</span>
+			<span class="title">bookster</span>
+		</div>
+		<div class="alert" id="flash">
+			<span class="message">You were added to a <a href="#">chat</a></span>
+			<button type="button" class="close">x</button>
 		</div>
 		<div id="page">
 		</div>
