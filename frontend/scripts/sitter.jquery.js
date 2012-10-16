@@ -95,6 +95,7 @@ function display_wall(push_state) {
 		dataType: 'html'
 	}).done(function(response) {
 		$("#content").html(response);
+		poll_wallposts(sessionStorage.user_id);
 	});
 
 	if(push_state)
@@ -122,9 +123,10 @@ function display_user_page(username, push_state) {
 	var url = '/content/user/' + username;
 	$.ajax(url, {
 		headers: {'user-id': sessionStorage.user_id},
-		dataType: 'html'
+		dataType: 'json'
 	}).done(function(response) {
-		$("#content").html(response);
+		$("#content").html(response.content);
+		poll_wallposts(response.user_id, sessionStorage.user_id);
 	});
 
 	if(push_state)
@@ -189,6 +191,24 @@ function load_content(page) {
 		page_func.apply(this, params);
 }
 
+function poll_wallposts(user_id, ignore_user_id) {
+	var worker = new Worker("/static/scripts/wallposts.worker.js");
+	worker.addEventListener("message", function(e) {
+		if(e.data.message == "new") {
+			// New wallposts have been posted since we
+			// opened the page
+			$("#wallposts").append(e.data.content);
+		}
+	});
+
+	worker.postMessage({
+		message: "start",
+		user_id: user_id,
+		ignore_user_id: ignore_user_id,
+		last_updated: new Date()
+	});
+}
+
 $(document).ready(function() {
 	load_base();
 	console.log("ready");
@@ -220,7 +240,7 @@ $(document).ready(function() {
 				});
 			} else {
 				$("#login_error").show();
-			}Offline
+			}
 		}, "json");
 
 		return false;
@@ -281,9 +301,13 @@ $(document).ready(function() {
 
 	// Wallpost form
 	$(document).on("submit", "#wallpost_form", function() {
+		var post = $("textarea[name='post']").val().trim();
+		if(post.length == 0)
+			return false;
+
 		var data = {
 			to_id: $("input[name='to_id']").val(),
-			post: $("textarea[name='post']").val()
+			post: post
 		};
 
 		$.ajax('/save_wallpost', {
@@ -305,6 +329,5 @@ $(document).ready(function() {
 		window.history.pushState(null, "cumonu", "/");
 		return;
 	}
-
 });
 
