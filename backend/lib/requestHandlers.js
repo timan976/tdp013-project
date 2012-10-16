@@ -398,10 +398,20 @@ function chat(request, response, chat_id) {
 				member_list.push(chat.members[k]);
 			member_list[member_list.length - 1].is_last = true;
 
+			var friends = [];
+			for(var f in user.friends) {
+				var friend = user.friends[f];
+				if(chat.members[friend.user_id] == undefined)
+					friends.push(friend);
+			}
+
+			console.log(friends);
+
 			var data = {
 				chat: chat,
 				member_list: member_list,
-				friends: user.friends
+				friends: friends,
+				has_friends: friends.length > 0
 			};
 
 			var stream = mu.compileAndRender("chat.mustache", data);

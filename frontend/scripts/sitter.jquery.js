@@ -205,8 +205,12 @@ function load_content(page) {
 		page_func.apply(this, params);
 }
 
+var worker;
 function poll_wallposts(user_id, ignore_user_id) {
-	var worker = new Worker("/static/scripts/wallposts.worker.js");
+	if(worker)
+		worker.terminate();
+
+	worker = new Worker("/static/scripts/wallposts.worker.js");
 	worker.addEventListener("message", function(e) {
 		if(e.data.message == "new") {
 			// New wallposts have been posted since we
@@ -359,7 +363,7 @@ $(document).ready(function() {
 			type: 'POST'
 		}).done(function(response) {
 			$("#wallposts > #notice").hide();
-			$("#content").append(response);
+			$("#wallposts").append(response);
 		});
 
 		return false;
@@ -390,11 +394,36 @@ $(document).ready(function() {
 	$(document).on("click", "a[href^='/chat/']", function() {
 		var chat_id = $(this).attr("href").substring(6);
 		display_chat(chat_id, true);
+		$("#flash").hide();
 		return false;
 	});
 
 	$(document).on("click", "#flash .close", function() {
 		$("#flash").hide();
+	});
+
+	$(document).on("click", "#add_to_chat_form button", function() {
+		var option_element = $("#add_to_chat_form").find("option:selected");
+		var user_id = option_element.attr("data-user-id");
+		var chat_id = $("#add_to_chat_form select").attr("data-chat-id");
+		var username = option_element.attr("data-username");
+
+		if(!socket)
+			return;
+
+		socket.emit("add", {
+			user_id: user_id,
+			chat_id: chat_id
+		});
+
+		var link = '<a href="/user/' + username + '">' + option_element.val(); + '</a>';
+		$(".member_list").append(", " + link);
+
+		option_element.remove();
+		if($("#add_to_chat_form option").size() == 0)
+			$(".add_user").remove();
+
+		return false;
 	});
 
 	if(sessionStorage["user_id"] == undefined) {

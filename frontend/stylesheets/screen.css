@@ -183,3 +183,7 @@ form#register > .control-group > .controls > .add-on {
 	margin: 0 auto;
 	display: none
 }
+
+.add_user {
+	margin-top: 40px;
+}

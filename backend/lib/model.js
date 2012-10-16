@@ -258,6 +258,26 @@ function save_message(message, chat_id, user_id, callback) {
 	});
 }
 
+function add_chat_member(chat_id, user_id, callback) {
+	db.collection("chat", function(error, chat_collection) {
+		find_user_by_id(user_id, function(success, user) {
+			if(!success)
+				callback(false);
+
+			console.log(user);
+			find_chat_by_id(chat_id, function(success, chat) {
+				var members = chat.members;
+				members[user_id] = chat_member(user);
+				var criteria = {_id: object_id(chat_id)};
+				chat_collection.update(criteria, {$set: {members: members}}, function(error) {
+					console.log(error);
+					callback(!error);
+				});
+			})
+		});
+	});
+}
+
 exports.register_user = register_user;
 exports.validate_login = validate_login;
 exports.username_exists = username_exists;
@@ -276,3 +296,4 @@ exports.create_chat = create_chat;
 exports.find_chat_by_id = find_chat_by_id;
 exports.find_users_by_id = find_users_by_id;
 exports.save_message = save_message;
+exports.add_chat_member = add_chat_member;

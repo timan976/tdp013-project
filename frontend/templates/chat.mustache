@@ -1,9 +1,11 @@
 <bold>CoolChat&trade;</bold><br />
 <small>
 with 
+	<span class="member_list">
 		{{#member_list}}
 		<a href="/user/{{username}}">{{name}}</a>{{^is_last}}, {{/is_last}}
 		{{/member_list}}
+	</span>
 </small>
 
 <div id="messages">
@@ -24,18 +26,26 @@ with
 				<input type="text" name="message" placeholder="Say something..." />
 				<input type="submit" class="btn" value="Send" />
 			</div>
-		</div>
+		</divwed>
 	</form>
 	
+	{{#has_friends}}
 	<div class="add_user">
-		<a href="#">Add friend to conversation</a><br />
+		<h5>Add friend to conversation</h5>
 
 		<div id="chat_friends">
-				{{#friends}}
-				<a href="#" class="add_to_chat" data-user-id="{{user_id}}" data-chat-id="{{chat._id}}">
-						<i class="icon-plus"></i> {{name}}
-				</a><br />
-				{{/friends}}
+				<form id="add_to_chat_form">
+					<div class="control-group">
+						<select name="user" data-chat-id="{{chat._id}}">
+						{{#friends}}
+							<option data-user-id="{{user_id}}" data-username="{{username}}">{{name}}</option>
+						{{/friends}}
+						</select>
+						<br />
+						<button type="button" class="btn btn-primary">Add</button>
+					</div>
+				</form>
 		</div>
 	</div>
+	{{/has_friends}}
 </div>

@@ -71,6 +71,22 @@ function bind(server) {
 		socket.on("rejoin", function(data) {
 			socket.join(JSON.stringify(data.chat_id));
 		});
+
+		socket.on("add", function(data) {
+			console.log(data);
+			var partner_socket = sockets[data.user_id];
+			if(!partner_socket)
+				return;
+
+			partner_socket.join(JSON.stringify(data.chat_id));
+			partner_socket.emit("added", data.chat_id);
+
+			// Add member to database
+			model.add_chat_member(data.chat_id, data.user_id, function(success) {
+				if(success)
+					console.log("Added " + data.user_id + " to " + data.chat_id);
+			});
+		});
 	});
 }
 
