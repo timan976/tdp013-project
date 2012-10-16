@@ -1,0 +1,34 @@
+var should = require('should');
+var request = require('superagent');
+var assert = require('assert');
+
+require('../lib-coverage/main.js');
+
+var port = 8888;
+var endpoint = "http://localhost:" + port;
+
+describe("Server", function() {
+    describe("GET /", function() {
+    });
+    
+    describe("GET /404", function() {
+	it("should return 404", function(done) {
+	    request(endpoint + "/404").end(function(response) {
+		response.status.should.equal(404);
+		done();
+	    });
+	});
+    });
+    
+    describe("POST /login", function() {
+        it("should return 200 OK", function(done) {
+            request(endpoint + "/login?username=test&password=asd").end(function(response) {
+                response.status.should.equal(200);
+                done();
+            });
+        });
+    });
+});
+
+
+                
