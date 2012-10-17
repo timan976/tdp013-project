@@ -40,14 +40,16 @@ if (typeof _$jscoverage !== 'object') {
 if (! _$jscoverage['model.js']) {
   _$jscoverage['model.js'] = [];
   _$jscoverage['model.js'][1] = 0;
+  _$jscoverage['model.js'][2] = 0;
   _$jscoverage['model.js'][3] = 0;
-  _$jscoverage['model.js'][4] = 0;
   _$jscoverage['model.js'][5] = 0;
   _$jscoverage['model.js'][6] = 0;
-  _$jscoverage['model.js'][11] = 0;
+  _$jscoverage['model.js'][7] = 0;
+  _$jscoverage['model.js'][9] = 0;
   _$jscoverage['model.js'][12] = 0;
   _$jscoverage['model.js'][13] = 0;
   _$jscoverage['model.js'][14] = 0;
+  _$jscoverage['model.js'][16] = 0;
   _$jscoverage['model.js'][19] = 0;
   _$jscoverage['model.js'][20] = 0;
   _$jscoverage['model.js'][21] = 0;
@@ -60,288 +62,404 @@ if (! _$jscoverage['model.js']) {
   _$jscoverage['model.js'][36] = 0;
   _$jscoverage['model.js'][37] = 0;
   _$jscoverage['model.js'][38] = 0;
-  _$jscoverage['model.js'][39] = 0;
+  _$jscoverage['model.js'][43] = 0;
   _$jscoverage['model.js'][44] = 0;
   _$jscoverage['model.js'][45] = 0;
   _$jscoverage['model.js'][46] = 0;
-  _$jscoverage['model.js'][47] = 0;
+  _$jscoverage['model.js'][51] = 0;
   _$jscoverage['model.js'][52] = 0;
   _$jscoverage['model.js'][53] = 0;
   _$jscoverage['model.js'][54] = 0;
-  _$jscoverage['model.js'][57] = 0;
-  _$jscoverage['model.js'][58] = 0;
+  _$jscoverage['model.js'][55] = 0;
+  _$jscoverage['model.js'][60] = 0;
   _$jscoverage['model.js'][61] = 0;
+  _$jscoverage['model.js'][62] = 0;
   _$jscoverage['model.js'][63] = 0;
-  _$jscoverage['model.js'][64] = 0;
-  _$jscoverage['model.js'][65] = 0;
-  _$jscoverage['model.js'][67] = 0;
   _$jscoverage['model.js'][68] = 0;
   _$jscoverage['model.js'][69] = 0;
   _$jscoverage['model.js'][70] = 0;
-  _$jscoverage['model.js'][72] = 0;
+  _$jscoverage['model.js'][71] = 0;
   _$jscoverage['model.js'][73] = 0;
-  _$jscoverage['model.js'][80] = 0;
-  _$jscoverage['model.js'][81] = 0;
-  _$jscoverage['model.js'][82] = 0;
-  _$jscoverage['model.js'][83] = 0;
-  _$jscoverage['model.js'][84] = 0;
+  _$jscoverage['model.js'][74] = 0;
+  _$jscoverage['model.js'][75] = 0;
+  _$jscoverage['model.js'][76] = 0;
+  _$jscoverage['model.js'][78] = 0;
+  _$jscoverage['model.js'][79] = 0;
   _$jscoverage['model.js'][86] = 0;
   _$jscoverage['model.js'][87] = 0;
-  _$jscoverage['model.js'][94] = 0;
+  _$jscoverage['model.js'][88] = 0;
+  _$jscoverage['model.js'][91] = 0;
+  _$jscoverage['model.js'][92] = 0;
   _$jscoverage['model.js'][95] = 0;
+  _$jscoverage['model.js'][97] = 0;
   _$jscoverage['model.js'][98] = 0;
   _$jscoverage['model.js'][99] = 0;
+  _$jscoverage['model.js'][101] = 0;
   _$jscoverage['model.js'][102] = 0;
   _$jscoverage['model.js'][103] = 0;
   _$jscoverage['model.js'][104] = 0;
-  _$jscoverage['model.js'][105] = 0;
-  _$jscoverage['model.js'][108] = 0;
-  _$jscoverage['model.js'][109] = 0;
-  _$jscoverage['model.js'][110] = 0;
-  _$jscoverage['model.js'][111] = 0;
+  _$jscoverage['model.js'][106] = 0;
+  _$jscoverage['model.js'][107] = 0;
+  _$jscoverage['model.js'][114] = 0;
+  _$jscoverage['model.js'][115] = 0;
+  _$jscoverage['model.js'][116] = 0;
+  _$jscoverage['model.js'][117] = 0;
+  _$jscoverage['model.js'][118] = 0;
   _$jscoverage['model.js'][120] = 0;
   _$jscoverage['model.js'][121] = 0;
-  _$jscoverage['model.js'][127] = 0;
   _$jscoverage['model.js'][128] = 0;
   _$jscoverage['model.js'][129] = 0;
-  _$jscoverage['model.js'][130] = 0;
   _$jscoverage['model.js'][132] = 0;
   _$jscoverage['model.js'][133] = 0;
-  _$jscoverage['model.js'][134] = 0;
-  _$jscoverage['model.js'][135] = 0;
+  _$jscoverage['model.js'][136] = 0;
+  _$jscoverage['model.js'][137] = 0;
+  _$jscoverage['model.js'][138] = 0;
   _$jscoverage['model.js'][139] = 0;
-  _$jscoverage['model.js'][140] = 0;
-  _$jscoverage['model.js'][141] = 0;
   _$jscoverage['model.js'][142] = 0;
+  _$jscoverage['model.js'][143] = 0;
+  _$jscoverage['model.js'][144] = 0;
   _$jscoverage['model.js'][145] = 0;
-  _$jscoverage['model.js'][146] = 0;
-  _$jscoverage['model.js'][153] = 0;
   _$jscoverage['model.js'][154] = 0;
   _$jscoverage['model.js'][155] = 0;
-  _$jscoverage['model.js'][156] = 0;
-  _$jscoverage['model.js'][160] = 0;
   _$jscoverage['model.js'][161] = 0;
+  _$jscoverage['model.js'][162] = 0;
+  _$jscoverage['model.js'][163] = 0;
+  _$jscoverage['model.js'][164] = 0;
+  _$jscoverage['model.js'][166] = 0;
+  _$jscoverage['model.js'][167] = 0;
+  _$jscoverage['model.js'][168] = 0;
   _$jscoverage['model.js'][169] = 0;
-  _$jscoverage['model.js'][170] = 0;
-  _$jscoverage['model.js'][171] = 0;
-  _$jscoverage['model.js'][172] = 0;
   _$jscoverage['model.js'][173] = 0;
   _$jscoverage['model.js'][174] = 0;
   _$jscoverage['model.js'][175] = 0;
   _$jscoverage['model.js'][176] = 0;
-  _$jscoverage['model.js'][177] = 0;
-  _$jscoverage['model.js'][178] = 0;
   _$jscoverage['model.js'][179] = 0;
   _$jscoverage['model.js'][180] = 0;
-  _$jscoverage['model.js'][181] = 0;
+  _$jscoverage['model.js'][187] = 0;
+  _$jscoverage['model.js'][188] = 0;
+  _$jscoverage['model.js'][189] = 0;
+  _$jscoverage['model.js'][190] = 0;
+  _$jscoverage['model.js'][194] = 0;
+  _$jscoverage['model.js'][195] = 0;
+  _$jscoverage['model.js'][205] = 0;
+  _$jscoverage['model.js'][208] = 0;
+  _$jscoverage['model.js'][214] = 0;
+  _$jscoverage['model.js'][215] = 0;
+  _$jscoverage['model.js'][216] = 0;
+  _$jscoverage['model.js'][217] = 0;
+  _$jscoverage['model.js'][218] = 0;
+  _$jscoverage['model.js'][221] = 0;
+  _$jscoverage['model.js'][222] = 0;
+  _$jscoverage['model.js'][223] = 0;
+  _$jscoverage['model.js'][224] = 0;
+  _$jscoverage['model.js'][227] = 0;
+  _$jscoverage['model.js'][228] = 0;
+  _$jscoverage['model.js'][229] = 0;
+  _$jscoverage['model.js'][235] = 0;
+  _$jscoverage['model.js'][236] = 0;
+  _$jscoverage['model.js'][237] = 0;
+  _$jscoverage['model.js'][238] = 0;
+  _$jscoverage['model.js'][243] = 0;
+  _$jscoverage['model.js'][244] = 0;
+  _$jscoverage['model.js'][245] = 0;
+  _$jscoverage['model.js'][246] = 0;
+  _$jscoverage['model.js'][252] = 0;
+  _$jscoverage['model.js'][253] = 0;
+  _$jscoverage['model.js'][254] = 0;
+  _$jscoverage['model.js'][255] = 0;
+  _$jscoverage['model.js'][261] = 0;
+  _$jscoverage['model.js'][262] = 0;
+  _$jscoverage['model.js'][263] = 0;
+  _$jscoverage['model.js'][264] = 0;
+  _$jscoverage['model.js'][265] = 0;
+  _$jscoverage['model.js'][267] = 0;
+  _$jscoverage['model.js'][268] = 0;
+  _$jscoverage['model.js'][269] = 0;
+  _$jscoverage['model.js'][270] = 0;
+  _$jscoverage['model.js'][271] = 0;
+  _$jscoverage['model.js'][272] = 0;
+  _$jscoverage['model.js'][273] = 0;
+  _$jscoverage['model.js'][274] = 0;
+  _$jscoverage['model.js'][281] = 0;
+  _$jscoverage['model.js'][282] = 0;
+  _$jscoverage['model.js'][283] = 0;
+  _$jscoverage['model.js'][284] = 0;
+  _$jscoverage['model.js'][285] = 0;
+  _$jscoverage['model.js'][286] = 0;
+  _$jscoverage['model.js'][287] = 0;
+  _$jscoverage['model.js'][288] = 0;
+  _$jscoverage['model.js'][289] = 0;
+  _$jscoverage['model.js'][290] = 0;
+  _$jscoverage['model.js'][291] = 0;
+  _$jscoverage['model.js'][292] = 0;
+  _$jscoverage['model.js'][293] = 0;
+  _$jscoverage['model.js'][295] = 0;
+  _$jscoverage['model.js'][296] = 0;
+  _$jscoverage['model.js'][297] = 0;
+  _$jscoverage['model.js'][298] = 0;
+  _$jscoverage['model.js'][299] = 0;
 }
-_$jscoverage['model.js'].source = ["var mongo = require('mongodb');","","function register_user(db, user, callback) {","\tdb.collection(\"user\", function(error, collection) {","\t\tcollection.insert(user, function(error, record) {","\t\t\tcallback(error, record);","\t\t});","\t});","}","","function username_exists(db, username, callback) {","\tdb.collection(\"user\", function(error, collection) {","\t\tcollection.findOne({username: username}, function(e, doc) {","\t\t\tcallback(!!doc);","\t\t});","\t});","}","","function validate_login(db, user, callback) {","    db.collection(\"user\", function(error, collection) {","        collection.findOne({username: user.username}, function(error, dbUser) {","\t\t\tcallback(dbUser != null &amp;&amp; user.password == dbUser.password, dbUser);","        });","    });","}","","function login_user(db, user, callback) {","    db.collection(\"user\", function(error, collection) {","        collection.update({username: user.username}, {$set: {logged_in: true}}, function(update_error, doc) {","\t\t\tcallback(error);","\t\t});","    });","}","","function logout_user(db, user_id, callback) {","    db.collection(\"user\", function(error, collection) {","\t\tvar id = new mongo.BSONPure.ObjectID(user_id);","        collection.update({_id: id}, {$set: {logged_in: false}}, function(update_error, doc) {","\t\t\tcallback(error);","\t\t});","    });","}","","function find_user(db, criteria, callback) {","\tdb.collection(\"user\", function(error, collection) {","\t\tcollection.findOne(criteria, function(user_error, user_doc) {","\t\t\tcallback(!error, user_doc);","\t\t});","\t});","}","","function find_user_by_id(db, user_id, callback) {","\tvar id = new mongo.BSONPure.ObjectID(user_id);","\tfind_user(db, {_id: id}, callback);","}","","function find_user_by_username(db, username, callback) {","\tfind_user(db, {username: username}, callback);","}","","function search_users(db, query, callback) {","\t// TODO: This can probably be done in a better way.","\tvar q = query.replace(/'/g, \"\");","\tvar query_string = \"(this.first_name + ' ' + this.last_name).toLowerCase().indexOf('\" + q + \"') != -1\";","\tquery_string += \"|| this.username.toLowerCase().indexOf('\" + q + \"') != -1\";","","\tdb.collection(\"user\", function(error, collection) {","\t\tcollection.find({$where: query_string}, function(find_error, documents) {","\t\t\tif(find_error) {","\t\t\t\t\tcallback(find_error, []);","\t\t\t} else {","\t\t\t\tdocuments.toArray(function(err, res) {","\t\t\t\t\tcallback(undefined, res);","\t\t\t\t});","\t\t\t}","\t\t});","\t});","}","","function find_wallposts(db, criteria, callback) {","\tdb.collection(\"wallpost\", function(error, collection) {","\t\tcollection.find(criteria, function(find_error, documents) {","\t\t\tif(find_error) {","\t\t\t\t\tcallback(false, []);","\t\t\t} else {","\t\t\t\tdocuments.toArray(function(err, res) {","\t\t\t\t\tcallback(true, res);","\t\t\t\t});","\t\t\t}","\t\t});","\t});","}","","function find_wallposts_to_user(db, user, callback) {","\tfind_wallposts(db, {to_id: user._id}, callback);","}","","function add_wallpost(db, from_id, to_id, post, callback) {","\tdb.collection(\"wallpost\", function(error, collection) {","\t\t// Wallposts also contain the username of the sender","\t\t// so we need to fetch that before inserting the wallpost.","\t\tfind_user_by_id(db, from_id, function(success, user) {","\t\t\tif(!success) {","\t\t\t\tcallback(false, undefined);","\t\t\t\treturn;","\t\t\t}","","\t\t\tto_id = new mongo.BSONPure.ObjectID(to_id);","\t\t\tfrom_id = new mongo.BSONPure.ObjectID(from_id);","\t\t\tvar name = user.first_name + \" \" + user.last_name;","\t\t\tvar wallpost_record = {","\t\t\t\tfrom: name,","\t\t\t\tfrom_username: user.username,","\t\t\t\tfrom_id: from_id,","\t\t\t\tto_id: to_id,","\t\t\t\tpost: post,","\t\t\t\tdate: new Date()","\t\t\t};","","\t\t\tcollection.insert(wallpost_record, function(post_error, wallpost_doc) {","\t\t\t\tcallback(!post_error, wallpost_doc);","\t\t\t});","\t\t})","\t})","}","","function add_friend(db, user_id, friend_id, callback) {","\tuser_id = new mongo.BSONPure.ObjectID(user_id);","\tfriend_id = new mongo.BSONPure.ObjectID(friend_id);","\tdb.collection(\"user\", function(error, collection) {","\t\t// Make sure the user exists","\t\tcollection.findOne({_id: user_id}, function(user_error, user) {","\t\t\tif(user_error || !user) {","\t\t\t\tcallback(false);","\t\t\t\treturn;","\t\t\t}","","\t\t\t// Make sure the friend exists","\t\t\tcollection.findOne({_id: friend_id}, function(friend_error, friend_user) {","\t\t\t\tif(friend_error || !friend_user) {","\t\t\t\t\tcallback(false);","\t\t\t\t\treturn;","\t\t\t\t}","","\t\t\t\tvar friends = user.friends;","\t\t\t\tvar friend = {","\t\t\t\t\tuser_id: friend_user._id,","\t\t\t\t\tusername: friend_user.username,","\t\t\t\t\tname: friend_user.first_name + \" \" + friend_user.last_name","\t\t\t\t};","","\t\t\t\t// Make sure the two people aren't already friends","\t\t\t\tcollection.findOne({_id: user_id, friends: {$elemMatch: {user_id: friend_id}}}, function(find_error, match) {","\t\t\t\t\tif(match) {","\t\t\t\t\t\tcallback(false);","\t\t\t\t\t\treturn;","\t\t\t\t\t}","","\t\t\t\t\t// Finally add the friend to the users friends-list","\t\t\t\t\tcollection.update(user, {$addToSet: {friends: friend}}, function(update_error) {","\t\t\t\t\t\tcallback(!update_error);","\t\t\t\t\t});","\t\t\t\t})","\t\t\t});","\t\t});","\t});","}","","exports.register_user = register_user;","exports.validate_login = validate_login;","exports.username_exists = username_exists;","exports.login_user = login_user;","exports.logout_user = logout_user;","exports.find_user_by_id = find_user_by_id;","exports.find_user_by_username = find_user_by_username;","exports.find_user = find_user;","exports.search_users = search_users;","exports.find_wallposts_to_user = find_wallposts_to_user;","exports.find_wallposts = find_wallposts;","exports.add_wallpost = add_wallpost;","exports.add_friend = add_friend;"];
+_$jscoverage['model.js'].source = ["var mongo = require('mongodb');","var mongo_server = new mongo.Server('localhost', 27017);","var db = new mongo.Db('tdp013-project', mongo_server);","","db.open(function(err, db) {","\tif(err != undefined)","\t\tconsole.log(\"Error connecting to database: \" + err);","\telse","\t\tconsole.log(\"Opened a connection to the database\");","});","","function object_id(id) {","\tif(typeof id == \"string\")","\t\treturn new mongo.BSONPure.ObjectID(id);","\t","\treturn id;","}","","function register_user(user, callback) {","\tdb.collection(\"user\", function(error, collection) {","\t\tcollection.insert(user, function(error, record) {","\t\t\tcallback(error, record);","\t\t});","\t});","}","","function username_exists(username, callback) {","\tdb.collection(\"user\", function(error, collection) {","\t\tcollection.findOne({username: username}, function(e, doc) {","\t\t\tcallback(!!doc);","\t\t});","\t});","}","","function validate_login(user, callback) {","    db.collection(\"user\", function(error, collection) {","        collection.findOne({username: user.username}, function(error, dbUser) {","\t\t\tcallback(dbUser != null &amp;&amp; user.password == dbUser.password, dbUser);","        });","    });","}","","function login_user(user, callback) {","    db.collection(\"user\", function(error, collection) {","        collection.update({username: user.username}, {$set: {logged_in: true}}, function(update_error, doc) {","\t\t\tcallback(error);","\t\t});","    });","}","","function logout_user(user_id, callback) {","    db.collection(\"user\", function(error, collection) {","\t\tvar id = object_id(user_id);","        collection.update({_id: id}, {$set: {logged_in: false}}, function(update_error, doc) {","\t\t\tcallback(error);","\t\t});","    });","}","","function find_user(criteria, callback) {","\tdb.collection(\"user\", function(error, collection) {","\t\tcollection.findOne(criteria, function(user_error, user_doc) {","\t\t\tcallback(!error, user_doc);","\t\t});","\t});","}","","function find_users_by_id(ids, callback) {","\tvar object_ids = [];","\tfor(var index in ids)","\t\tobject_ids.push(object_id(ids[index]));","","\tdb.collection(\"user\", function(error, collection) {","\t\tcollection.find({_id: {$in: object_ids}}, function(find_error, documents) {","\t\t\tif(find_error) {","\t\t\t\tcallback(false, []);","\t\t\t} else {","\t\t\t\tdocuments.toArray(function(err, res) {","\t\t\t\t\tcallback(res &amp;&amp; res.length, res);","\t\t\t\t});","\t\t\t}","\t\t});","\t});","}","","function find_user_by_id(user_id, callback) {","\tvar id = object_id(user_id);","\tfind_user({_id: id}, callback);","}","","function find_user_by_username(username, callback) {","\tfind_user({username: username}, callback);","}","","function search_users(query, callback) {","\t// TODO: This can probably be done in a better way.","\tvar q = query.replace(/'/g, \"\");","\tvar query_string = \"(this.first_name + ' ' + this.last_name).toLowerCase().indexOf('\" + q + \"') != -1\";","\tquery_string += \"|| this.username.toLowerCase().indexOf('\" + q + \"') != -1\";","","\tdb.collection(\"user\", function(error, collection) {","\t\tcollection.find({$where: query_string}, function(find_error, documents) {","\t\t\tif(find_error) {","\t\t\t\t\tcallback(find_error, []);","\t\t\t} else {","\t\t\t\tdocuments.toArray(function(err, res) {","\t\t\t\t\tcallback(undefined, res);","\t\t\t\t});","\t\t\t}","\t\t});","\t});","}","","function find_wallposts(criteria, callback) {","\tdb.collection(\"wallpost\", function(error, collection) {","\t\tcollection.find(criteria, function(find_error, documents) {","\t\t\tif(find_error) {","\t\t\t\t\tcallback(false, []);","\t\t\t} else {","\t\t\t\tdocuments.toArray(function(err, res) {","\t\t\t\t\tcallback(true, res);","\t\t\t\t});","\t\t\t}","\t\t});","\t});","}","","function find_wallposts_to_user(user, callback) {","\tfind_wallposts({to_id: user._id}, callback);","}","","function add_wallpost(from_id, to_id, post, callback) {","\tdb.collection(\"wallpost\", function(error, collection) {","\t\t// Wallposts also contain the username of the sender","\t\t// so we need to fetch that before inserting the wallpost.","\t\tfind_user_by_id(from_id, function(success, user) {","\t\t\tif(!success) {","\t\t\t\tcallback(false, undefined);","\t\t\t\treturn;","\t\t\t}","","\t\t\tto_id = object_id(to_id);","\t\t\tfrom_id = object_id(from_id);","\t\t\tvar name = user.first_name + \" \" + user.last_name;","\t\t\tvar wallpost_record = {","\t\t\t\tfrom: name,","\t\t\t\tfrom_username: user.username,","\t\t\t\tfrom_id: from_id,","\t\t\t\tto_id: to_id,","\t\t\t\tpost: post,","\t\t\t\tdate: new Date()","\t\t\t};","","\t\t\tcollection.insert(wallpost_record, function(post_error, wallpost_doc) {","\t\t\t\tcallback(!post_error, wallpost_doc);","\t\t\t});","\t\t})","\t})","}","","function add_friend(user_id, friend_id, callback) {","\tuser_id = object_id(user_id);","\tfriend_id = object_id(friend_id);","\tdb.collection(\"user\", function(error, collection) {","\t\t// Make sure the user exists","\t\tcollection.findOne({_id: user_id}, function(user_error, user) {","\t\t\tif(user_error || !user) {","\t\t\t\tcallback(false);","\t\t\t\treturn;","\t\t\t}","","\t\t\t// Make sure the friend exists","\t\t\tcollection.findOne({_id: friend_id}, function(friend_error, friend_user) {","\t\t\t\tif(friend_error || !friend_user) {","\t\t\t\t\tcallback(false);","\t\t\t\t\treturn;","\t\t\t\t}","","\t\t\t\tvar friends = user.friends;","\t\t\t\tvar friend = {","\t\t\t\t\tuser_id: friend_user._id,","\t\t\t\t\tusername: friend_user.username,","\t\t\t\t\tname: friend_user.first_name + \" \" + friend_user.last_name","\t\t\t\t};","","\t\t\t\t// Make sure the two people aren't already friends","\t\t\t\tcollection.findOne({_id: user_id, friends: {$elemMatch: {user_id: friend_id}}}, function(find_error, match) {","\t\t\t\t\tif(match) {","\t\t\t\t\t\tcallback(false);","\t\t\t\t\t\treturn;","\t\t\t\t\t}","","\t\t\t\t\t// Finally add the friend to the users friends-list","\t\t\t\t\tcollection.update(user, {$addToSet: {friends: friend}}, function(update_error) {","\t\t\t\t\t\tcallback(!update_error);","\t\t\t\t\t});","\t\t\t\t})","\t\t\t});","\t\t});","\t});","}","","// Chat","","function chat_member(user) {","\t// Returns a structure representing","\t// a chat member","\treturn {","\t\tname: user.first_name + \" \" + user.last_name,","\t\tusername: user.username","\t};","}","","function create_chat(members, callback) {","\tfind_users_by_id(members, function(success, users) {","\t\tif(!success) {","\t\t\tconsole.log(\"Unable to find users for creating chat\");","\t\t\treturn callback(false, null);","\t\t}","","\t\tvar chat_members = {};","\t\tfor(var index in users) {","\t\t\tvar user = users[index];","\t\t\tchat_members[user._id] = chat_member(user);","\t\t}","","\t\tdb.collection(\"chat\", function(error, collection) {","\t\t\tcollection.insert({members: chat_members, messages: []}, function(error, chat) {","\t\t\t\tcallback(!error &amp;&amp; !!chat, chat[0]);","\t\t\t});","\t\t});","\t});","}","","function find_chat_by_id(chat_id, callback) {","\tdb.collection(\"chat\", function(error, collection) {","\t\tcollection.findOne({_id: object_id(chat_id)}, function(find_error, chat) {","\t\t\tcallback(!find_error, chat);","\t\t});","\t});","}","","function save_message(message, chat_id, user_id, callback) {","\tdb.collection(\"chat\", function(error, chat_collection) {","\t\tfind_user_by_id(user_id, function(success, user) {","\t\t\tvar message_object = {","\t\t\t\tmessage: message,","\t\t\t\tusername: user.username,","\t\t\t\tname: user.first_name + \" \" + user.last_name","\t\t\t};","","\t\t\tvar criteria = {_id: object_id(chat_id)};","\t\t\tvar update = {$addToSet: {messages: message_object}};","\t\t\tchat_collection.update(criteria, update, function(error) {","\t\t\t\tcallback(!error, message_object);","\t\t\t});","\t\t});","\t});","}","","function add_chat_member(chat_id, user_id, callback) {","\tdb.collection(\"chat\", function(error, chat_collection) {","\t\tfind_user_by_id(user_id, function(success, user) {","\t\t\tif(!success)","\t\t\t\tcallback(false);","","\t\t\tconsole.log(user);","\t\t\tfind_chat_by_id(chat_id, function(success, chat) {","\t\t\t\tvar members = chat.members;","\t\t\t\tmembers[user_id] = chat_member(user);","\t\t\t\tvar criteria = {_id: object_id(chat_id)};","\t\t\t\tchat_collection.update(criteria, {$set: {members: members}}, function(error) {","\t\t\t\t\tconsole.log(error);","\t\t\t\t\tcallback(!error);","\t\t\t\t});","\t\t\t})","\t\t});","\t});","}","","exports.register_user = register_user;","exports.validate_login = validate_login;","exports.username_exists = username_exists;","exports.login_user = login_user;","exports.logout_user = logout_user;","exports.find_user_by_id = find_user_by_id;","exports.find_user_by_username = find_user_by_username;","exports.find_user = find_user;","exports.search_users = search_users;","exports.find_wallposts_to_user = find_wallposts_to_user;","exports.find_wallposts = find_wallposts;","exports.add_wallpost = add_wallpost;","exports.add_friend = add_friend;","","exports.create_chat = create_chat;","exports.find_chat_by_id = find_chat_by_id;","exports.find_users_by_id = find_users_by_id;","exports.save_message = save_message;","exports.add_chat_member = add_chat_member;"];
 _$jscoverage['model.js'][1]++;
 var mongo = require("mongodb");
+_$jscoverage['model.js'][2]++;
+var mongo_server = new (mongo.Server)("localhost", 27017);
 _$jscoverage['model.js'][3]++;
-function register_user(db, user, callback) {
-  _$jscoverage['model.js'][4]++;
-  db.collection("user", (function (error, collection) {
-  _$jscoverage['model.js'][5]++;
-  collection.insert(user, (function (error, record) {
+var db = new (mongo.Db)("tdp013-project", mongo_server);
+_$jscoverage['model.js'][5]++;
+db.open((function (err, db) {
   _$jscoverage['model.js'][6]++;
+  if ((err != undefined)) {
+    _$jscoverage['model.js'][7]++;
+    console.log(("Error connecting to database: " + err));
+  }
+  else {
+    _$jscoverage['model.js'][9]++;
+    console.log("Opened a connection to the database");
+  }
+}));
+_$jscoverage['model.js'][12]++;
+function object_id(id) {
+  _$jscoverage['model.js'][13]++;
+  if (((typeof id) == "string")) {
+    _$jscoverage['model.js'][14]++;
+    return new (mongo.BSONPure.ObjectID)(id);
+  }
+  _$jscoverage['model.js'][16]++;
+  return id;
+}
+_$jscoverage['model.js'][19]++;
+function register_user(user, callback) {
+  _$jscoverage['model.js'][20]++;
+  db.collection("user", (function (error, collection) {
+  _$jscoverage['model.js'][21]++;
+  collection.insert(user, (function (error, record) {
+  _$jscoverage['model.js'][22]++;
   callback(error, record);
 }));
 }));
 }
-_$jscoverage['model.js'][11]++;
-function username_exists(db, username, callback) {
-  _$jscoverage['model.js'][12]++;
+_$jscoverage['model.js'][27]++;
+function username_exists(username, callback) {
+  _$jscoverage['model.js'][28]++;
   db.collection("user", (function (error, collection) {
-  _$jscoverage['model.js'][13]++;
+  _$jscoverage['model.js'][29]++;
   collection.findOne({username: username}, (function (e, doc) {
-  _$jscoverage['model.js'][14]++;
+  _$jscoverage['model.js'][30]++;
   callback((! (! doc)));
 }));
 }));
 }
-_$jscoverage['model.js'][19]++;
-function validate_login(db, user, callback) {
-  _$jscoverage['model.js'][20]++;
+_$jscoverage['model.js'][35]++;
+function validate_login(user, callback) {
+  _$jscoverage['model.js'][36]++;
   db.collection("user", (function (error, collection) {
-  _$jscoverage['model.js'][21]++;
+  _$jscoverage['model.js'][37]++;
   collection.findOne({username: user.username}, (function (error, dbUser) {
-  _$jscoverage['model.js'][22]++;
+  _$jscoverage['model.js'][38]++;
   callback(((dbUser != null) && (user.password == dbUser.password)), dbUser);
 }));
 }));
 }
-_$jscoverage['model.js'][27]++;
-function login_user(db, user, callback) {
-  _$jscoverage['model.js'][28]++;
+_$jscoverage['model.js'][43]++;
+function login_user(user, callback) {
+  _$jscoverage['model.js'][44]++;
   db.collection("user", (function (error, collection) {
-  _$jscoverage['model.js'][29]++;
-  collection.update({username: user.username}, {$set: {logged_in: true}}, (function (update_error, doc) {
-  _$jscoverage['model.js'][30]++;
-  callback(error);
-}));
-}));
-}
-_$jscoverage['model.js'][35]++;
-function logout_user(db, user_id, callback) {
-  _$jscoverage['model.js'][36]++;
-  db.collection("user", (function (error, collection) {
-  _$jscoverage['model.js'][37]++;
-  var id = new (mongo.BSONPure.ObjectID)(user_id);
-  _$jscoverage['model.js'][38]++;
-  collection.update({_id: id}, {$set: {logged_in: false}}, (function (update_error, doc) {
-  _$jscoverage['model.js'][39]++;
-  callback(error);
-}));
-}));
-}
-_$jscoverage['model.js'][44]++;
-function find_user(db, criteria, callback) {
   _$jscoverage['model.js'][45]++;
-  db.collection("user", (function (error, collection) {
+  collection.update({username: user.username}, {$set: {logged_in: true}}, (function (update_error, doc) {
   _$jscoverage['model.js'][46]++;
+  callback(error);
+}));
+}));
+}
+_$jscoverage['model.js'][51]++;
+function logout_user(user_id, callback) {
+  _$jscoverage['model.js'][52]++;
+  db.collection("user", (function (error, collection) {
+  _$jscoverage['model.js'][53]++;
+  var id = object_id(user_id);
+  _$jscoverage['model.js'][54]++;
+  collection.update({_id: id}, {$set: {logged_in: false}}, (function (update_error, doc) {
+  _$jscoverage['model.js'][55]++;
+  callback(error);
+}));
+}));
+}
+_$jscoverage['model.js'][60]++;
+function find_user(criteria, callback) {
+  _$jscoverage['model.js'][61]++;
+  db.collection("user", (function (error, collection) {
+  _$jscoverage['model.js'][62]++;
   collection.findOne(criteria, (function (user_error, user_doc) {
-  _$jscoverage['model.js'][47]++;
+  _$jscoverage['model.js'][63]++;
   callback((! error), user_doc);
 }));
 }));
 }
-_$jscoverage['model.js'][52]++;
-function find_user_by_id(db, user_id, callback) {
-  _$jscoverage['model.js'][53]++;
-  var id = new (mongo.BSONPure.ObjectID)(user_id);
-  _$jscoverage['model.js'][54]++;
-  find_user(db, {_id: id}, callback);
-}
-_$jscoverage['model.js'][57]++;
-function find_user_by_username(db, username, callback) {
-  _$jscoverage['model.js'][58]++;
-  find_user(db, {username: username}, callback);
-}
-_$jscoverage['model.js'][61]++;
-function search_users(db, query, callback) {
-  _$jscoverage['model.js'][63]++;
-  var q = query.replace(/'/g, "");
-  _$jscoverage['model.js'][64]++;
-  var query_string = ("(this.first_name + ' ' + this.last_name).toLowerCase().indexOf('" + q + "') != -1");
-  _$jscoverage['model.js'][65]++;
-  query_string += ("|| this.username.toLowerCase().indexOf('" + q + "') != -1");
-  _$jscoverage['model.js'][67]++;
-  db.collection("user", (function (error, collection) {
-  _$jscoverage['model.js'][68]++;
-  collection.find({$where: query_string}, (function (find_error, documents) {
+_$jscoverage['model.js'][68]++;
+function find_users_by_id(ids, callback) {
   _$jscoverage['model.js'][69]++;
+  var object_ids = [];
+  _$jscoverage['model.js'][70]++;
+  for (var index in ids) {
+    _$jscoverage['model.js'][71]++;
+    object_ids.push(object_id(ids[index]));
+}
+  _$jscoverage['model.js'][73]++;
+  db.collection("user", (function (error, collection) {
+  _$jscoverage['model.js'][74]++;
+  collection.find({_id: {$in: object_ids}}, (function (find_error, documents) {
+  _$jscoverage['model.js'][75]++;
   if (find_error) {
-    _$jscoverage['model.js'][70]++;
+    _$jscoverage['model.js'][76]++;
+    callback(false, []);
+  }
+  else {
+    _$jscoverage['model.js'][78]++;
+    documents.toArray((function (err, res) {
+  _$jscoverage['model.js'][79]++;
+  callback((res && res.length), res);
+}));
+  }
+}));
+}));
+}
+_$jscoverage['model.js'][86]++;
+function find_user_by_id(user_id, callback) {
+  _$jscoverage['model.js'][87]++;
+  var id = object_id(user_id);
+  _$jscoverage['model.js'][88]++;
+  find_user({_id: id}, callback);
+}
+_$jscoverage['model.js'][91]++;
+function find_user_by_username(username, callback) {
+  _$jscoverage['model.js'][92]++;
+  find_user({username: username}, callback);
+}
+_$jscoverage['model.js'][95]++;
+function search_users(query, callback) {
+  _$jscoverage['model.js'][97]++;
+  var q = query.replace(/'/g, "");
+  _$jscoverage['model.js'][98]++;
+  var query_string = ("(this.first_name + ' ' + this.last_name).toLowerCase().indexOf('" + q + "') != -1");
+  _$jscoverage['model.js'][99]++;
+  query_string += ("|| this.username.toLowerCase().indexOf('" + q + "') != -1");
+  _$jscoverage['model.js'][101]++;
+  db.collection("user", (function (error, collection) {
+  _$jscoverage['model.js'][102]++;
+  collection.find({$where: query_string}, (function (find_error, documents) {
+  _$jscoverage['model.js'][103]++;
+  if (find_error) {
+    _$jscoverage['model.js'][104]++;
     callback(find_error, []);
   }
   else {
-    _$jscoverage['model.js'][72]++;
+    _$jscoverage['model.js'][106]++;
     documents.toArray((function (err, res) {
-  _$jscoverage['model.js'][73]++;
+  _$jscoverage['model.js'][107]++;
   callback(undefined, res);
 }));
   }
 }));
 }));
 }
-_$jscoverage['model.js'][80]++;
-function find_wallposts(db, criteria, callback) {
-  _$jscoverage['model.js'][81]++;
+_$jscoverage['model.js'][114]++;
+function find_wallposts(criteria, callback) {
+  _$jscoverage['model.js'][115]++;
   db.collection("wallpost", (function (error, collection) {
-  _$jscoverage['model.js'][82]++;
+  _$jscoverage['model.js'][116]++;
   collection.find(criteria, (function (find_error, documents) {
-  _$jscoverage['model.js'][83]++;
+  _$jscoverage['model.js'][117]++;
   if (find_error) {
-    _$jscoverage['model.js'][84]++;
+    _$jscoverage['model.js'][118]++;
     callback(false, []);
   }
   else {
-    _$jscoverage['model.js'][86]++;
+    _$jscoverage['model.js'][120]++;
     documents.toArray((function (err, res) {
-  _$jscoverage['model.js'][87]++;
+  _$jscoverage['model.js'][121]++;
   callback(true, res);
 }));
   }
 }));
 }));
 }
-_$jscoverage['model.js'][94]++;
-function find_wallposts_to_user(db, user, callback) {
-  _$jscoverage['model.js'][95]++;
-  find_wallposts(db, {to_id: user._id}, callback);
+_$jscoverage['model.js'][128]++;
+function find_wallposts_to_user(user, callback) {
+  _$jscoverage['model.js'][129]++;
+  find_wallposts({to_id: user._id}, callback);
 }
-_$jscoverage['model.js'][98]++;
-function add_wallpost(db, from_id, to_id, post, callback) {
-  _$jscoverage['model.js'][99]++;
+_$jscoverage['model.js'][132]++;
+function add_wallpost(from_id, to_id, post, callback) {
+  _$jscoverage['model.js'][133]++;
   db.collection("wallpost", (function (error, collection) {
-  _$jscoverage['model.js'][102]++;
-  find_user_by_id(db, from_id, (function (success, user) {
-  _$jscoverage['model.js'][103]++;
+  _$jscoverage['model.js'][136]++;
+  find_user_by_id(from_id, (function (success, user) {
+  _$jscoverage['model.js'][137]++;
   if ((! success)) {
-    _$jscoverage['model.js'][104]++;
+    _$jscoverage['model.js'][138]++;
     callback(false, undefined);
-    _$jscoverage['model.js'][105]++;
+    _$jscoverage['model.js'][139]++;
     return;
   }
-  _$jscoverage['model.js'][108]++;
-  to_id = new (mongo.BSONPure.ObjectID)(to_id);
-  _$jscoverage['model.js'][109]++;
-  from_id = new (mongo.BSONPure.ObjectID)(from_id);
-  _$jscoverage['model.js'][110]++;
+  _$jscoverage['model.js'][142]++;
+  to_id = object_id(to_id);
+  _$jscoverage['model.js'][143]++;
+  from_id = object_id(from_id);
+  _$jscoverage['model.js'][144]++;
   var name = (user.first_name + " " + user.last_name);
-  _$jscoverage['model.js'][111]++;
+  _$jscoverage['model.js'][145]++;
   var wallpost_record = {from: name, from_username: user.username, from_id: from_id, to_id: to_id, post: post, date: new Date()};
-  _$jscoverage['model.js'][120]++;
+  _$jscoverage['model.js'][154]++;
   collection.insert(wallpost_record, (function (post_error, wallpost_doc) {
-  _$jscoverage['model.js'][121]++;
+  _$jscoverage['model.js'][155]++;
   callback((! post_error), wallpost_doc);
 }));
 }));
 }));
 }
-_$jscoverage['model.js'][127]++;
-function add_friend(db, user_id, friend_id, callback) {
-  _$jscoverage['model.js'][128]++;
-  user_id = new (mongo.BSONPure.ObjectID)(user_id);
-  _$jscoverage['model.js'][129]++;
-  friend_id = new (mongo.BSONPure.ObjectID)(friend_id);
-  _$jscoverage['model.js'][130]++;
+_$jscoverage['model.js'][161]++;
+function add_friend(user_id, friend_id, callback) {
+  _$jscoverage['model.js'][162]++;
+  user_id = object_id(user_id);
+  _$jscoverage['model.js'][163]++;
+  friend_id = object_id(friend_id);
+  _$jscoverage['model.js'][164]++;
   db.collection("user", (function (error, collection) {
-  _$jscoverage['model.js'][132]++;
+  _$jscoverage['model.js'][166]++;
   collection.findOne({_id: user_id}, (function (user_error, user) {
-  _$jscoverage['model.js'][133]++;
+  _$jscoverage['model.js'][167]++;
   if ((user_error || (! user))) {
-    _$jscoverage['model.js'][134]++;
+    _$jscoverage['model.js'][168]++;
     callback(false);
-    _$jscoverage['model.js'][135]++;
+    _$jscoverage['model.js'][169]++;
     return;
   }
-  _$jscoverage['model.js'][139]++;
+  _$jscoverage['model.js'][173]++;
   collection.findOne({_id: friend_id}, (function (friend_error, friend_user) {
-  _$jscoverage['model.js'][140]++;
+  _$jscoverage['model.js'][174]++;
   if ((friend_error || (! friend_user))) {
-    _$jscoverage['model.js'][141]++;
+    _$jscoverage['model.js'][175]++;
     callback(false);
-    _$jscoverage['model.js'][142]++;
+    _$jscoverage['model.js'][176]++;
     return;
   }
-  _$jscoverage['model.js'][145]++;
+  _$jscoverage['model.js'][179]++;
   var friends = user.friends;
-  _$jscoverage['model.js'][146]++;
+  _$jscoverage['model.js'][180]++;
   var friend = {user_id: friend_user._id, username: friend_user.username, name: (friend_user.first_name + " " + friend_user.last_name)};
-  _$jscoverage['model.js'][153]++;
+  _$jscoverage['model.js'][187]++;
   collection.findOne({_id: user_id, friends: {$elemMatch: {user_id: friend_id}}}, (function (find_error, match) {
-  _$jscoverage['model.js'][154]++;
+  _$jscoverage['model.js'][188]++;
   if (match) {
-    _$jscoverage['model.js'][155]++;
+    _$jscoverage['model.js'][189]++;
     callback(false);
-    _$jscoverage['model.js'][156]++;
+    _$jscoverage['model.js'][190]++;
     return;
   }
-  _$jscoverage['model.js'][160]++;
+  _$jscoverage['model.js'][194]++;
   collection.update(user, {$addToSet: {friends: friend}}, (function (update_error) {
-  _$jscoverage['model.js'][161]++;
+  _$jscoverage['model.js'][195]++;
   callback((! update_error));
 }));
 }));
@@ -349,29 +467,137 @@ function add_friend(db, user_id, friend_id, callback) {
 }));
 }));
 }
-_$jscoverage['model.js'][169]++;
+_$jscoverage['model.js'][205]++;
+function chat_member(user) {
+  _$jscoverage['model.js'][208]++;
+  return ({name: (user.first_name + " " + user.last_name), username: user.username});
+}
+_$jscoverage['model.js'][214]++;
+function create_chat(members, callback) {
+  _$jscoverage['model.js'][215]++;
+  find_users_by_id(members, (function (success, users) {
+  _$jscoverage['model.js'][216]++;
+  if ((! success)) {
+    _$jscoverage['model.js'][217]++;
+    console.log("Unable to find users for creating chat");
+    _$jscoverage['model.js'][218]++;
+    return callback(false, null);
+  }
+  _$jscoverage['model.js'][221]++;
+  var chat_members = {};
+  _$jscoverage['model.js'][222]++;
+  for (var index in users) {
+    _$jscoverage['model.js'][223]++;
+    var user = users[index];
+    _$jscoverage['model.js'][224]++;
+    chat_members[user._id] = chat_member(user);
+}
+  _$jscoverage['model.js'][227]++;
+  db.collection("chat", (function (error, collection) {
+  _$jscoverage['model.js'][228]++;
+  collection.insert({members: chat_members, messages: []}, (function (error, chat) {
+  _$jscoverage['model.js'][229]++;
+  callback(((! error) && (! (! chat))), chat[0]);
+}));
+}));
+}));
+}
+_$jscoverage['model.js'][235]++;
+function find_chat_by_id(chat_id, callback) {
+  _$jscoverage['model.js'][236]++;
+  db.collection("chat", (function (error, collection) {
+  _$jscoverage['model.js'][237]++;
+  collection.findOne({_id: object_id(chat_id)}, (function (find_error, chat) {
+  _$jscoverage['model.js'][238]++;
+  callback((! find_error), chat);
+}));
+}));
+}
+_$jscoverage['model.js'][243]++;
+function save_message(message, chat_id, user_id, callback) {
+  _$jscoverage['model.js'][244]++;
+  db.collection("chat", (function (error, chat_collection) {
+  _$jscoverage['model.js'][245]++;
+  find_user_by_id(user_id, (function (success, user) {
+  _$jscoverage['model.js'][246]++;
+  var message_object = {message: message, username: user.username, name: (user.first_name + " " + user.last_name)};
+  _$jscoverage['model.js'][252]++;
+  var criteria = {_id: object_id(chat_id)};
+  _$jscoverage['model.js'][253]++;
+  var update = {$addToSet: {messages: message_object}};
+  _$jscoverage['model.js'][254]++;
+  chat_collection.update(criteria, update, (function (error) {
+  _$jscoverage['model.js'][255]++;
+  callback((! error), message_object);
+}));
+}));
+}));
+}
+_$jscoverage['model.js'][261]++;
+function add_chat_member(chat_id, user_id, callback) {
+  _$jscoverage['model.js'][262]++;
+  db.collection("chat", (function (error, chat_collection) {
+  _$jscoverage['model.js'][263]++;
+  find_user_by_id(user_id, (function (success, user) {
+  _$jscoverage['model.js'][264]++;
+  if ((! success)) {
+    _$jscoverage['model.js'][265]++;
+    callback(false);
+  }
+  _$jscoverage['model.js'][267]++;
+  console.log(user);
+  _$jscoverage['model.js'][268]++;
+  find_chat_by_id(chat_id, (function (success, chat) {
+  _$jscoverage['model.js'][269]++;
+  var members = chat.members;
+  _$jscoverage['model.js'][270]++;
+  members[user_id] = chat_member(user);
+  _$jscoverage['model.js'][271]++;
+  var criteria = {_id: object_id(chat_id)};
+  _$jscoverage['model.js'][272]++;
+  chat_collection.update(criteria, {$set: {members: members}}, (function (error) {
+  _$jscoverage['model.js'][273]++;
+  console.log(error);
+  _$jscoverage['model.js'][274]++;
+  callback((! error));
+}));
+}));
+}));
+}));
+}
+_$jscoverage['model.js'][281]++;
 exports.register_user = register_user;
-_$jscoverage['model.js'][170]++;
+_$jscoverage['model.js'][282]++;
 exports.validate_login = validate_login;
-_$jscoverage['model.js'][171]++;
+_$jscoverage['model.js'][283]++;
 exports.username_exists = username_exists;
-_$jscoverage['model.js'][172]++;
+_$jscoverage['model.js'][284]++;
 exports.login_user = login_user;
-_$jscoverage['model.js'][173]++;
+_$jscoverage['model.js'][285]++;
 exports.logout_user = logout_user;
-_$jscoverage['model.js'][174]++;
+_$jscoverage['model.js'][286]++;
 exports.find_user_by_id = find_user_by_id;
-_$jscoverage['model.js'][175]++;
+_$jscoverage['model.js'][287]++;
 exports.find_user_by_username = find_user_by_username;
-_$jscoverage['model.js'][176]++;
+_$jscoverage['model.js'][288]++;
 exports.find_user = find_user;
-_$jscoverage['model.js'][177]++;
+_$jscoverage['model.js'][289]++;
 exports.search_users = search_users;
-_$jscoverage['model.js'][178]++;
+_$jscoverage['model.js'][290]++;
 exports.find_wallposts_to_user = find_wallposts_to_user;
-_$jscoverage['model.js'][179]++;
+_$jscoverage['model.js'][291]++;
 exports.find_wallposts = find_wallposts;
-_$jscoverage['model.js'][180]++;
+_$jscoverage['model.js'][292]++;
 exports.add_wallpost = add_wallpost;
-_$jscoverage['model.js'][181]++;
+_$jscoverage['model.js'][293]++;
 exports.add_friend = add_friend;
+_$jscoverage['model.js'][295]++;
+exports.create_chat = create_chat;
+_$jscoverage['model.js'][296]++;
+exports.find_chat_by_id = find_chat_by_id;
+_$jscoverage['model.js'][297]++;
+exports.find_users_by_id = find_users_by_id;
+_$jscoverage['model.js'][298]++;
+exports.save_message = save_message;
+_$jscoverage['model.js'][299]++;
+exports.add_chat_member = add_chat_member;

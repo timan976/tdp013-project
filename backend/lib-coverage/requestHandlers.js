@@ -48,219 +48,220 @@ if (! _$jscoverage['requestHandlers.js']) {
   _$jscoverage['requestHandlers.js'][7] = 0;
   _$jscoverage['requestHandlers.js'][9] = 0;
   _$jscoverage['requestHandlers.js'][10] = 0;
-  _$jscoverage['requestHandlers.js'][13] = 0;
-  _$jscoverage['requestHandlers.js'][14] = 0;
+  _$jscoverage['requestHandlers.js'][11] = 0;
+  _$jscoverage['requestHandlers.js'][12] = 0;
   _$jscoverage['requestHandlers.js'][15] = 0;
-  _$jscoverage['requestHandlers.js'][19] = 0;
-  _$jscoverage['requestHandlers.js'][20] = 0;
+  _$jscoverage['requestHandlers.js'][16] = 0;
+  _$jscoverage['requestHandlers.js'][17] = 0;
   _$jscoverage['requestHandlers.js'][21] = 0;
   _$jscoverage['requestHandlers.js'][22] = 0;
+  _$jscoverage['requestHandlers.js'][23] = 0;
+  _$jscoverage['requestHandlers.js'][24] = 0;
   _$jscoverage['requestHandlers.js'][25] = 0;
-  _$jscoverage['requestHandlers.js'][26] = 0;
-  _$jscoverage['requestHandlers.js'][27] = 0;
+  _$jscoverage['requestHandlers.js'][28] = 0;
+  _$jscoverage['requestHandlers.js'][29] = 0;
+  _$jscoverage['requestHandlers.js'][30] = 0;
   _$jscoverage['requestHandlers.js'][31] = 0;
   _$jscoverage['requestHandlers.js'][32] = 0;
-  _$jscoverage['requestHandlers.js'][33] = 0;
-  _$jscoverage['requestHandlers.js'][34] = 0;
   _$jscoverage['requestHandlers.js'][35] = 0;
-  _$jscoverage['requestHandlers.js'][38] = 0;
+  _$jscoverage['requestHandlers.js'][36] = 0;
   _$jscoverage['requestHandlers.js'][39] = 0;
   _$jscoverage['requestHandlers.js'][40] = 0;
   _$jscoverage['requestHandlers.js'][41] = 0;
   _$jscoverage['requestHandlers.js'][42] = 0;
+  _$jscoverage['requestHandlers.js'][43] = 0;
+  _$jscoverage['requestHandlers.js'][44] = 0;
   _$jscoverage['requestHandlers.js'][45] = 0;
-  _$jscoverage['requestHandlers.js'][46] = 0;
+  _$jscoverage['requestHandlers.js'][48] = 0;
   _$jscoverage['requestHandlers.js'][49] = 0;
   _$jscoverage['requestHandlers.js'][50] = 0;
   _$jscoverage['requestHandlers.js'][51] = 0;
-  _$jscoverage['requestHandlers.js'][52] = 0;
-  _$jscoverage['requestHandlers.js'][53] = 0;
-  _$jscoverage['requestHandlers.js'][54] = 0;
-  _$jscoverage['requestHandlers.js'][55] = 0;
+  _$jscoverage['requestHandlers.js'][56] = 0;
+  _$jscoverage['requestHandlers.js'][57] = 0;
   _$jscoverage['requestHandlers.js'][58] = 0;
   _$jscoverage['requestHandlers.js'][59] = 0;
   _$jscoverage['requestHandlers.js'][60] = 0;
   _$jscoverage['requestHandlers.js'][61] = 0;
-  _$jscoverage['requestHandlers.js'][66] = 0;
+  _$jscoverage['requestHandlers.js'][62] = 0;
+  _$jscoverage['requestHandlers.js'][64] = 0;
+  _$jscoverage['requestHandlers.js'][65] = 0;
   _$jscoverage['requestHandlers.js'][67] = 0;
   _$jscoverage['requestHandlers.js'][68] = 0;
-  _$jscoverage['requestHandlers.js'][69] = 0;
-  _$jscoverage['requestHandlers.js'][70] = 0;
-  _$jscoverage['requestHandlers.js'][71] = 0;
   _$jscoverage['requestHandlers.js'][72] = 0;
-  _$jscoverage['requestHandlers.js'][74] = 0;
+  _$jscoverage['requestHandlers.js'][73] = 0;
   _$jscoverage['requestHandlers.js'][75] = 0;
+  _$jscoverage['requestHandlers.js'][76] = 0;
   _$jscoverage['requestHandlers.js'][77] = 0;
   _$jscoverage['requestHandlers.js'][78] = 0;
+  _$jscoverage['requestHandlers.js'][79] = 0;
   _$jscoverage['requestHandlers.js'][82] = 0;
   _$jscoverage['requestHandlers.js'][83] = 0;
-  _$jscoverage['requestHandlers.js'][85] = 0;
   _$jscoverage['requestHandlers.js'][86] = 0;
   _$jscoverage['requestHandlers.js'][87] = 0;
-  _$jscoverage['requestHandlers.js'][88] = 0;
-  _$jscoverage['requestHandlers.js'][89] = 0;
-  _$jscoverage['requestHandlers.js'][92] = 0;
+  _$jscoverage['requestHandlers.js'][90] = 0;
   _$jscoverage['requestHandlers.js'][93] = 0;
+  _$jscoverage['requestHandlers.js'][94] = 0;
+  _$jscoverage['requestHandlers.js'][95] = 0;
   _$jscoverage['requestHandlers.js'][96] = 0;
   _$jscoverage['requestHandlers.js'][97] = 0;
+  _$jscoverage['requestHandlers.js'][99] = 0;
   _$jscoverage['requestHandlers.js'][100] = 0;
-  _$jscoverage['requestHandlers.js'][103] = 0;
-  _$jscoverage['requestHandlers.js'][104] = 0;
-  _$jscoverage['requestHandlers.js'][105] = 0;
-  _$jscoverage['requestHandlers.js'][106] = 0;
-  _$jscoverage['requestHandlers.js'][107] = 0;
+  _$jscoverage['requestHandlers.js'][101] = 0;
   _$jscoverage['requestHandlers.js'][109] = 0;
   _$jscoverage['requestHandlers.js'][110] = 0;
   _$jscoverage['requestHandlers.js'][111] = 0;
+  _$jscoverage['requestHandlers.js'][112] = 0;
+  _$jscoverage['requestHandlers.js'][113] = 0;
+  _$jscoverage['requestHandlers.js'][115] = 0;
+  _$jscoverage['requestHandlers.js'][116] = 0;
+  _$jscoverage['requestHandlers.js'][117] = 0;
+  _$jscoverage['requestHandlers.js'][118] = 0;
   _$jscoverage['requestHandlers.js'][119] = 0;
-  _$jscoverage['requestHandlers.js'][120] = 0;
-  _$jscoverage['requestHandlers.js'][121] = 0;
+  _$jscoverage['requestHandlers.js'][122] = 0;
   _$jscoverage['requestHandlers.js'][123] = 0;
   _$jscoverage['requestHandlers.js'][124] = 0;
-  _$jscoverage['requestHandlers.js'][126] = 0;
-  _$jscoverage['requestHandlers.js'][127] = 0;
-  _$jscoverage['requestHandlers.js'][128] = 0;
   _$jscoverage['requestHandlers.js'][129] = 0;
-  _$jscoverage['requestHandlers.js'][130] = 0;
-  _$jscoverage['requestHandlers.js'][133] = 0;
-  _$jscoverage['requestHandlers.js'][134] = 0;
-  _$jscoverage['requestHandlers.js'][135] = 0;
+  _$jscoverage['requestHandlers.js'][136] = 0;
+  _$jscoverage['requestHandlers.js'][137] = 0;
+  _$jscoverage['requestHandlers.js'][138] = 0;
+  _$jscoverage['requestHandlers.js'][139] = 0;
   _$jscoverage['requestHandlers.js'][140] = 0;
+  _$jscoverage['requestHandlers.js'][141] = 0;
+  _$jscoverage['requestHandlers.js'][142] = 0;
   _$jscoverage['requestHandlers.js'][147] = 0;
   _$jscoverage['requestHandlers.js'][148] = 0;
-  _$jscoverage['requestHandlers.js'][149] = 0;
-  _$jscoverage['requestHandlers.js'][150] = 0;
   _$jscoverage['requestHandlers.js'][151] = 0;
   _$jscoverage['requestHandlers.js'][152] = 0;
   _$jscoverage['requestHandlers.js'][153] = 0;
-  _$jscoverage['requestHandlers.js'][158] = 0;
+  _$jscoverage['requestHandlers.js'][154] = 0;
+  _$jscoverage['requestHandlers.js'][155] = 0;
+  _$jscoverage['requestHandlers.js'][156] = 0;
   _$jscoverage['requestHandlers.js'][159] = 0;
-  _$jscoverage['requestHandlers.js'][162] = 0;
-  _$jscoverage['requestHandlers.js'][163] = 0;
-  _$jscoverage['requestHandlers.js'][164] = 0;
-  _$jscoverage['requestHandlers.js'][165] = 0;
+  _$jscoverage['requestHandlers.js'][160] = 0;
+  _$jscoverage['requestHandlers.js'][161] = 0;
   _$jscoverage['requestHandlers.js'][166] = 0;
   _$jscoverage['requestHandlers.js'][167] = 0;
   _$jscoverage['requestHandlers.js'][170] = 0;
   _$jscoverage['requestHandlers.js'][171] = 0;
   _$jscoverage['requestHandlers.js'][172] = 0;
-  _$jscoverage['requestHandlers.js'][177] = 0;
-  _$jscoverage['requestHandlers.js'][178] = 0;
+  _$jscoverage['requestHandlers.js'][173] = 0;
+  _$jscoverage['requestHandlers.js'][174] = 0;
+  _$jscoverage['requestHandlers.js'][175] = 0;
+  _$jscoverage['requestHandlers.js'][179] = 0;
+  _$jscoverage['requestHandlers.js'][180] = 0;
   _$jscoverage['requestHandlers.js'][181] = 0;
   _$jscoverage['requestHandlers.js'][182] = 0;
   _$jscoverage['requestHandlers.js'][183] = 0;
-  _$jscoverage['requestHandlers.js'][184] = 0;
-  _$jscoverage['requestHandlers.js'][185] = 0;
   _$jscoverage['requestHandlers.js'][186] = 0;
-  _$jscoverage['requestHandlers.js'][190] = 0;
-  _$jscoverage['requestHandlers.js'][191] = 0;
-  _$jscoverage['requestHandlers.js'][192] = 0;
+  _$jscoverage['requestHandlers.js'][187] = 0;
+  _$jscoverage['requestHandlers.js'][188] = 0;
   _$jscoverage['requestHandlers.js'][193] = 0;
   _$jscoverage['requestHandlers.js'][194] = 0;
+  _$jscoverage['requestHandlers.js'][195] = 0;
+  _$jscoverage['requestHandlers.js'][196] = 0;
   _$jscoverage['requestHandlers.js'][197] = 0;
-  _$jscoverage['requestHandlers.js'][198] = 0;
-  _$jscoverage['requestHandlers.js'][199] = 0;
+  _$jscoverage['requestHandlers.js'][200] = 0;
+  _$jscoverage['requestHandlers.js'][201] = 0;
+  _$jscoverage['requestHandlers.js'][202] = 0;
+  _$jscoverage['requestHandlers.js'][203] = 0;
   _$jscoverage['requestHandlers.js'][204] = 0;
   _$jscoverage['requestHandlers.js'][205] = 0;
   _$jscoverage['requestHandlers.js'][206] = 0;
-  _$jscoverage['requestHandlers.js'][207] = 0;
-  _$jscoverage['requestHandlers.js'][208] = 0;
-  _$jscoverage['requestHandlers.js'][211] = 0;
-  _$jscoverage['requestHandlers.js'][212] = 0;
-  _$jscoverage['requestHandlers.js'][213] = 0;
-  _$jscoverage['requestHandlers.js'][214] = 0;
+  _$jscoverage['requestHandlers.js'][209] = 0;
+  _$jscoverage['requestHandlers.js'][210] = 0;
   _$jscoverage['requestHandlers.js'][215] = 0;
   _$jscoverage['requestHandlers.js'][216] = 0;
   _$jscoverage['requestHandlers.js'][217] = 0;
-  _$jscoverage['requestHandlers.js'][220] = 0;
-  _$jscoverage['requestHandlers.js'][221] = 0;
+  _$jscoverage['requestHandlers.js'][223] = 0;
+  _$jscoverage['requestHandlers.js'][224] = 0;
+  _$jscoverage['requestHandlers.js'][225] = 0;
   _$jscoverage['requestHandlers.js'][226] = 0;
   _$jscoverage['requestHandlers.js'][227] = 0;
-  _$jscoverage['requestHandlers.js'][228] = 0;
   _$jscoverage['requestHandlers.js'][229] = 0;
+  _$jscoverage['requestHandlers.js'][234] = 0;
   _$jscoverage['requestHandlers.js'][235] = 0;
-  _$jscoverage['requestHandlers.js'][236] = 0;
-  _$jscoverage['requestHandlers.js'][237] = 0;
   _$jscoverage['requestHandlers.js'][238] = 0;
   _$jscoverage['requestHandlers.js'][239] = 0;
+  _$jscoverage['requestHandlers.js'][240] = 0;
   _$jscoverage['requestHandlers.js'][241] = 0;
+  _$jscoverage['requestHandlers.js'][242] = 0;
+  _$jscoverage['requestHandlers.js'][245] = 0;
   _$jscoverage['requestHandlers.js'][246] = 0;
   _$jscoverage['requestHandlers.js'][247] = 0;
+  _$jscoverage['requestHandlers.js'][248] = 0;
   _$jscoverage['requestHandlers.js'][250] = 0;
   _$jscoverage['requestHandlers.js'][251] = 0;
-  _$jscoverage['requestHandlers.js'][252] = 0;
-  _$jscoverage['requestHandlers.js'][253] = 0;
-  _$jscoverage['requestHandlers.js'][254] = 0;
+  _$jscoverage['requestHandlers.js'][256] = 0;
   _$jscoverage['requestHandlers.js'][257] = 0;
   _$jscoverage['requestHandlers.js'][258] = 0;
-  _$jscoverage['requestHandlers.js'][259] = 0;
-  _$jscoverage['requestHandlers.js'][260] = 0;
-  _$jscoverage['requestHandlers.js'][262] = 0;
-  _$jscoverage['requestHandlers.js'][263] = 0;
+  _$jscoverage['requestHandlers.js'][261] = 0;
+  _$jscoverage['requestHandlers.js'][266] = 0;
+  _$jscoverage['requestHandlers.js'][267] = 0;
   _$jscoverage['requestHandlers.js'][268] = 0;
   _$jscoverage['requestHandlers.js'][269] = 0;
   _$jscoverage['requestHandlers.js'][270] = 0;
   _$jscoverage['requestHandlers.js'][273] = 0;
+  _$jscoverage['requestHandlers.js'][274] = 0;
+  _$jscoverage['requestHandlers.js'][275] = 0;
+  _$jscoverage['requestHandlers.js'][276] = 0;
+  _$jscoverage['requestHandlers.js'][277] = 0;
   _$jscoverage['requestHandlers.js'][278] = 0;
-  _$jscoverage['requestHandlers.js'][279] = 0;
-  _$jscoverage['requestHandlers.js'][280] = 0;
-  _$jscoverage['requestHandlers.js'][281] = 0;
-  _$jscoverage['requestHandlers.js'][282] = 0;
+  _$jscoverage['requestHandlers.js'][283] = 0;
+  _$jscoverage['requestHandlers.js'][284] = 0;
   _$jscoverage['requestHandlers.js'][285] = 0;
   _$jscoverage['requestHandlers.js'][286] = 0;
   _$jscoverage['requestHandlers.js'][287] = 0;
-  _$jscoverage['requestHandlers.js'][288] = 0;
-  _$jscoverage['requestHandlers.js'][289] = 0;
   _$jscoverage['requestHandlers.js'][290] = 0;
+  _$jscoverage['requestHandlers.js'][291] = 0;
+  _$jscoverage['requestHandlers.js'][292] = 0;
+  _$jscoverage['requestHandlers.js'][293] = 0;
+  _$jscoverage['requestHandlers.js'][294] = 0;
   _$jscoverage['requestHandlers.js'][295] = 0;
-  _$jscoverage['requestHandlers.js'][296] = 0;
-  _$jscoverage['requestHandlers.js'][297] = 0;
-  _$jscoverage['requestHandlers.js'][298] = 0;
-  _$jscoverage['requestHandlers.js'][299] = 0;
+  _$jscoverage['requestHandlers.js'][300] = 0;
+  _$jscoverage['requestHandlers.js'][301] = 0;
   _$jscoverage['requestHandlers.js'][302] = 0;
   _$jscoverage['requestHandlers.js'][303] = 0;
   _$jscoverage['requestHandlers.js'][304] = 0;
-  _$jscoverage['requestHandlers.js'][305] = 0;
-  _$jscoverage['requestHandlers.js'][306] = 0;
   _$jscoverage['requestHandlers.js'][307] = 0;
-  _$jscoverage['requestHandlers.js'][312] = 0;
-  _$jscoverage['requestHandlers.js'][313] = 0;
-  _$jscoverage['requestHandlers.js'][314] = 0;
+  _$jscoverage['requestHandlers.js'][308] = 0;
   _$jscoverage['requestHandlers.js'][315] = 0;
   _$jscoverage['requestHandlers.js'][316] = 0;
+  _$jscoverage['requestHandlers.js'][317] = 0;
   _$jscoverage['requestHandlers.js'][319] = 0;
   _$jscoverage['requestHandlers.js'][320] = 0;
-  _$jscoverage['requestHandlers.js'][327] = 0;
-  _$jscoverage['requestHandlers.js'][328] = 0;
-  _$jscoverage['requestHandlers.js'][329] = 0;
-  _$jscoverage['requestHandlers.js'][331] = 0;
-  _$jscoverage['requestHandlers.js'][332] = 0;
+  _$jscoverage['requestHandlers.js'][324] = 0;
+  _$jscoverage['requestHandlers.js'][325] = 0;
+  _$jscoverage['requestHandlers.js'][334] = 0;
+  _$jscoverage['requestHandlers.js'][335] = 0;
   _$jscoverage['requestHandlers.js'][336] = 0;
   _$jscoverage['requestHandlers.js'][337] = 0;
-  _$jscoverage['requestHandlers.js'][346] = 0;
+  _$jscoverage['requestHandlers.js'][338] = 0;
+  _$jscoverage['requestHandlers.js'][340] = 0;
+  _$jscoverage['requestHandlers.js'][341] = 0;
+  _$jscoverage['requestHandlers.js'][342] = 0;
+  _$jscoverage['requestHandlers.js'][343] = 0;
+  _$jscoverage['requestHandlers.js'][344] = 0;
   _$jscoverage['requestHandlers.js'][347] = 0;
   _$jscoverage['requestHandlers.js'][348] = 0;
   _$jscoverage['requestHandlers.js'][349] = 0;
-  _$jscoverage['requestHandlers.js'][350] = 0;
-  _$jscoverage['requestHandlers.js'][352] = 0;
-  _$jscoverage['requestHandlers.js'][353] = 0;
   _$jscoverage['requestHandlers.js'][354] = 0;
   _$jscoverage['requestHandlers.js'][355] = 0;
   _$jscoverage['requestHandlers.js'][356] = 0;
+  _$jscoverage['requestHandlers.js'][357] = 0;
   _$jscoverage['requestHandlers.js'][359] = 0;
   _$jscoverage['requestHandlers.js'][360] = 0;
   _$jscoverage['requestHandlers.js'][361] = 0;
-  _$jscoverage['requestHandlers.js'][366] = 0;
+  _$jscoverage['requestHandlers.js'][362] = 0;
   _$jscoverage['requestHandlers.js'][367] = 0;
   _$jscoverage['requestHandlers.js'][368] = 0;
   _$jscoverage['requestHandlers.js'][369] = 0;
+  _$jscoverage['requestHandlers.js'][370] = 0;
   _$jscoverage['requestHandlers.js'][371] = 0;
   _$jscoverage['requestHandlers.js'][372] = 0;
   _$jscoverage['requestHandlers.js'][373] = 0;
-  _$jscoverage['requestHandlers.js'][374] = 0;
-  _$jscoverage['requestHandlers.js'][379] = 0;
-  _$jscoverage['requestHandlers.js'][380] = 0;
-  _$jscoverage['requestHandlers.js'][381] = 0;
+  _$jscoverage['requestHandlers.js'][376] = 0;
+  _$jscoverage['requestHandlers.js'][377] = 0;
+  _$jscoverage['requestHandlers.js'][378] = 0;
   _$jscoverage['requestHandlers.js'][382] = 0;
   _$jscoverage['requestHandlers.js'][383] = 0;
   _$jscoverage['requestHandlers.js'][384] = 0;
@@ -268,23 +269,40 @@ if (! _$jscoverage['requestHandlers.js']) {
   _$jscoverage['requestHandlers.js'][388] = 0;
   _$jscoverage['requestHandlers.js'][389] = 0;
   _$jscoverage['requestHandlers.js'][390] = 0;
+  _$jscoverage['requestHandlers.js'][391] = 0;
   _$jscoverage['requestHandlers.js'][394] = 0;
   _$jscoverage['requestHandlers.js'][395] = 0;
   _$jscoverage['requestHandlers.js'][396] = 0;
   _$jscoverage['requestHandlers.js'][397] = 0;
   _$jscoverage['requestHandlers.js'][398] = 0;
   _$jscoverage['requestHandlers.js'][399] = 0;
-  _$jscoverage['requestHandlers.js'][400] = 0;
   _$jscoverage['requestHandlers.js'][401] = 0;
   _$jscoverage['requestHandlers.js'][402] = 0;
   _$jscoverage['requestHandlers.js'][403] = 0;
   _$jscoverage['requestHandlers.js'][404] = 0;
   _$jscoverage['requestHandlers.js'][405] = 0;
-  _$jscoverage['requestHandlers.js'][406] = 0;
-  _$jscoverage['requestHandlers.js'][407] = 0;
   _$jscoverage['requestHandlers.js'][408] = 0;
+  _$jscoverage['requestHandlers.js'][410] = 0;
+  _$jscoverage['requestHandlers.js'][417] = 0;
+  _$jscoverage['requestHandlers.js'][418] = 0;
+  _$jscoverage['requestHandlers.js'][423] = 0;
+  _$jscoverage['requestHandlers.js'][424] = 0;
+  _$jscoverage['requestHandlers.js'][425] = 0;
+  _$jscoverage['requestHandlers.js'][426] = 0;
+  _$jscoverage['requestHandlers.js'][427] = 0;
+  _$jscoverage['requestHandlers.js'][428] = 0;
+  _$jscoverage['requestHandlers.js'][429] = 0;
+  _$jscoverage['requestHandlers.js'][430] = 0;
+  _$jscoverage['requestHandlers.js'][431] = 0;
+  _$jscoverage['requestHandlers.js'][432] = 0;
+  _$jscoverage['requestHandlers.js'][433] = 0;
+  _$jscoverage['requestHandlers.js'][434] = 0;
+  _$jscoverage['requestHandlers.js'][435] = 0;
+  _$jscoverage['requestHandlers.js'][436] = 0;
+  _$jscoverage['requestHandlers.js'][437] = 0;
+  _$jscoverage['requestHandlers.js'][438] = 0;
 }
-_$jscoverage['requestHandlers.js'].source = ["var mongo = require('mongodb');","var util = require('util');","var model = require('./model');","var crypto = require('crypto');","var mu = require('mu2');","var url = require('url');","mu.root = __dirname + '../../../frontend/templates';","","var mongo_server = new mongo.Server('localhost', 27017);","var db = new mongo.Db('tdp013-project', mongo_server);","","// Open a connection to the database","db.open(function(err, db) {","\tif(err) {","\t\tconsole.log(\"Error connecting to database:\\n\" + err);","\t}","});","","function parse_post_data(request, callback) {","\tvar body = \"\";","\trequest.on(\"data\", function(data) {","\t\tbody += data;","\t});","","\trequest.on(\"end\", function() {","\t\tvar post_data = url.parse(request.url + \"?\" + body, true).query;","\t\tcallback(post_data);","\t});","}","","function base(req, res) {","\tmu.clearCache();","\tres.writeHead(200, {'Content-Type': 'text/html'});","\tvar stream = mu.compileAndRender(\"base.html\");","\tstream.pipe(res);","}","","function index(req, res) {","\tmu.clearCache();","\tres.writeHead(200, {'Content-Type': 'text/html'});","\tvar stream = mu.compileAndRender(\"index.html\");","\tstream.pipe(res);","}","","function valid(text) {","\treturn text != undefined &amp;&amp; text.length &gt; 0;","}","","function valid_username(request, response) {","\tvar q = url.parse(request.url, true).query;","\tif(typeof q[\"username\"] == \"undefined\") {","\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\tresponse.write(JSON.stringify({valid: false}));","\t\tresponse.end();","\t\treturn;","\t}","","\tmodel.username_exists(db, q.username, function(exists) {","\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\tresponse.write(JSON.stringify({valid: !exists}));","\t\tresponse.end();","\t});","}","","// User registration","function validate_register_input(fields, callback) {","\tif(!valid(fields.first_name)) return callback(false);","\tif(!valid(fields.last_name)) return callback(false);","\tif(!valid(fields.username)) return callback(false);","\tif(!valid(fields.password)) return callback(false);","\tif(!valid(fields.password_repeat)) return callback(false);","\tif(!valid(fields.email)) return callback(false);","","\tif(fields.password != fields.password_repeat)","\t\treturn callback(false);","","\tmodel.username_exists(db, fields.username, function(exists) {","\t\tcallback(!exists);","\t});","}","","function register(request, response) {","\tparse_post_data(request, function(fields) {","\t\t// Validate form","\t\tvalidate_register_input(fields, function(valid) {","\t\t\tif(!valid) {","\t\t\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\t\t\tresponse.write(JSON.stringify({success: false}));","\t\t\t\tresponse.end();","\t\t\t} else {","\t\t\t\t// Save user","\t\t\t\tvar user = fields;","\t\t\t\tdelete user[\"password_repeat\"];","","\t\t\t\t// Hash the users password","\t\t\t\tvar salt = crypto.createHash('sha1').update(user.username).digest('hex');","\t\t\t\tuser.password = crypto.createHash('sha1').update(user.password + salt).digest('hex');","","\t\t\t\t// Add a logged in flag to the user","\t\t\t\tuser[\"logged_in\"] = false;","","\t\t\t\t// Insert the user in the database","\t\t\t\tmodel.register_user(db, fields, function(error, record) {","\t\t\t\t\tif(error) {","\t\t\t\t\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\t\t\t\t\tresponse.write(JSON.stringify({success: false}));","\t\t\t\t\t\tresponse.end();","\t\t\t\t\t} else {","\t\t\t\t\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\t\t\t\t\tresponse.write(JSON.stringify({success: true}));","\t\t\t\t\t\tresponse.end();","\t\t\t\t\t}","\t\t\t\t});","\t\t\t}","\t\t});","\t});","}","","function login(request, response) {","    parse_post_data(request, function(post_data) {","        var user = post_data;","","\t\tvar salt = crypto.createHash('sha1').update(user.username).digest('hex');","\t\tuser.password = crypto.createHash('sha1').update(user.password + salt).digest('hex');","","        model.validate_login(db, user, function(success, user_document) {","            if(!success) {","\t\t\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\t\t\tresponse.write(JSON.stringify({success: false}));","\t\t\t\tresponse.end();","\t\t\t} else {","\t\t\t\t// Update the database","\t\t\t\tmodel.login_user(db, user, function(error) {","\t\t\t\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\t\t\t\tresponse.write(JSON.stringify({","\t\t\t\t\t\tsuccess: !error,","\t\t\t\t\t\terror: error,","\t\t\t\t\t\tuser_id: user_document._id","\t\t\t\t\t}));","\t\t\t\t\tresponse.end();","\t\t\t\t});","\t\t    }","        });","    });","}","","function logout(request, response) {","\tparse_post_data(request, function(post_data) {","\t\tvar user_id = post_data.user_id;","\t\tmodel.logout_user(db, user_id, function(error) {","\t\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\t\tresponse.write(JSON.stringify({success: !error}));","\t\t\tresponse.end();","\t\t});","\t});","}","","function homepage(request, response) {","\tmu.clearCache();","","\t// Get user","\tvar user_id = request.headers[\"user-id\"];","\tmodel.find_user_by_id(db, user_id, function(success, user) {","\t\tif(!success) {","\t\t\tresponse.writeHead(500);","\t\t\tresponse.end();","\t\t\treturn;","\t\t}","","\t\tresponse.writeHead(200, {'Content-Type': 'text/html'});","\t\tvar stream = mu.compileAndRender('homepage.mustache', {user: user});","\t\tstream.pipe(response);","\t});","}","","// The logged in users wall","function wall(request, response) {","\tmu.clearCache();","","\t// Get user","\tvar user_id = request.headers[\"user-id\"];","\tmodel.find_user_by_id(db, user_id, function(success, user) {","\t\tif(!success) {","\t\t\tresponse.writeHead(500);","\t\t\tresponse.end();","\t\t\treturn;","\t\t}","","\t\t// Get wallposts","\t\tmodel.find_wallposts_to_user(db, user, function(success, wallposts) {","\t\t\tif(!success) {","\t\t\t\tresponse.writeHead(500);","\t\t\t\tresponse.end();","\t\t\t\treturn;","\t\t\t}","","\t\t\tresponse.writeHead(200, {'Content-Type': 'text/html'});","\t\t\tvar stream = mu.compileAndRender('wall.mustache', {wallposts: wallposts});","\t\t\tstream.pipe(response);","\t\t});","\t});","}","","function search_form(request, response) {","\tmu.clearCache();","\tresponse.writeHead(200, {'Content-Type': 'text/html'});","\tvar stream = mu.compileAndRender('search.mustache');","\tstream.pipe(response);","}","","function search(request, response) {","\tparse_post_data(request, function(post_data) {","\t\tvar query = post_data.query;","\t\tif(!query) {","\t\t\tresponse.writeHead(400);","\t\t\tresponse.end();","\t\t\treturn;","\t\t}","","\t\tmodel.search_users(db, query, function(error, results) {","\t\t\tvar vars = {","\t\t\t\tusers: results,","\t\t\t\tquery: query,","\t\t\t\tcount: results.length","\t\t\t};","\t\t\tresponse.writeHead(200, {'Content-Type': 'text/html'});","\t\t\tconsole.log(response);","\t\t\tvar stream = mu.compileAndRender('search_results.mustache', vars);","\t\t\tstream.pipe(response);","\t\t});","\t});","}","","// Gets the wallposts to a specified user","function wallposts(request, response) {","\tvar params = url.parse(request.url, true).query;","\tvar user_id = params[\"user_id\"];","\tvar ignore_user_id = params[\"ignore\"];","\tvar last_updated = request.headers[\"if-modified-since\"];","\t","\tvar criteria = {","\t\tto_id: new mongo.BSONPure.ObjectID(user_id),","\t\tdate: {$gt: new Date(last_updated)}","\t};","","\tif(ignore_user_id != undefined) {","\t\tcriteria[\"from_id\"] = {$ne: new mongo.BSONPure.ObjectID(ignore_user_id)};","\t}","","\tmodel.find_wallposts(db, criteria, function(success, wallposts) {","\t\tif(!success) {","\t\t\tresponse.writeHead(500);","\t\t\tresponse.end();","\t\t\treturn;","\t\t}","","\t\tif(wallposts.length) {","\t\t\tvar content = \"\";","\t\t\tmu.compileAndRender('wallposts.mustache', {wallposts: wallposts}).on('data', function(data) {","\t\t\t\tcontent += data;","\t\t\t}).on('end', function() {","\t\t\t\tvar last_updated = wallposts[wallposts.length - 1].date;","\t\t\t\tvar data = {","\t\t\t\t\tcontent: content,","\t\t\t\t\tlast_updated: last_updated","\t\t\t\t};","","\t\t\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\t\t\tresponse.write(JSON.stringify(data));","\t\t\t\tresponse.end();","\t\t\t});","\t\t} else {","\t\t\tresponse.end();","\t\t}","\t});","}","","function show_user(request, response, username) {","\tif(!username) {","\t\tresponse.writeHead(400);","\t\tresponse.end();","\t\treturn;","\t}","","\tvar viewer_id = request.headers[\"user-id\"];","\tmodel.find_user_by_username(db, username, function(success, user) {","\t\tif(!success) {","\t\t\tresponse.writeHead(500);","\t\t\tresponse.end();","\t\t\treturn;","\t\t}","","\t\t// Fetch viewer so we can check if the two people","\t\t// are friends","\t\tmodel.find_user_by_id(db, viewer_id, function(success, viewer) {","\t\t\tif(!success) {","\t\t\t\tresponse.writeHead(500);","\t\t\t\tresponse.end();","\t\t\t\treturn;","\t\t\t}","","\t\t\tvar is_friend = false;","\t\t\tfor(var index in viewer.friends) {","\t\t\t\tvar friend = viewer.friends[index];","\t\t\t\tif(friend.user_id.equals(user._id)) {","\t\t\t\t\tis_friend = true;","\t\t\t\t\tbreak;","\t\t\t\t}","\t\t\t}","","\t\t\t// Fetch wallposts","\t\t\tmodel.find_wallposts_to_user(db, user, function(success, wallposts) {","\t\t\t\tif(!success) {","\t\t\t\t\tresponse.writeHead(500);","\t\t\t\t\tresponse.end();","\t\t\t\t\treturn;","\t\t\t\t}","","\t\t\t\tvar can_post = viewer_id != user._id;","\t\t\t\tvar vars = {","\t\t\t\t\tuser: user,","\t\t\t\t\twallposts: wallposts,","\t\t\t\t\tcan_post: can_post,","\t\t\t\t\tis_friend: is_friend","\t\t\t\t};","","\t\t\t\tvar html = \"\";","\t\t\t\tmu.compileAndRender('user_page.mustache', vars).on('data', function(data) {","\t\t\t\t\thtml += data.toString();","\t\t\t\t}).on('end', function() {","\t\t\t\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\t\t\t\tvar data = {","\t\t\t\t\t\tcontent: html,","\t\t\t\t\t\tuser_id: user._id","\t\t\t\t\t};","\t\t\t\t\tresponse.write(JSON.stringify(data));","\t\t\t\t\tresponse.end();","\t\t\t\t});","\t\t\t});","\t\t});","","\t});","","}","","function save_wallpost(request, response) {","\tparse_post_data(request, function(post_data) {","\t\tvar from_id = request.headers[\"user-id\"];","\t\tvar to_id = post_data[\"to_id\"];","\t\tvar post = post_data[\"post\"];","","\t\tmodel.add_wallpost(db, from_id, to_id, post, function(success, wallpost) {","\t\t\tif(!success) {","\t\t\t\tresponse.writeHead(500);","\t\t\t\tresponse.end();","\t\t\t\treturn;","\t\t\t}","","\t\t\tresponse.writeHead(200, {'Content-Type': 'text/html'});","\t\t\tvar stream = mu.compileAndRender('wallpost.mustache', wallpost);","\t\t\tstream.pipe(response);","\t\t});","\t});","}","","function add_friend(request, response) {","\tparse_post_data(request, function(post_data) {","\t\tvar user_id = request.headers[\"user-id\"];","\t\tvar friend_id = post_data[\"friend_id\"];","","\t\tmodel.add_friend(db, user_id, friend_id, function(success) {","\t\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\t\tresponse.write(JSON.stringify({success: success}));","\t\t\tresponse.end();","\t\t});","\t});","}","","function friends(request, response) {","\tvar user_id = request.headers[\"user-id\"];","\tmodel.find_user_by_id(db, user_id, function(success, user) {","\t\tif(!success) {","\t\t\tresponse.writeHead(500);","\t\t\tresponse.end();","\t\t\treturn;","\t\t}","","\t\tresponse.writeHead(200, {'Content-Type': 'text/html'});","\t\tvar stream = mu.compileAndRender(\"friends.mustache\", {friends: user.friends});","\t\tstream.pipe(response);","\t});","}","","exports.base = base;","exports.index = index;","exports.register = register;","exports.login = login;","exports.logout = logout;","exports.valid_username = valid_username;","exports.homepage = homepage;","exports.wall = wall;","exports.search_form = search_form;","exports.search = search;","exports.show_user = show_user;","exports.save_wallpost = save_wallpost;","exports.wallposts = wallposts;","exports.add_friend = add_friend;","exports.friends = friends;"];
+_$jscoverage['requestHandlers.js'].source = ["var mongo = require('mongodb');","var util = require('util');","var model = require('./model');","var crypto = require('crypto');","var mu = require('mu2');","var url = require('url');","mu.root = __dirname + '../../../frontend/templates';","","function parse_post_data(request, callback) {","\tvar body = \"\";","\trequest.on(\"data\", function(data) {","\t\tbody += data;","\t});","","\trequest.on(\"end\", function() {","\t\tvar post_data = url.parse(request.url + \"?\" + body, true).query;","\t\tcallback(post_data);","\t});","}","","function base(req, res) {","\tmu.clearCache();","\tres.writeHead(200, {'Content-Type': 'text/html'});","\tvar stream = mu.compileAndRender(\"base.html\");","\tstream.pipe(res);","}","","function index(req, res) {","\tmu.clearCache();","\tres.writeHead(200, {'Content-Type': 'text/html'});","\tvar stream = mu.compileAndRender(\"index.html\");","\tstream.pipe(res);","}","","function valid(text) {","\treturn text != undefined &amp;&amp; text.length &gt; 0;","}","","function valid_username(request, response) {","\tvar q = url.parse(request.url, true).query;","\tif(typeof q[\"username\"] == \"undefined\") {","\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\tresponse.write(JSON.stringify({valid: false}));","\t\tresponse.end();","\t\treturn;","\t}","","\tmodel.username_exists(q.username, function(exists) {","\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\tresponse.write(JSON.stringify({valid: !exists}));","\t\tresponse.end();","\t});","}","","// User registration","function validate_register_input(fields, callback) {","\tif(!valid(fields.first_name)) return callback(false);","\tif(!valid(fields.last_name)) return callback(false);","\tif(!valid(fields.username)) return callback(false);","\tif(!valid(fields.password)) return callback(false);","\tif(!valid(fields.password_repeat)) return callback(false);","\tif(!valid(fields.email)) return callback(false);","","\tif(fields.password != fields.password_repeat)","\t\treturn callback(false);","","\tmodel.username_exists(fields.username, function(exists) {","\t\tcallback(!exists);","\t});","}","","function register(request, response) {","\tparse_post_data(request, function(fields) {","\t\t// Validate form","\t\tvalidate_register_input(fields, function(valid) {","\t\t\tif(!valid) {","\t\t\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\t\t\tresponse.write(JSON.stringify({success: false}));","\t\t\t\tresponse.end();","\t\t\t} else {","\t\t\t\t// Save user","\t\t\t\tvar user = fields;","\t\t\t\tdelete user[\"password_repeat\"];","","\t\t\t\t// Hash the users password","\t\t\t\tvar salt = crypto.createHash('sha1').update(user.username).digest('hex');","\t\t\t\tuser.password = crypto.createHash('sha1').update(user.password + salt).digest('hex');","","\t\t\t\t// Add a logged in flag to the user","\t\t\t\tuser[\"logged_in\"] = false;","","\t\t\t\t// Insert the user in the database","\t\t\t\tmodel.register_user(fields, function(error, record) {","\t\t\t\t\tif(error) {","\t\t\t\t\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\t\t\t\t\tresponse.write(JSON.stringify({success: false}));","\t\t\t\t\t\tresponse.end();","\t\t\t\t\t} else {","\t\t\t\t\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\t\t\t\t\tresponse.write(JSON.stringify({success: true}));","\t\t\t\t\t\tresponse.end();","\t\t\t\t\t}","\t\t\t\t});","\t\t\t}","\t\t});","\t});","}","","function login(request, response) {","    parse_post_data(request, function(post_data) {","        var user = post_data;","\t\tvar salt = crypto.createHash('sha1').update(user.username).digest('hex');","\t\tuser.password = crypto.createHash('sha1').update(user.password + salt).digest('hex');","","        model.validate_login(user, function(success, user_document) {","            if(!success) {","\t\t\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\t\t\tresponse.write(JSON.stringify({success: false}));","\t\t\t\tresponse.end();","\t\t\t} else {","\t\t\t\t// Update the database","\t\t\t\tmodel.login_user(user, function(error) {","\t\t\t\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\t\t\t\tresponse.write(JSON.stringify({","\t\t\t\t\t\tsuccess: !error,","\t\t\t\t\t\terror: error,","\t\t\t\t\t\tuser_id: user_document._id","\t\t\t\t\t}));","\t\t\t\t\tresponse.end();","\t\t\t\t});","\t\t    }","        });","    });","}","","function logout(request, response) {","\tparse_post_data(request, function(post_data) {","\t\tvar user_id = post_data.user_id;","\t\tmodel.logout_user(user_id, function(error) {","\t\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\t\tresponse.write(JSON.stringify({success: !error}));","\t\t\tresponse.end();","\t\t});","\t});","}","","function homepage(request, response) {","\tmu.clearCache();","","\t// Get user","\tvar user_id = request.headers[\"user-id\"];","\tmodel.find_user_by_id(user_id, function(success, user) {","\t\tif(!success) {","\t\t\tresponse.writeHead(500);","\t\t\tresponse.end();","\t\t\treturn;","\t\t}","","\t\tresponse.writeHead(200, {'Content-Type': 'text/html'});","\t\tvar stream = mu.compileAndRender('homepage.mustache', {user: user});","\t\tstream.pipe(response);","\t});","}","","// The logged in users wall","function wall(request, response) {","\tmu.clearCache();","","\t// Get user","\tvar user_id = request.headers[\"user-id\"];","\tmodel.find_user_by_id(user_id, function(success, user) {","\t\tif(!success) {","\t\t\tresponse.writeHead(500);","\t\t\tresponse.end();","\t\t\treturn;","\t\t}","","\t\t// Get wallposts","\t\tmodel.find_wallposts_to_user(user, function(success, wallposts) {","\t\t\tif(!success) {","\t\t\t\tresponse.writeHead(500);","\t\t\t\tresponse.end();","\t\t\t\treturn;","\t\t\t}","","\t\t\tresponse.writeHead(200, {'Content-Type': 'text/html'});","\t\t\tvar stream = mu.compileAndRender('wall.mustache', {wallposts: wallposts});","\t\t\tstream.pipe(response);","\t\t});","\t});","}","","function search_form(request, response) {","\tmu.clearCache();","\tresponse.writeHead(200, {'Content-Type': 'text/html'});","\tvar stream = mu.compileAndRender('search.mustache');","\tstream.pipe(response);","}","","function search(request, response) {","\tparse_post_data(request, function(post_data) {","\t\tvar query = post_data.query;","\t\tif(!query) {","\t\t\tresponse.writeHead(400);","\t\t\tresponse.end();","\t\t\treturn;","\t\t}","","\t\tmodel.search_users(query, function(error, results) {","\t\t\tvar vars = {","\t\t\t\tusers: results,","\t\t\t\tquery: query,","\t\t\t\tcount: results.length","\t\t\t};","\t\t\tresponse.writeHead(200, {'Content-Type': 'text/html'});","\t\t\tvar stream = mu.compileAndRender('search_results.mustache', vars);","\t\t\tstream.pipe(response);","\t\t});","\t});","}","","// Gets the wallposts to a specified user","function wallposts(request, response) {","\tvar params = url.parse(request.url, true).query;","\tvar user_id = params[\"user_id\"];","\tvar ignore_user_id = params[\"ignore\"];","\tvar last_updated = request.headers[\"if-modified-since\"];","\t","\tvar criteria = {","\t\tto_id: new mongo.BSONPure.ObjectID(user_id),","\t\tdate: {$gt: new Date(last_updated)}","\t};","","\tif(ignore_user_id != undefined) {","\t\tcriteria[\"from_id\"] = {$ne: new mongo.BSONPure.ObjectID(ignore_user_id)};","\t}","","\tmodel.find_wallposts(criteria, function(success, wallposts) {","\t\tif(!success) {","\t\t\tresponse.writeHead(500);","\t\t\tresponse.end();","\t\t\treturn;","\t\t}","","\t\tif(wallposts.length) {","\t\t\tvar content = \"\";","\t\t\tmu.compileAndRender('wallposts.mustache', {wallposts: wallposts}).on('data', function(data) {","\t\t\t\tcontent += data;","\t\t\t}).on('end', function() {","\t\t\t\tvar last_updated = wallposts[wallposts.length - 1].date;","\t\t\t\tvar data = {","\t\t\t\t\tcontent: content,","\t\t\t\t\tlast_updated: last_updated","\t\t\t\t};","","\t\t\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\t\t\tresponse.write(JSON.stringify(data));","\t\t\t\tresponse.end();","\t\t\t});","\t\t} else {","\t\t\tresponse.end();","\t\t}","\t});","}","","function show_user(request, response, username) {","\tif(!username) {","\t\tresponse.writeHead(400);","\t\tresponse.end();","\t\treturn;","\t}","","\tvar viewer_id = request.headers[\"user-id\"];","\tmodel.find_user_by_username(username, function(success, user) {","\t\tif(!success) {","\t\t\tresponse.writeHead(500);","\t\t\tresponse.end();","\t\t\treturn;","\t\t}","","\t\t// Fetch viewer so we can check if the two people","\t\t// are friends","\t\tmodel.find_user_by_id(viewer_id, function(success, viewer) {","\t\t\tif(!success) {","\t\t\t\tresponse.writeHead(500);","\t\t\t\tresponse.end();","\t\t\t\treturn;","\t\t\t}","","\t\t\tvar is_friend = false;","\t\t\tfor(var index in viewer.friends) {","\t\t\t\tvar friend = viewer.friends[index];","\t\t\t\tif(friend.user_id.equals(user._id)) {","\t\t\t\t\tis_friend = true;","\t\t\t\t\tbreak;","\t\t\t\t}","\t\t\t}","","\t\t\t// Fetch wallposts","\t\t\tmodel.find_wallposts_to_user(user, function(success, wallposts) {","\t\t\t\tif(!success) {","\t\t\t\t\tresponse.writeHead(500);","\t\t\t\t\tresponse.end();","\t\t\t\t\treturn;","\t\t\t\t}","","\t\t\t\tvar can_post = viewer_id != user._id;","\t\t\t\tvar vars = {","\t\t\t\t\tuser: user,","\t\t\t\t\twallposts: wallposts,","\t\t\t\t\tcan_post: can_post,","\t\t\t\t\tis_friend: is_friend","\t\t\t\t};","","\t\t\t\tvar html = \"\";","\t\t\t\tmu.compileAndRender('user_page.mustache', vars).on('data', function(data) {","\t\t\t\t\thtml += data.toString();","\t\t\t\t}).on('end', function() {","\t\t\t\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\t\t\t\tvar data = {","\t\t\t\t\t\tcontent: html,","\t\t\t\t\t\tuser_id: user._id","\t\t\t\t\t};","\t\t\t\t\tresponse.write(JSON.stringify(data));","\t\t\t\t\tresponse.end();","\t\t\t\t});","\t\t\t});","\t\t});","","\t});","","}","","function save_wallpost(request, response) {","\tparse_post_data(request, function(post_data) {","\t\tvar from_id = request.headers[\"user-id\"];","\t\tvar to_id = post_data[\"to_id\"];","\t\tvar post = post_data[\"post\"];","","\t\tmodel.add_wallpost(from_id, to_id, post, function(success, wallpost) {","\t\t\tif(!success) {","\t\t\t\tresponse.writeHead(500);","\t\t\t\tresponse.end();","\t\t\t\treturn;","\t\t\t}","","\t\t\tresponse.writeHead(200, {'Content-Type': 'text/html'});","\t\t\tvar stream = mu.compileAndRender('wallpost.mustache', wallpost);","\t\t\tstream.pipe(response);","\t\t});","\t});","}","","function add_friend(request, response) {","\tparse_post_data(request, function(post_data) {","\t\tvar user_id = request.headers[\"user-id\"];","\t\tvar friend_id = post_data[\"friend_id\"];","","\t\tmodel.add_friend(user_id, friend_id, function(success) {","\t\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\t\tresponse.write(JSON.stringify({success: success}));","\t\t\tresponse.end();","\t\t});","\t});","}","","function friends(request, response) {","\tvar user_id = request.headers[\"user-id\"];","\tmodel.find_user_by_id(user_id, function(success, user) {","\t\tif(!success) {","\t\t\tresponse.writeHead(500);","\t\t\tresponse.end();","\t\t\treturn;","\t\t}","","\t\tresponse.writeHead(200, {'Content-Type': 'text/html'});","\t\tvar stream = mu.compileAndRender(\"friends.mustache\", {friends: user.friends});","\t\tstream.pipe(response);","\t});","}","","function chat(request, response, chat_id) {","\tif(!chat_id) {","\t\tresponse.writeHead(500);","\t\treturn response.end();","\t}","","\tmodel.find_chat_by_id(chat_id, function(success, chat) {","\t\tif(!success) {","\t\t\tresponse.writeHead(500);","\t\t\treturn response.end();","\t\t}","","\t\tvar user_id = request.headers[\"user-id\"];","\t\tmodel.find_user_by_id(user_id, function(success, user) {","\t\t\tvar member_list = [];","\t\t\tfor(var k in chat.members)","\t\t\t\tmember_list.push(chat.members[k]);","\t\t\tmember_list[member_list.length - 1].is_last = true;","","\t\t\tvar friends = [];","\t\t\tfor(var f in user.friends) {","\t\t\t\tvar friend = user.friends[f];","\t\t\t\tif(chat.members[friend.user_id] == undefined)","\t\t\t\t\tfriends.push(friend);","\t\t\t}","","\t\t\tconsole.log(friends);","","\t\t\tvar data = {","\t\t\t\tchat: chat,","\t\t\t\tmember_list: member_list,","\t\t\t\tfriends: friends,","\t\t\t\thas_friends: friends.length &gt; 0","\t\t\t};","","\t\t\tvar stream = mu.compileAndRender(\"chat.mustache\", data);","\t\t\tstream.pipe(response);","\t\t});","\t});","}","","exports.base = base;","exports.index = index;","exports.register = register;","exports.login = login;","exports.logout = logout;","exports.valid_username = valid_username;","exports.homepage = homepage;","exports.wall = wall;","exports.search_form = search_form;","exports.search = search;","exports.show_user = show_user;","exports.save_wallpost = save_wallpost;","exports.wallposts = wallposts;","exports.add_friend = add_friend;","exports.friends = friends;","exports.chat = chat;"];
 _$jscoverage['requestHandlers.js'][1]++;
 var mongo = require("mongodb");
 _$jscoverage['requestHandlers.js'][2]++;
@@ -300,172 +318,160 @@ var url = require("url");
 _$jscoverage['requestHandlers.js'][7]++;
 mu.root = (__dirname + "../../../frontend/templates");
 _$jscoverage['requestHandlers.js'][9]++;
-var mongo_server = new (mongo.Server)("localhost", 27017);
-_$jscoverage['requestHandlers.js'][10]++;
-var db = new (mongo.Db)("tdp013-project", mongo_server);
-_$jscoverage['requestHandlers.js'][13]++;
-db.open((function (err, db) {
-  _$jscoverage['requestHandlers.js'][14]++;
-  if (err) {
-    _$jscoverage['requestHandlers.js'][15]++;
-    console.log(("Error connecting to database:\n" + err));
-  }
-}));
-_$jscoverage['requestHandlers.js'][19]++;
 function parse_post_data(request, callback) {
-  _$jscoverage['requestHandlers.js'][20]++;
+  _$jscoverage['requestHandlers.js'][10]++;
   var body = "";
-  _$jscoverage['requestHandlers.js'][21]++;
+  _$jscoverage['requestHandlers.js'][11]++;
   request.on("data", (function (data) {
-  _$jscoverage['requestHandlers.js'][22]++;
+  _$jscoverage['requestHandlers.js'][12]++;
   body += data;
 }));
-  _$jscoverage['requestHandlers.js'][25]++;
+  _$jscoverage['requestHandlers.js'][15]++;
   request.on("end", (function () {
-  _$jscoverage['requestHandlers.js'][26]++;
+  _$jscoverage['requestHandlers.js'][16]++;
   var post_data = url.parse((request.url + "?" + body), true).query;
-  _$jscoverage['requestHandlers.js'][27]++;
+  _$jscoverage['requestHandlers.js'][17]++;
   callback(post_data);
 }));
 }
-_$jscoverage['requestHandlers.js'][31]++;
+_$jscoverage['requestHandlers.js'][21]++;
 function base(req, res) {
-  _$jscoverage['requestHandlers.js'][32]++;
+  _$jscoverage['requestHandlers.js'][22]++;
   mu.clearCache();
-  _$jscoverage['requestHandlers.js'][33]++;
+  _$jscoverage['requestHandlers.js'][23]++;
   res.writeHead(200, {"Content-Type": "text/html"});
-  _$jscoverage['requestHandlers.js'][34]++;
+  _$jscoverage['requestHandlers.js'][24]++;
   var stream = mu.compileAndRender("base.html");
-  _$jscoverage['requestHandlers.js'][35]++;
+  _$jscoverage['requestHandlers.js'][25]++;
   stream.pipe(res);
 }
-_$jscoverage['requestHandlers.js'][38]++;
+_$jscoverage['requestHandlers.js'][28]++;
 function index(req, res) {
-  _$jscoverage['requestHandlers.js'][39]++;
+  _$jscoverage['requestHandlers.js'][29]++;
   mu.clearCache();
-  _$jscoverage['requestHandlers.js'][40]++;
+  _$jscoverage['requestHandlers.js'][30]++;
   res.writeHead(200, {"Content-Type": "text/html"});
-  _$jscoverage['requestHandlers.js'][41]++;
+  _$jscoverage['requestHandlers.js'][31]++;
   var stream = mu.compileAndRender("index.html");
-  _$jscoverage['requestHandlers.js'][42]++;
+  _$jscoverage['requestHandlers.js'][32]++;
   stream.pipe(res);
 }
-_$jscoverage['requestHandlers.js'][45]++;
+_$jscoverage['requestHandlers.js'][35]++;
 function valid(text) {
-  _$jscoverage['requestHandlers.js'][46]++;
+  _$jscoverage['requestHandlers.js'][36]++;
   return ((text != undefined) && (text.length > 0));
 }
-_$jscoverage['requestHandlers.js'][49]++;
+_$jscoverage['requestHandlers.js'][39]++;
 function valid_username(request, response) {
-  _$jscoverage['requestHandlers.js'][50]++;
+  _$jscoverage['requestHandlers.js'][40]++;
   var q = url.parse(request.url, true).query;
-  _$jscoverage['requestHandlers.js'][51]++;
+  _$jscoverage['requestHandlers.js'][41]++;
   if (((typeof q.username) == "undefined")) {
-    _$jscoverage['requestHandlers.js'][52]++;
+    _$jscoverage['requestHandlers.js'][42]++;
     response.writeHead(200, {"Content-Type": "application/json"});
-    _$jscoverage['requestHandlers.js'][53]++;
+    _$jscoverage['requestHandlers.js'][43]++;
     response.write(JSON.stringify({valid: false}));
-    _$jscoverage['requestHandlers.js'][54]++;
+    _$jscoverage['requestHandlers.js'][44]++;
     response.end();
-    _$jscoverage['requestHandlers.js'][55]++;
+    _$jscoverage['requestHandlers.js'][45]++;
     return;
   }
-  _$jscoverage['requestHandlers.js'][58]++;
-  model.username_exists(db, q.username, (function (exists) {
-  _$jscoverage['requestHandlers.js'][59]++;
+  _$jscoverage['requestHandlers.js'][48]++;
+  model.username_exists(q.username, (function (exists) {
+  _$jscoverage['requestHandlers.js'][49]++;
   response.writeHead(200, {"Content-Type": "application/json"});
-  _$jscoverage['requestHandlers.js'][60]++;
+  _$jscoverage['requestHandlers.js'][50]++;
   response.write(JSON.stringify({valid: (! exists)}));
-  _$jscoverage['requestHandlers.js'][61]++;
+  _$jscoverage['requestHandlers.js'][51]++;
   response.end();
 }));
 }
-_$jscoverage['requestHandlers.js'][66]++;
+_$jscoverage['requestHandlers.js'][56]++;
 function validate_register_input(fields, callback) {
-  _$jscoverage['requestHandlers.js'][67]++;
+  _$jscoverage['requestHandlers.js'][57]++;
   if ((! valid(fields.first_name))) {
-    _$jscoverage['requestHandlers.js'][67]++;
+    _$jscoverage['requestHandlers.js'][57]++;
     return callback(false);
   }
-  _$jscoverage['requestHandlers.js'][68]++;
+  _$jscoverage['requestHandlers.js'][58]++;
   if ((! valid(fields.last_name))) {
-    _$jscoverage['requestHandlers.js'][68]++;
+    _$jscoverage['requestHandlers.js'][58]++;
     return callback(false);
   }
-  _$jscoverage['requestHandlers.js'][69]++;
+  _$jscoverage['requestHandlers.js'][59]++;
   if ((! valid(fields.username))) {
-    _$jscoverage['requestHandlers.js'][69]++;
+    _$jscoverage['requestHandlers.js'][59]++;
     return callback(false);
   }
-  _$jscoverage['requestHandlers.js'][70]++;
+  _$jscoverage['requestHandlers.js'][60]++;
   if ((! valid(fields.password))) {
-    _$jscoverage['requestHandlers.js'][70]++;
+    _$jscoverage['requestHandlers.js'][60]++;
     return callback(false);
   }
-  _$jscoverage['requestHandlers.js'][71]++;
+  _$jscoverage['requestHandlers.js'][61]++;
   if ((! valid(fields.password_repeat))) {
-    _$jscoverage['requestHandlers.js'][71]++;
+    _$jscoverage['requestHandlers.js'][61]++;
     return callback(false);
   }
-  _$jscoverage['requestHandlers.js'][72]++;
+  _$jscoverage['requestHandlers.js'][62]++;
   if ((! valid(fields.email))) {
-    _$jscoverage['requestHandlers.js'][72]++;
+    _$jscoverage['requestHandlers.js'][62]++;
     return callback(false);
   }
-  _$jscoverage['requestHandlers.js'][74]++;
+  _$jscoverage['requestHandlers.js'][64]++;
   if ((fields.password != fields.password_repeat)) {
-    _$jscoverage['requestHandlers.js'][75]++;
+    _$jscoverage['requestHandlers.js'][65]++;
     return callback(false);
   }
-  _$jscoverage['requestHandlers.js'][77]++;
-  model.username_exists(db, fields.username, (function (exists) {
-  _$jscoverage['requestHandlers.js'][78]++;
+  _$jscoverage['requestHandlers.js'][67]++;
+  model.username_exists(fields.username, (function (exists) {
+  _$jscoverage['requestHandlers.js'][68]++;
   callback((! exists));
 }));
 }
-_$jscoverage['requestHandlers.js'][82]++;
+_$jscoverage['requestHandlers.js'][72]++;
 function register(request, response) {
-  _$jscoverage['requestHandlers.js'][83]++;
+  _$jscoverage['requestHandlers.js'][73]++;
   parse_post_data(request, (function (fields) {
-  _$jscoverage['requestHandlers.js'][85]++;
+  _$jscoverage['requestHandlers.js'][75]++;
   validate_register_input(fields, (function (valid) {
-  _$jscoverage['requestHandlers.js'][86]++;
+  _$jscoverage['requestHandlers.js'][76]++;
   if ((! valid)) {
-    _$jscoverage['requestHandlers.js'][87]++;
+    _$jscoverage['requestHandlers.js'][77]++;
     response.writeHead(200, {"Content-Type": "application/json"});
-    _$jscoverage['requestHandlers.js'][88]++;
+    _$jscoverage['requestHandlers.js'][78]++;
     response.write(JSON.stringify({success: false}));
-    _$jscoverage['requestHandlers.js'][89]++;
+    _$jscoverage['requestHandlers.js'][79]++;
     response.end();
   }
   else {
-    _$jscoverage['requestHandlers.js'][92]++;
+    _$jscoverage['requestHandlers.js'][82]++;
     var user = fields;
-    _$jscoverage['requestHandlers.js'][93]++;
+    _$jscoverage['requestHandlers.js'][83]++;
     (delete user.password_repeat);
-    _$jscoverage['requestHandlers.js'][96]++;
+    _$jscoverage['requestHandlers.js'][86]++;
     var salt = crypto.createHash("sha1").update(user.username).digest("hex");
-    _$jscoverage['requestHandlers.js'][97]++;
+    _$jscoverage['requestHandlers.js'][87]++;
     user.password = crypto.createHash("sha1").update((user.password + salt)).digest("hex");
-    _$jscoverage['requestHandlers.js'][100]++;
+    _$jscoverage['requestHandlers.js'][90]++;
     user.logged_in = false;
-    _$jscoverage['requestHandlers.js'][103]++;
-    model.register_user(db, fields, (function (error, record) {
-  _$jscoverage['requestHandlers.js'][104]++;
+    _$jscoverage['requestHandlers.js'][93]++;
+    model.register_user(fields, (function (error, record) {
+  _$jscoverage['requestHandlers.js'][94]++;
   if (error) {
-    _$jscoverage['requestHandlers.js'][105]++;
+    _$jscoverage['requestHandlers.js'][95]++;
     response.writeHead(200, {"Content-Type": "application/json"});
-    _$jscoverage['requestHandlers.js'][106]++;
+    _$jscoverage['requestHandlers.js'][96]++;
     response.write(JSON.stringify({success: false}));
-    _$jscoverage['requestHandlers.js'][107]++;
+    _$jscoverage['requestHandlers.js'][97]++;
     response.end();
   }
   else {
-    _$jscoverage['requestHandlers.js'][109]++;
+    _$jscoverage['requestHandlers.js'][99]++;
     response.writeHead(200, {"Content-Type": "application/json"});
-    _$jscoverage['requestHandlers.js'][110]++;
+    _$jscoverage['requestHandlers.js'][100]++;
     response.write(JSON.stringify({success: true}));
-    _$jscoverage['requestHandlers.js'][111]++;
+    _$jscoverage['requestHandlers.js'][101]++;
     response.end();
   }
 }));
@@ -473,399 +479,453 @@ function register(request, response) {
 }));
 }));
 }
-_$jscoverage['requestHandlers.js'][119]++;
+_$jscoverage['requestHandlers.js'][109]++;
 function login(request, response) {
-  _$jscoverage['requestHandlers.js'][120]++;
+  _$jscoverage['requestHandlers.js'][110]++;
   parse_post_data(request, (function (post_data) {
-  _$jscoverage['requestHandlers.js'][121]++;
+  _$jscoverage['requestHandlers.js'][111]++;
   var user = post_data;
-  _$jscoverage['requestHandlers.js'][123]++;
+  _$jscoverage['requestHandlers.js'][112]++;
   var salt = crypto.createHash("sha1").update(user.username).digest("hex");
-  _$jscoverage['requestHandlers.js'][124]++;
+  _$jscoverage['requestHandlers.js'][113]++;
   user.password = crypto.createHash("sha1").update((user.password + salt)).digest("hex");
-  _$jscoverage['requestHandlers.js'][126]++;
-  model.validate_login(db, user, (function (success, user_document) {
-  _$jscoverage['requestHandlers.js'][127]++;
+  _$jscoverage['requestHandlers.js'][115]++;
+  model.validate_login(user, (function (success, user_document) {
+  _$jscoverage['requestHandlers.js'][116]++;
   if ((! success)) {
-    _$jscoverage['requestHandlers.js'][128]++;
+    _$jscoverage['requestHandlers.js'][117]++;
     response.writeHead(200, {"Content-Type": "application/json"});
-    _$jscoverage['requestHandlers.js'][129]++;
+    _$jscoverage['requestHandlers.js'][118]++;
     response.write(JSON.stringify({success: false}));
-    _$jscoverage['requestHandlers.js'][130]++;
+    _$jscoverage['requestHandlers.js'][119]++;
     response.end();
   }
   else {
-    _$jscoverage['requestHandlers.js'][133]++;
-    model.login_user(db, user, (function (error) {
-  _$jscoverage['requestHandlers.js'][134]++;
+    _$jscoverage['requestHandlers.js'][122]++;
+    model.login_user(user, (function (error) {
+  _$jscoverage['requestHandlers.js'][123]++;
   response.writeHead(200, {"Content-Type": "application/json"});
-  _$jscoverage['requestHandlers.js'][135]++;
+  _$jscoverage['requestHandlers.js'][124]++;
   response.write(JSON.stringify({success: (! error), error: error, user_id: user_document._id}));
-  _$jscoverage['requestHandlers.js'][140]++;
+  _$jscoverage['requestHandlers.js'][129]++;
   response.end();
 }));
   }
+}));
+}));
+}
+_$jscoverage['requestHandlers.js'][136]++;
+function logout(request, response) {
+  _$jscoverage['requestHandlers.js'][137]++;
+  parse_post_data(request, (function (post_data) {
+  _$jscoverage['requestHandlers.js'][138]++;
+  var user_id = post_data.user_id;
+  _$jscoverage['requestHandlers.js'][139]++;
+  model.logout_user(user_id, (function (error) {
+  _$jscoverage['requestHandlers.js'][140]++;
+  response.writeHead(200, {"Content-Type": "application/json"});
+  _$jscoverage['requestHandlers.js'][141]++;
+  response.write(JSON.stringify({success: (! error)}));
+  _$jscoverage['requestHandlers.js'][142]++;
+  response.end();
 }));
 }));
 }
 _$jscoverage['requestHandlers.js'][147]++;
-function logout(request, response) {
-  _$jscoverage['requestHandlers.js'][148]++;
-  parse_post_data(request, (function (post_data) {
-  _$jscoverage['requestHandlers.js'][149]++;
-  var user_id = post_data.user_id;
-  _$jscoverage['requestHandlers.js'][150]++;
-  model.logout_user(db, user_id, (function (error) {
-  _$jscoverage['requestHandlers.js'][151]++;
-  response.writeHead(200, {"Content-Type": "application/json"});
-  _$jscoverage['requestHandlers.js'][152]++;
-  response.write(JSON.stringify({success: (! error)}));
-  _$jscoverage['requestHandlers.js'][153]++;
-  response.end();
-}));
-}));
-}
-_$jscoverage['requestHandlers.js'][158]++;
 function homepage(request, response) {
+  _$jscoverage['requestHandlers.js'][148]++;
+  mu.clearCache();
+  _$jscoverage['requestHandlers.js'][151]++;
+  var user_id = request.headers["user-id"];
+  _$jscoverage['requestHandlers.js'][152]++;
+  model.find_user_by_id(user_id, (function (success, user) {
+  _$jscoverage['requestHandlers.js'][153]++;
+  if ((! success)) {
+    _$jscoverage['requestHandlers.js'][154]++;
+    response.writeHead(500);
+    _$jscoverage['requestHandlers.js'][155]++;
+    response.end();
+    _$jscoverage['requestHandlers.js'][156]++;
+    return;
+  }
   _$jscoverage['requestHandlers.js'][159]++;
-  mu.clearCache();
-  _$jscoverage['requestHandlers.js'][162]++;
-  var user_id = request.headers["user-id"];
-  _$jscoverage['requestHandlers.js'][163]++;
-  model.find_user_by_id(db, user_id, (function (success, user) {
-  _$jscoverage['requestHandlers.js'][164]++;
-  if ((! success)) {
-    _$jscoverage['requestHandlers.js'][165]++;
-    response.writeHead(500);
-    _$jscoverage['requestHandlers.js'][166]++;
-    response.end();
-    _$jscoverage['requestHandlers.js'][167]++;
-    return;
-  }
-  _$jscoverage['requestHandlers.js'][170]++;
   response.writeHead(200, {"Content-Type": "text/html"});
-  _$jscoverage['requestHandlers.js'][171]++;
+  _$jscoverage['requestHandlers.js'][160]++;
   var stream = mu.compileAndRender("homepage.mustache", {user: user});
-  _$jscoverage['requestHandlers.js'][172]++;
+  _$jscoverage['requestHandlers.js'][161]++;
   stream.pipe(response);
 }));
 }
-_$jscoverage['requestHandlers.js'][177]++;
+_$jscoverage['requestHandlers.js'][166]++;
 function wall(request, response) {
-  _$jscoverage['requestHandlers.js'][178]++;
+  _$jscoverage['requestHandlers.js'][167]++;
   mu.clearCache();
-  _$jscoverage['requestHandlers.js'][181]++;
+  _$jscoverage['requestHandlers.js'][170]++;
   var user_id = request.headers["user-id"];
-  _$jscoverage['requestHandlers.js'][182]++;
-  model.find_user_by_id(db, user_id, (function (success, user) {
-  _$jscoverage['requestHandlers.js'][183]++;
+  _$jscoverage['requestHandlers.js'][171]++;
+  model.find_user_by_id(user_id, (function (success, user) {
+  _$jscoverage['requestHandlers.js'][172]++;
   if ((! success)) {
-    _$jscoverage['requestHandlers.js'][184]++;
+    _$jscoverage['requestHandlers.js'][173]++;
     response.writeHead(500);
-    _$jscoverage['requestHandlers.js'][185]++;
+    _$jscoverage['requestHandlers.js'][174]++;
     response.end();
-    _$jscoverage['requestHandlers.js'][186]++;
+    _$jscoverage['requestHandlers.js'][175]++;
     return;
   }
-  _$jscoverage['requestHandlers.js'][190]++;
-  model.find_wallposts_to_user(db, user, (function (success, wallposts) {
-  _$jscoverage['requestHandlers.js'][191]++;
+  _$jscoverage['requestHandlers.js'][179]++;
+  model.find_wallposts_to_user(user, (function (success, wallposts) {
+  _$jscoverage['requestHandlers.js'][180]++;
   if ((! success)) {
-    _$jscoverage['requestHandlers.js'][192]++;
+    _$jscoverage['requestHandlers.js'][181]++;
     response.writeHead(500);
-    _$jscoverage['requestHandlers.js'][193]++;
+    _$jscoverage['requestHandlers.js'][182]++;
     response.end();
-    _$jscoverage['requestHandlers.js'][194]++;
+    _$jscoverage['requestHandlers.js'][183]++;
     return;
   }
-  _$jscoverage['requestHandlers.js'][197]++;
+  _$jscoverage['requestHandlers.js'][186]++;
   response.writeHead(200, {"Content-Type": "text/html"});
-  _$jscoverage['requestHandlers.js'][198]++;
+  _$jscoverage['requestHandlers.js'][187]++;
   var stream = mu.compileAndRender("wall.mustache", {wallposts: wallposts});
-  _$jscoverage['requestHandlers.js'][199]++;
+  _$jscoverage['requestHandlers.js'][188]++;
   stream.pipe(response);
 }));
 }));
 }
-_$jscoverage['requestHandlers.js'][204]++;
+_$jscoverage['requestHandlers.js'][193]++;
 function search_form(request, response) {
-  _$jscoverage['requestHandlers.js'][205]++;
+  _$jscoverage['requestHandlers.js'][194]++;
   mu.clearCache();
-  _$jscoverage['requestHandlers.js'][206]++;
+  _$jscoverage['requestHandlers.js'][195]++;
   response.writeHead(200, {"Content-Type": "text/html"});
-  _$jscoverage['requestHandlers.js'][207]++;
+  _$jscoverage['requestHandlers.js'][196]++;
   var stream = mu.compileAndRender("search.mustache");
-  _$jscoverage['requestHandlers.js'][208]++;
+  _$jscoverage['requestHandlers.js'][197]++;
   stream.pipe(response);
 }
-_$jscoverage['requestHandlers.js'][211]++;
+_$jscoverage['requestHandlers.js'][200]++;
 function search(request, response) {
-  _$jscoverage['requestHandlers.js'][212]++;
+  _$jscoverage['requestHandlers.js'][201]++;
   parse_post_data(request, (function (post_data) {
-  _$jscoverage['requestHandlers.js'][213]++;
+  _$jscoverage['requestHandlers.js'][202]++;
   var query = post_data.query;
-  _$jscoverage['requestHandlers.js'][214]++;
+  _$jscoverage['requestHandlers.js'][203]++;
   if ((! query)) {
-    _$jscoverage['requestHandlers.js'][215]++;
+    _$jscoverage['requestHandlers.js'][204]++;
     response.writeHead(400);
-    _$jscoverage['requestHandlers.js'][216]++;
+    _$jscoverage['requestHandlers.js'][205]++;
     response.end();
-    _$jscoverage['requestHandlers.js'][217]++;
+    _$jscoverage['requestHandlers.js'][206]++;
     return;
   }
-  _$jscoverage['requestHandlers.js'][220]++;
-  model.search_users(db, query, (function (error, results) {
-  _$jscoverage['requestHandlers.js'][221]++;
+  _$jscoverage['requestHandlers.js'][209]++;
+  model.search_users(query, (function (error, results) {
+  _$jscoverage['requestHandlers.js'][210]++;
   var vars = {users: results, query: query, count: results.length};
-  _$jscoverage['requestHandlers.js'][226]++;
+  _$jscoverage['requestHandlers.js'][215]++;
   response.writeHead(200, {"Content-Type": "text/html"});
-  _$jscoverage['requestHandlers.js'][227]++;
-  console.log(response);
-  _$jscoverage['requestHandlers.js'][228]++;
+  _$jscoverage['requestHandlers.js'][216]++;
   var stream = mu.compileAndRender("search_results.mustache", vars);
-  _$jscoverage['requestHandlers.js'][229]++;
+  _$jscoverage['requestHandlers.js'][217]++;
   stream.pipe(response);
 }));
 }));
 }
-_$jscoverage['requestHandlers.js'][235]++;
+_$jscoverage['requestHandlers.js'][223]++;
 function wallposts(request, response) {
-  _$jscoverage['requestHandlers.js'][236]++;
+  _$jscoverage['requestHandlers.js'][224]++;
   var params = url.parse(request.url, true).query;
-  _$jscoverage['requestHandlers.js'][237]++;
+  _$jscoverage['requestHandlers.js'][225]++;
   var user_id = params.user_id;
-  _$jscoverage['requestHandlers.js'][238]++;
+  _$jscoverage['requestHandlers.js'][226]++;
   var ignore_user_id = params.ignore;
-  _$jscoverage['requestHandlers.js'][239]++;
+  _$jscoverage['requestHandlers.js'][227]++;
   var last_updated = request.headers["if-modified-since"];
-  _$jscoverage['requestHandlers.js'][241]++;
+  _$jscoverage['requestHandlers.js'][229]++;
   var criteria = {to_id: new (mongo.BSONPure.ObjectID)(user_id), date: {$gt: new Date(last_updated)}};
-  _$jscoverage['requestHandlers.js'][246]++;
+  _$jscoverage['requestHandlers.js'][234]++;
   if ((ignore_user_id != undefined)) {
-    _$jscoverage['requestHandlers.js'][247]++;
+    _$jscoverage['requestHandlers.js'][235]++;
     criteria.from_id = {$ne: new (mongo.BSONPure.ObjectID)(ignore_user_id)};
   }
-  _$jscoverage['requestHandlers.js'][250]++;
-  model.find_wallposts(db, criteria, (function (success, wallposts) {
-  _$jscoverage['requestHandlers.js'][251]++;
+  _$jscoverage['requestHandlers.js'][238]++;
+  model.find_wallposts(criteria, (function (success, wallposts) {
+  _$jscoverage['requestHandlers.js'][239]++;
   if ((! success)) {
-    _$jscoverage['requestHandlers.js'][252]++;
+    _$jscoverage['requestHandlers.js'][240]++;
     response.writeHead(500);
-    _$jscoverage['requestHandlers.js'][253]++;
+    _$jscoverage['requestHandlers.js'][241]++;
     response.end();
-    _$jscoverage['requestHandlers.js'][254]++;
+    _$jscoverage['requestHandlers.js'][242]++;
     return;
   }
-  _$jscoverage['requestHandlers.js'][257]++;
+  _$jscoverage['requestHandlers.js'][245]++;
   if (wallposts.length) {
-    _$jscoverage['requestHandlers.js'][258]++;
+    _$jscoverage['requestHandlers.js'][246]++;
     var content = "";
-    _$jscoverage['requestHandlers.js'][259]++;
+    _$jscoverage['requestHandlers.js'][247]++;
     mu.compileAndRender("wallposts.mustache", {wallposts: wallposts}).on("data", (function (data) {
-  _$jscoverage['requestHandlers.js'][260]++;
+  _$jscoverage['requestHandlers.js'][248]++;
   content += data;
 })).on("end", (function () {
-  _$jscoverage['requestHandlers.js'][262]++;
+  _$jscoverage['requestHandlers.js'][250]++;
   var last_updated = wallposts[(wallposts.length - 1)].date;
-  _$jscoverage['requestHandlers.js'][263]++;
+  _$jscoverage['requestHandlers.js'][251]++;
   var data = {content: content, last_updated: last_updated};
-  _$jscoverage['requestHandlers.js'][268]++;
+  _$jscoverage['requestHandlers.js'][256]++;
   response.writeHead(200, {"Content-Type": "application/json"});
-  _$jscoverage['requestHandlers.js'][269]++;
+  _$jscoverage['requestHandlers.js'][257]++;
   response.write(JSON.stringify(data));
-  _$jscoverage['requestHandlers.js'][270]++;
+  _$jscoverage['requestHandlers.js'][258]++;
   response.end();
 }));
   }
   else {
-    _$jscoverage['requestHandlers.js'][273]++;
+    _$jscoverage['requestHandlers.js'][261]++;
     response.end();
   }
 }));
 }
-_$jscoverage['requestHandlers.js'][278]++;
+_$jscoverage['requestHandlers.js'][266]++;
 function show_user(request, response, username) {
-  _$jscoverage['requestHandlers.js'][279]++;
+  _$jscoverage['requestHandlers.js'][267]++;
   if ((! username)) {
-    _$jscoverage['requestHandlers.js'][280]++;
+    _$jscoverage['requestHandlers.js'][268]++;
     response.writeHead(400);
-    _$jscoverage['requestHandlers.js'][281]++;
+    _$jscoverage['requestHandlers.js'][269]++;
     response.end();
-    _$jscoverage['requestHandlers.js'][282]++;
+    _$jscoverage['requestHandlers.js'][270]++;
     return;
   }
-  _$jscoverage['requestHandlers.js'][285]++;
+  _$jscoverage['requestHandlers.js'][273]++;
   var viewer_id = request.headers["user-id"];
-  _$jscoverage['requestHandlers.js'][286]++;
-  model.find_user_by_username(db, username, (function (success, user) {
-  _$jscoverage['requestHandlers.js'][287]++;
+  _$jscoverage['requestHandlers.js'][274]++;
+  model.find_user_by_username(username, (function (success, user) {
+  _$jscoverage['requestHandlers.js'][275]++;
   if ((! success)) {
-    _$jscoverage['requestHandlers.js'][288]++;
+    _$jscoverage['requestHandlers.js'][276]++;
     response.writeHead(500);
-    _$jscoverage['requestHandlers.js'][289]++;
+    _$jscoverage['requestHandlers.js'][277]++;
     response.end();
-    _$jscoverage['requestHandlers.js'][290]++;
+    _$jscoverage['requestHandlers.js'][278]++;
     return;
   }
-  _$jscoverage['requestHandlers.js'][295]++;
-  model.find_user_by_id(db, viewer_id, (function (success, viewer) {
-  _$jscoverage['requestHandlers.js'][296]++;
+  _$jscoverage['requestHandlers.js'][283]++;
+  model.find_user_by_id(viewer_id, (function (success, viewer) {
+  _$jscoverage['requestHandlers.js'][284]++;
   if ((! success)) {
-    _$jscoverage['requestHandlers.js'][297]++;
+    _$jscoverage['requestHandlers.js'][285]++;
     response.writeHead(500);
-    _$jscoverage['requestHandlers.js'][298]++;
+    _$jscoverage['requestHandlers.js'][286]++;
     response.end();
-    _$jscoverage['requestHandlers.js'][299]++;
+    _$jscoverage['requestHandlers.js'][287]++;
     return;
   }
-  _$jscoverage['requestHandlers.js'][302]++;
+  _$jscoverage['requestHandlers.js'][290]++;
   var is_friend = false;
-  _$jscoverage['requestHandlers.js'][303]++;
+  _$jscoverage['requestHandlers.js'][291]++;
   for (var index in viewer.friends) {
-    _$jscoverage['requestHandlers.js'][304]++;
+    _$jscoverage['requestHandlers.js'][292]++;
     var friend = viewer.friends[index];
-    _$jscoverage['requestHandlers.js'][305]++;
+    _$jscoverage['requestHandlers.js'][293]++;
     if (friend.user_id.equals(user._id)) {
-      _$jscoverage['requestHandlers.js'][306]++;
+      _$jscoverage['requestHandlers.js'][294]++;
       is_friend = true;
-      _$jscoverage['requestHandlers.js'][307]++;
+      _$jscoverage['requestHandlers.js'][295]++;
       break;
     }
 }
-  _$jscoverage['requestHandlers.js'][312]++;
-  model.find_wallposts_to_user(db, user, (function (success, wallposts) {
-  _$jscoverage['requestHandlers.js'][313]++;
+  _$jscoverage['requestHandlers.js'][300]++;
+  model.find_wallposts_to_user(user, (function (success, wallposts) {
+  _$jscoverage['requestHandlers.js'][301]++;
   if ((! success)) {
-    _$jscoverage['requestHandlers.js'][314]++;
+    _$jscoverage['requestHandlers.js'][302]++;
     response.writeHead(500);
-    _$jscoverage['requestHandlers.js'][315]++;
+    _$jscoverage['requestHandlers.js'][303]++;
     response.end();
-    _$jscoverage['requestHandlers.js'][316]++;
+    _$jscoverage['requestHandlers.js'][304]++;
     return;
   }
-  _$jscoverage['requestHandlers.js'][319]++;
+  _$jscoverage['requestHandlers.js'][307]++;
   var can_post = (viewer_id != user._id);
-  _$jscoverage['requestHandlers.js'][320]++;
+  _$jscoverage['requestHandlers.js'][308]++;
   var vars = {user: user, wallposts: wallposts, can_post: can_post, is_friend: is_friend};
-  _$jscoverage['requestHandlers.js'][327]++;
+  _$jscoverage['requestHandlers.js'][315]++;
   var html = "";
-  _$jscoverage['requestHandlers.js'][328]++;
+  _$jscoverage['requestHandlers.js'][316]++;
   mu.compileAndRender("user_page.mustache", vars).on("data", (function (data) {
-  _$jscoverage['requestHandlers.js'][329]++;
+  _$jscoverage['requestHandlers.js'][317]++;
   html += data.toString();
 })).on("end", (function () {
-  _$jscoverage['requestHandlers.js'][331]++;
+  _$jscoverage['requestHandlers.js'][319]++;
   response.writeHead(200, {"Content-Type": "application/json"});
-  _$jscoverage['requestHandlers.js'][332]++;
+  _$jscoverage['requestHandlers.js'][320]++;
   var data = {content: html, user_id: user._id};
-  _$jscoverage['requestHandlers.js'][336]++;
+  _$jscoverage['requestHandlers.js'][324]++;
   response.write(JSON.stringify(data));
-  _$jscoverage['requestHandlers.js'][337]++;
+  _$jscoverage['requestHandlers.js'][325]++;
   response.end();
 }));
 }));
 }));
 }));
 }
-_$jscoverage['requestHandlers.js'][346]++;
+_$jscoverage['requestHandlers.js'][334]++;
 function save_wallpost(request, response) {
-  _$jscoverage['requestHandlers.js'][347]++;
+  _$jscoverage['requestHandlers.js'][335]++;
   parse_post_data(request, (function (post_data) {
-  _$jscoverage['requestHandlers.js'][348]++;
+  _$jscoverage['requestHandlers.js'][336]++;
   var from_id = request.headers["user-id"];
-  _$jscoverage['requestHandlers.js'][349]++;
+  _$jscoverage['requestHandlers.js'][337]++;
   var to_id = post_data.to_id;
-  _$jscoverage['requestHandlers.js'][350]++;
+  _$jscoverage['requestHandlers.js'][338]++;
   var post = post_data.post;
-  _$jscoverage['requestHandlers.js'][352]++;
-  model.add_wallpost(db, from_id, to_id, post, (function (success, wallpost) {
-  _$jscoverage['requestHandlers.js'][353]++;
+  _$jscoverage['requestHandlers.js'][340]++;
+  model.add_wallpost(from_id, to_id, post, (function (success, wallpost) {
+  _$jscoverage['requestHandlers.js'][341]++;
   if ((! success)) {
-    _$jscoverage['requestHandlers.js'][354]++;
+    _$jscoverage['requestHandlers.js'][342]++;
     response.writeHead(500);
-    _$jscoverage['requestHandlers.js'][355]++;
+    _$jscoverage['requestHandlers.js'][343]++;
     response.end();
-    _$jscoverage['requestHandlers.js'][356]++;
+    _$jscoverage['requestHandlers.js'][344]++;
     return;
   }
-  _$jscoverage['requestHandlers.js'][359]++;
+  _$jscoverage['requestHandlers.js'][347]++;
   response.writeHead(200, {"Content-Type": "text/html"});
-  _$jscoverage['requestHandlers.js'][360]++;
+  _$jscoverage['requestHandlers.js'][348]++;
   var stream = mu.compileAndRender("wallpost.mustache", wallpost);
-  _$jscoverage['requestHandlers.js'][361]++;
+  _$jscoverage['requestHandlers.js'][349]++;
   stream.pipe(response);
 }));
 }));
 }
-_$jscoverage['requestHandlers.js'][366]++;
+_$jscoverage['requestHandlers.js'][354]++;
 function add_friend(request, response) {
-  _$jscoverage['requestHandlers.js'][367]++;
+  _$jscoverage['requestHandlers.js'][355]++;
   parse_post_data(request, (function (post_data) {
+  _$jscoverage['requestHandlers.js'][356]++;
+  var user_id = request.headers["user-id"];
+  _$jscoverage['requestHandlers.js'][357]++;
+  var friend_id = post_data.friend_id;
+  _$jscoverage['requestHandlers.js'][359]++;
+  model.add_friend(user_id, friend_id, (function (success) {
+  _$jscoverage['requestHandlers.js'][360]++;
+  response.writeHead(200, {"Content-Type": "application/json"});
+  _$jscoverage['requestHandlers.js'][361]++;
+  response.write(JSON.stringify({success: success}));
+  _$jscoverage['requestHandlers.js'][362]++;
+  response.end();
+}));
+}));
+}
+_$jscoverage['requestHandlers.js'][367]++;
+function friends(request, response) {
   _$jscoverage['requestHandlers.js'][368]++;
   var user_id = request.headers["user-id"];
   _$jscoverage['requestHandlers.js'][369]++;
-  var friend_id = post_data.friend_id;
-  _$jscoverage['requestHandlers.js'][371]++;
-  model.add_friend(db, user_id, friend_id, (function (success) {
-  _$jscoverage['requestHandlers.js'][372]++;
-  response.writeHead(200, {"Content-Type": "application/json"});
-  _$jscoverage['requestHandlers.js'][373]++;
-  response.write(JSON.stringify({success: success}));
-  _$jscoverage['requestHandlers.js'][374]++;
-  response.end();
-}));
-}));
-}
-_$jscoverage['requestHandlers.js'][379]++;
-function friends(request, response) {
-  _$jscoverage['requestHandlers.js'][380]++;
-  var user_id = request.headers["user-id"];
-  _$jscoverage['requestHandlers.js'][381]++;
-  model.find_user_by_id(db, user_id, (function (success, user) {
-  _$jscoverage['requestHandlers.js'][382]++;
+  model.find_user_by_id(user_id, (function (success, user) {
+  _$jscoverage['requestHandlers.js'][370]++;
   if ((! success)) {
-    _$jscoverage['requestHandlers.js'][383]++;
+    _$jscoverage['requestHandlers.js'][371]++;
     response.writeHead(500);
-    _$jscoverage['requestHandlers.js'][384]++;
+    _$jscoverage['requestHandlers.js'][372]++;
     response.end();
-    _$jscoverage['requestHandlers.js'][385]++;
+    _$jscoverage['requestHandlers.js'][373]++;
     return;
   }
-  _$jscoverage['requestHandlers.js'][388]++;
+  _$jscoverage['requestHandlers.js'][376]++;
   response.writeHead(200, {"Content-Type": "text/html"});
-  _$jscoverage['requestHandlers.js'][389]++;
+  _$jscoverage['requestHandlers.js'][377]++;
   var stream = mu.compileAndRender("friends.mustache", {friends: user.friends});
-  _$jscoverage['requestHandlers.js'][390]++;
+  _$jscoverage['requestHandlers.js'][378]++;
   stream.pipe(response);
 }));
 }
-_$jscoverage['requestHandlers.js'][394]++;
+_$jscoverage['requestHandlers.js'][382]++;
+function chat(request, response, chat_id) {
+  _$jscoverage['requestHandlers.js'][383]++;
+  if ((! chat_id)) {
+    _$jscoverage['requestHandlers.js'][384]++;
+    response.writeHead(500);
+    _$jscoverage['requestHandlers.js'][385]++;
+    return response.end();
+  }
+  _$jscoverage['requestHandlers.js'][388]++;
+  model.find_chat_by_id(chat_id, (function (success, chat) {
+  _$jscoverage['requestHandlers.js'][389]++;
+  if ((! success)) {
+    _$jscoverage['requestHandlers.js'][390]++;
+    response.writeHead(500);
+    _$jscoverage['requestHandlers.js'][391]++;
+    return response.end();
+  }
+  _$jscoverage['requestHandlers.js'][394]++;
+  var user_id = request.headers["user-id"];
+  _$jscoverage['requestHandlers.js'][395]++;
+  model.find_user_by_id(user_id, (function (success, user) {
+  _$jscoverage['requestHandlers.js'][396]++;
+  var member_list = [];
+  _$jscoverage['requestHandlers.js'][397]++;
+  for (var k in chat.members) {
+    _$jscoverage['requestHandlers.js'][398]++;
+    member_list.push(chat.members[k]);
+}
+  _$jscoverage['requestHandlers.js'][399]++;
+  member_list[(member_list.length - 1)].is_last = true;
+  _$jscoverage['requestHandlers.js'][401]++;
+  var friends = [];
+  _$jscoverage['requestHandlers.js'][402]++;
+  for (var f in user.friends) {
+    _$jscoverage['requestHandlers.js'][403]++;
+    var friend = user.friends[f];
+    _$jscoverage['requestHandlers.js'][404]++;
+    if ((chat.members[friend.user_id] == undefined)) {
+      _$jscoverage['requestHandlers.js'][405]++;
+      friends.push(friend);
+    }
+}
+  _$jscoverage['requestHandlers.js'][408]++;
+  console.log(friends);
+  _$jscoverage['requestHandlers.js'][410]++;
+  var data = {chat: chat, member_list: member_list, friends: friends, has_friends: (friends.length > 0)};
+  _$jscoverage['requestHandlers.js'][417]++;
+  var stream = mu.compileAndRender("chat.mustache", data);
+  _$jscoverage['requestHandlers.js'][418]++;
+  stream.pipe(response);
+}));
+}));
+}
+_$jscoverage['requestHandlers.js'][423]++;
 exports.base = base;
-_$jscoverage['requestHandlers.js'][395]++;
+_$jscoverage['requestHandlers.js'][424]++;
 exports.index = index;
-_$jscoverage['requestHandlers.js'][396]++;
+_$jscoverage['requestHandlers.js'][425]++;
 exports.register = register;
-_$jscoverage['requestHandlers.js'][397]++;
+_$jscoverage['requestHandlers.js'][426]++;
 exports.login = login;
-_$jscoverage['requestHandlers.js'][398]++;
+_$jscoverage['requestHandlers.js'][427]++;
 exports.logout = logout;
-_$jscoverage['requestHandlers.js'][399]++;
+_$jscoverage['requestHandlers.js'][428]++;
 exports.valid_username = valid_username;
-_$jscoverage['requestHandlers.js'][400]++;
+_$jscoverage['requestHandlers.js'][429]++;
 exports.homepage = homepage;
-_$jscoverage['requestHandlers.js'][401]++;
+_$jscoverage['requestHandlers.js'][430]++;
 exports.wall = wall;
-_$jscoverage['requestHandlers.js'][402]++;
+_$jscoverage['requestHandlers.js'][431]++;
 exports.search_form = search_form;
-_$jscoverage['requestHandlers.js'][403]++;
+_$jscoverage['requestHandlers.js'][432]++;
 exports.search = search;
-_$jscoverage['requestHandlers.js'][404]++;
+_$jscoverage['requestHandlers.js'][433]++;
 exports.show_user = show_user;
-_$jscoverage['requestHandlers.js'][405]++;
+_$jscoverage['requestHandlers.js'][434]++;
 exports.save_wallpost = save_wallpost;
-_$jscoverage['requestHandlers.js'][406]++;
+_$jscoverage['requestHandlers.js'][435]++;
 exports.wallposts = wallposts;
-_$jscoverage['requestHandlers.js'][407]++;
+_$jscoverage['requestHandlers.js'][436]++;
 exports.add_friend = add_friend;
-_$jscoverage['requestHandlers.js'][408]++;
+_$jscoverage['requestHandlers.js'][437]++;
 exports.friends = friends;
+_$jscoverage['requestHandlers.js'][438]++;
+exports.chat = chat;

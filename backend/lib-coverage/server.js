@@ -41,32 +41,38 @@ if (! _$jscoverage['server.js']) {
   _$jscoverage['server.js'] = [];
   _$jscoverage['server.js'][1] = 0;
   _$jscoverage['server.js'][2] = 0;
-  _$jscoverage['server.js'][4] = 0;
+  _$jscoverage['server.js'][3] = 0;
   _$jscoverage['server.js'][5] = 0;
   _$jscoverage['server.js'][6] = 0;
   _$jscoverage['server.js'][7] = 0;
-  _$jscoverage['server.js'][10] = 0;
+  _$jscoverage['server.js'][8] = 0;
   _$jscoverage['server.js'][11] = 0;
-  _$jscoverage['server.js'][14] = 0;
+  _$jscoverage['server.js'][12] = 0;
+  _$jscoverage['server.js'][13] = 0;
+  _$jscoverage['server.js'][16] = 0;
 }
-_$jscoverage['server.js'].source = ["var http = require(\"http\")","var url = require(\"url\")","","function start(route, handlers) {","\tfunction onRequest(request, response) {","\t\tvar pathname = url.parse(request.url).pathname;","\t\troute(handlers, pathname, request, response);","\t}","","\thttp.createServer(onRequest).listen(8888);","\tconsole.log(\"Server started on http://localhost:8888/\");","}","","exports.start = start;"];
+_$jscoverage['server.js'].source = ["var http = require(\"http\")","var url = require(\"url\")","var socket_server = require(\"./socket_server\");","","function start(route, handlers) {","\tfunction onRequest(request, response) {","\t\tvar pathname = url.parse(request.url).pathname;","\t\troute(handlers, pathname, request, response);","\t}","","\tvar server = http.createServer(onRequest).listen(80);","\tsocket_server.bind(server);","\tconsole.log(\"Server started on http://localhost/\");","}","","exports.start = start;"];
 _$jscoverage['server.js'][1]++;
 var http = require("http");
 _$jscoverage['server.js'][2]++;
 var url = require("url");
-_$jscoverage['server.js'][4]++;
+_$jscoverage['server.js'][3]++;
+var socket_server = require("./socket_server");
+_$jscoverage['server.js'][5]++;
 function start(route, handlers) {
-  _$jscoverage['server.js'][5]++;
+  _$jscoverage['server.js'][6]++;
   function onRequest(request, response) {
-    _$jscoverage['server.js'][6]++;
-    var pathname = url.parse(request.url).pathname;
     _$jscoverage['server.js'][7]++;
+    var pathname = url.parse(request.url).pathname;
+    _$jscoverage['server.js'][8]++;
     route(handlers, pathname, request, response);
 }
-  _$jscoverage['server.js'][10]++;
-  http.createServer(onRequest).listen(8888);
   _$jscoverage['server.js'][11]++;
-  console.log("Server started on http://localhost:8888/");
+  var server = http.createServer(onRequest).listen(80);
+  _$jscoverage['server.js'][12]++;
+  socket_server.bind(server);
+  _$jscoverage['server.js'][13]++;
+  console.log("Server started on http://localhost/");
 }
-_$jscoverage['server.js'][14]++;
+_$jscoverage['server.js'][16]++;
 exports.start = start;

@@ -135,6 +135,7 @@ function login(request, response) {
 
 function logout(request, response) {
 	parse_post_data(request, function(post_data) {
+            console.log(post_data);
 		var user_id = post_data.user_id;
 		model.logout_user(user_id, function(error) {
 			response.writeHead(200, {'Content-Type': 'application/json'});

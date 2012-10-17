@@ -59,30 +59,31 @@ if (! _$jscoverage['router.js']) {
   _$jscoverage['router.js'][36] = 0;
   _$jscoverage['router.js'][37] = 0;
   _$jscoverage['router.js'][39] = 0;
-  _$jscoverage['router.js'][40] = 0;
   _$jscoverage['router.js'][41] = 0;
   _$jscoverage['router.js'][42] = 0;
   _$jscoverage['router.js'][43] = 0;
   _$jscoverage['router.js'][44] = 0;
-  _$jscoverage['router.js'][47] = 0;
-  _$jscoverage['router.js'][48] = 0;
+  _$jscoverage['router.js'][45] = 0;
+  _$jscoverage['router.js'][46] = 0;
   _$jscoverage['router.js'][49] = 0;
   _$jscoverage['router.js'][50] = 0;
+  _$jscoverage['router.js'][51] = 0;
   _$jscoverage['router.js'][52] = 0;
-  _$jscoverage['router.js'][53] = 0;
-  _$jscoverage['router.js'][56] = 0;
-  _$jscoverage['router.js'][57] = 0;
+  _$jscoverage['router.js'][54] = 0;
+  _$jscoverage['router.js'][55] = 0;
   _$jscoverage['router.js'][58] = 0;
-  _$jscoverage['router.js'][61] = 0;
-  _$jscoverage['router.js'][62] = 0;
+  _$jscoverage['router.js'][59] = 0;
+  _$jscoverage['router.js'][60] = 0;
   _$jscoverage['router.js'][63] = 0;
   _$jscoverage['router.js'][64] = 0;
-  _$jscoverage['router.js'][67] = 0;
-  _$jscoverage['router.js'][68] = 0;
+  _$jscoverage['router.js'][65] = 0;
+  _$jscoverage['router.js'][66] = 0;
+  _$jscoverage['router.js'][69] = 0;
   _$jscoverage['router.js'][70] = 0;
-  _$jscoverage['router.js'][73] = 0;
+  _$jscoverage['router.js'][72] = 0;
+  _$jscoverage['router.js'][75] = 0;
 }
-_$jscoverage['router.js'].source = ["","// Returns a handler that matches the given path","function match(handlers, request_path) {","\tfor(var route_path in handlers) {","\t\tif(route_path.indexOf('*') != -1) {","\t\t\tvar regex_string = route_path.replace(\"**\", \"(([a-zA-Z._-]+/?)+)\").replace(/\\*/g, \"([a-zA-Z._-]+)\");","\t\t\tvar regex = new RegExp(regex_string, \"i\");","\t\t\tvar matches = request_path.match(regex);","","\t\t\tif(!matches)","\t\t\t\tcontinue;","","\t\t\tif(matches[0] == request_path) {","\t\t\t\tvar params = [];","\t\t\t\tif(matches.length &gt; 2)","\t\t\t\t\tparams = matches.slice(1, matches.length - 1);","\t\t\t\telse","\t\t\t\t\tparams = [matches[1]];","\t\t\t\treturn {","\t\t\t\t\thandler: handlers[route_path],","\t\t\t\t\tparams: params","\t\t\t\t};","\t\t\t}","\t\t} else {","\t\t\tif(route_path == request_path) {","\t\t\t\treturn {","\t\t\t\t\thandler: handlers[route_path],","\t\t\t\t\tparams: []","\t\t\t\t};","\t\t\t}","\t\t}","\t}","\treturn false;","}","","function route(handlers, pathname, request, response) {","\tvar m = match(handlers, pathname);","","\tif(!m) {","\t\tconsole.log(\"No request handler found for \" + pathname);","\t\tresponse.writeHead(404, {'Content-Type': 'text/html'});","\t\tresponse.write(\"404 Not Found\");","\t\tresponse.end();","\t\treturn;","\t}","","\tvar handler = m.handler;","\tvar method = request.method;","\tvar args = [request, response];","\targs.push.apply(args, m.params);","","\tvar date = new Date();","\tconsole.log(\"[\" + date.toString() + \"] \" + request.method + \" \" + pathname);","","\t// Enable CORS","\tif(handler[\"cors_enabled\"] == true) {","\t\tresponse.setHeader(\"Access-Control-Allow-Origin\", \"*\");","\t\tresponse.setHeader(\"Access-Control-Allow-Methods\", \"POST, GET, OPTIONS\");","\t}","","\tif(request.method != \"OPTIONS\" &amp;&amp; typeof handler[method] != \"function\") {","\t\tresponse.writeHead(405);","\t\tresponse.end();","\t\treturn;","\t}","","\tif(request.method == \"OPTIONS\")","\t\trequest.end();","\telse","\t\thandler[method].apply(this, args);","}","","exports.route = route;"];
+_$jscoverage['router.js'].source = ["","// Returns a handler that matches the given path","function match(handlers, request_path) {","\tfor(var route_path in handlers) {","\t\tif(route_path.indexOf('*') != -1) {","\t\t\tvar regex_string = route_path.replace(\"**\", \"(([0-9a-zA-Z._-]+/?)+)\").replace(/\\*/g, \"([0-9a-zA-Z._-]+)\");","\t\t\tvar regex = new RegExp(regex_string, \"i\");","\t\t\tvar matches = request_path.match(regex);","","\t\t\tif(!matches)","\t\t\t\tcontinue;","","\t\t\tif(matches[0] == request_path) {","\t\t\t\tvar params = [];","\t\t\t\tif(matches.length &gt; 2)","\t\t\t\t\tparams = matches.slice(1, matches.length - 1);","\t\t\t\telse","\t\t\t\t\tparams = [matches[1]];","\t\t\t\treturn {","\t\t\t\t\thandler: handlers[route_path],","\t\t\t\t\tparams: params","\t\t\t\t};","\t\t\t}","\t\t} else {","\t\t\tif(route_path == request_path) {","\t\t\t\treturn {","\t\t\t\t\thandler: handlers[route_path],","\t\t\t\t\tparams: []","\t\t\t\t};","\t\t\t}","\t\t}","\t}","\treturn false;","}","","function route(handlers, pathname, request, response) {","\tif(pathname.substring(0, 10) == \"/socket.io\") return;","","\tvar m = match(handlers, pathname);","","\tif(!m) {","\t\tconsole.log(\"No request handler found for \" + pathname);","\t\tresponse.writeHead(404, {'Content-Type': 'text/html'});","\t\tresponse.write(\"404 Not Found\");","\t\tresponse.end();","\t\treturn;","\t}","","\tvar handler = m.handler;","\tvar method = request.method;","\tvar args = [request, response];","\targs.push.apply(args, m.params);","","\tvar date = new Date();","\tconsole.log(\"[\" + date.toString() + \"] \" + request.method + \" \" + pathname);","","\t// Enable CORS","\tif(handler[\"cors_enabled\"] == true) {","\t\tresponse.setHeader(\"Access-Control-Allow-Origin\", \"*\");","\t\tresponse.setHeader(\"Access-Control-Allow-Methods\", \"POST, GET, OPTIONS\");","\t}","","\tif(request.method != \"OPTIONS\" &amp;&amp; typeof handler[method] != \"function\") {","\t\tresponse.writeHead(405);","\t\tresponse.end();","\t\treturn;","\t}","","\tif(request.method == \"OPTIONS\")","\t\trequest.end();","\telse","\t\thandler[method].apply(this, args);","}","","exports.route = route;"];
 _$jscoverage['router.js'][3]++;
 function match(handlers, request_path) {
   _$jscoverage['router.js'][4]++;
@@ -90,7 +91,7 @@ function match(handlers, request_path) {
     _$jscoverage['router.js'][5]++;
     if ((route_path.indexOf("*") != -1)) {
       _$jscoverage['router.js'][6]++;
-      var regex_string = route_path.replace("**", "(([a-zA-Z._-]+/?)+)").replace(/\*/g, "([a-zA-Z._-]+)");
+      var regex_string = route_path.replace("**", "(([0-9a-zA-Z._-]+/?)+)").replace(/\*/g, "([0-9a-zA-Z._-]+)");
       _$jscoverage['router.js'][7]++;
       var regex = new RegExp(regex_string, "i");
       _$jscoverage['router.js'][8]++;
@@ -131,57 +132,62 @@ function match(handlers, request_path) {
 _$jscoverage['router.js'][36]++;
 function route(handlers, pathname, request, response) {
   _$jscoverage['router.js'][37]++;
-  var m = match(handlers, pathname);
-  _$jscoverage['router.js'][39]++;
-  if ((! m)) {
-    _$jscoverage['router.js'][40]++;
-    console.log(("No request handler found for " + pathname));
-    _$jscoverage['router.js'][41]++;
-    response.writeHead(404, {"Content-Type": "text/html"});
-    _$jscoverage['router.js'][42]++;
-    response.write("404 Not Found");
-    _$jscoverage['router.js'][43]++;
-    response.end();
-    _$jscoverage['router.js'][44]++;
+  if ((pathname.substring(0, 10) == "/socket.io")) {
+    _$jscoverage['router.js'][37]++;
     return;
   }
-  _$jscoverage['router.js'][47]++;
-  var handler = m.handler;
-  _$jscoverage['router.js'][48]++;
-  var method = request.method;
+  _$jscoverage['router.js'][39]++;
+  var m = match(handlers, pathname);
+  _$jscoverage['router.js'][41]++;
+  if ((! m)) {
+    _$jscoverage['router.js'][42]++;
+    console.log(("No request handler found for " + pathname));
+    _$jscoverage['router.js'][43]++;
+    response.writeHead(404, {"Content-Type": "text/html"});
+    _$jscoverage['router.js'][44]++;
+    response.write("404 Not Found");
+    _$jscoverage['router.js'][45]++;
+    response.end();
+    _$jscoverage['router.js'][46]++;
+    return;
+  }
   _$jscoverage['router.js'][49]++;
-  var args = [request, response];
+  var handler = m.handler;
   _$jscoverage['router.js'][50]++;
-  args.push.apply(args, m.params);
+  var method = request.method;
+  _$jscoverage['router.js'][51]++;
+  var args = [request, response];
   _$jscoverage['router.js'][52]++;
+  args.push.apply(args, m.params);
+  _$jscoverage['router.js'][54]++;
   var date = new Date();
-  _$jscoverage['router.js'][53]++;
+  _$jscoverage['router.js'][55]++;
   console.log(("[" + date.toString() + "] " + request.method + " " + pathname));
-  _$jscoverage['router.js'][56]++;
+  _$jscoverage['router.js'][58]++;
   if ((handler.cors_enabled == true)) {
-    _$jscoverage['router.js'][57]++;
+    _$jscoverage['router.js'][59]++;
     response.setHeader("Access-Control-Allow-Origin", "*");
-    _$jscoverage['router.js'][58]++;
+    _$jscoverage['router.js'][60]++;
     response.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS");
   }
-  _$jscoverage['router.js'][61]++;
+  _$jscoverage['router.js'][63]++;
   if (((request.method != "OPTIONS") && ((typeof handler[method]) != "function"))) {
-    _$jscoverage['router.js'][62]++;
-    response.writeHead(405);
-    _$jscoverage['router.js'][63]++;
-    response.end();
     _$jscoverage['router.js'][64]++;
+    response.writeHead(405);
+    _$jscoverage['router.js'][65]++;
+    response.end();
+    _$jscoverage['router.js'][66]++;
     return;
   }
-  _$jscoverage['router.js'][67]++;
+  _$jscoverage['router.js'][69]++;
   if ((request.method == "OPTIONS")) {
-    _$jscoverage['router.js'][68]++;
+    _$jscoverage['router.js'][70]++;
     request.end();
   }
   else {
-    _$jscoverage['router.js'][70]++;
+    _$jscoverage['router.js'][72]++;
     handler[method].apply(this, args);
   }
 }
-_$jscoverage['router.js'][73]++;
+_$jscoverage['router.js'][75]++;
 exports.route = route;
