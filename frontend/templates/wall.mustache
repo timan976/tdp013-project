@@ -1,4 +1,9 @@
 <h3>Your wall</h3>
 <div id="wallposts">
+	{{^wallposts}}
+		<em id="no_posts">No posts, yet.</em>
+	{{/wallposts}}
+
 	{{> wallposts.mustache}}
 </div>
+

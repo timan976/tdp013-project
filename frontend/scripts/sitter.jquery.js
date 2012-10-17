@@ -144,8 +144,7 @@ function display_friends(push_state) {
 
 function display_chat(chat_id, push_state) {
 	$("li.active").removeClass("active");
-	$("a[href='/messages']").parent().addClass("active");
-	
+
 	if(socket) {
 		socket.emit("rejoin", {
 			chat_id: chat_id
@@ -215,6 +214,7 @@ function poll_wallposts(user_id, ignore_user_id) {
 		if(e.data.message == "new") {
 			// New wallposts have been posted since we
 			// opened the page
+			$("#wallposts > #no_posts").remove();
 			$("#wallposts").append(e.data.content);
 		}
 	});
@@ -228,7 +228,7 @@ function poll_wallposts(user_id, ignore_user_id) {
 }
 
 function create_socket() {
-	socket = io.connect("http://localhost");
+	socket = io.connect();
 	socket.emit("init", {user_id: sessionStorage.user_id});
 
 	socket.on("created", function(chat_id) {
@@ -256,8 +256,23 @@ $(document).ready(function() {
 	$(document).on("keyup", "#register_username", validate_username);
 	$(document).on("change", "#register_username", validate_username);
 
-	$(document).on("click", "#login_error > .close", function() {
-		$("#login_error").hide();
+	$(document).on("submit", "#register", function() {
+		var data = $(this).serialize();
+		$.post("/register", data, function(response) {
+			if(response.success) {
+				$("#register input[type=text], #register input[type=password]").val("");
+				$("#registration_error").hide();
+				$("#registration_message").show();
+			} else {
+				$("#registration_message").hide();
+				$("#registration_error").show();
+			}
+		});
+		return false;
+	});
+
+	$(document).on("click", "#login_error > .close, #registration_error > .close", function() {
+		$(this).parent().hide();
 	});
 
 	$(document).on("submit", "#login", function() {
@@ -364,6 +379,7 @@ $(document).ready(function() {
 		}).done(function(response) {
 			$("#wallposts > #notice").hide();
 			$("#wallposts").append(response);
+			$("textarea[name='post']").val("");
 		});
 
 		return false;

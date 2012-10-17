@@ -60,7 +60,7 @@ function logout_user(user_id, callback) {
 function find_user(criteria, callback) {
 	db.collection("user", function(error, collection) {
 		collection.findOne(criteria, function(user_error, user_doc) {
-			callback(!error, user_doc);
+			callback(!error && user_doc, user_doc);
 		});
 	});
 }
@@ -152,7 +152,7 @@ function add_wallpost(from_id, to_id, post, callback) {
 			};
 
 			collection.insert(wallpost_record, function(post_error, wallpost_doc) {
-				callback(!post_error, wallpost_doc);
+				callback(!post_error && wallpost_doc, wallpost_doc);
 			});
 		})
 	})
@@ -235,7 +235,7 @@ function create_chat(members, callback) {
 function find_chat_by_id(chat_id, callback) {
 	db.collection("chat", function(error, collection) {
 		collection.findOne({_id: object_id(chat_id)}, function(find_error, chat) {
-			callback(!find_error, chat);
+			callback(!find_error && chat, chat);
 		});
 	});
 }
