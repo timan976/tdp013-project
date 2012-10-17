@@ -6,7 +6,7 @@ import time
 driver = webdriver.Firefox()
 
 ########################################
-driver.get("http://localhost:8888/")
+driver.get("http://localhost/")
 
 ########################################
 # Register a user with username test
@@ -27,11 +27,11 @@ passwordRepeat.send_keys("asd")
 email.send_keys("test@example.com")
 
 registerElement.submit()
-time.sleep(0.1)
+time.sleep(0.5)
 
 ########################################
 # 
-driver.get("http://localhost:8888/")
+driver.get("http://localhost/")
 
 registerElement = driver.find_element_by_name("register")
 firstName = driver.find_element_by_id("first_name")
@@ -63,10 +63,10 @@ assert "icon-ok-sign" in icon_elem.get_attribute("class")
 passwordRepeat.clear()
 passwordRepeat.send_keys("asd")
 registerElement.submit()
-time.sleep(0.1)
+time.sleep(0.5)
 
 # Creates a second user for further testing
-driver.get("http://localhost:8888/")
+driver.get("http://localhost/")
 
 registerElement = driver.find_element_by_name("register")
 firstName = driver.find_element_by_id("first_name")
@@ -88,7 +88,7 @@ print "Registrering!"
 
 ########################################
 # Login test
-driver.get("http://localhost:8888/")
+driver.get("http://localhost/")
 
 inputElement = driver.find_element_by_name("login")
 loginUsername = driver.find_element_by_id("username")
@@ -107,14 +107,14 @@ assert "display: block" in login_error_elem.get_attribute("style")
 loginPassword.clear()
 loginPassword.send_keys("asd")
 inputElement.submit()
-time.sleep(0.1)
+time.sleep(0.5)
 
 ########################################
 # Search for friend
 driver.find_element_by_link_text("Search").click()
-time.sleep(0.1)
+time.sleep(0.5)
 
-search_button_elem = driver.find_element_by_css_selector("input[name=send]")
+search_button_elem = driver.find_element_by_css_selector("input[name=query]")
 search_elem = driver.find_element_by_css_selector("input[name=query]")
 search_elem.send_keys("testarn")
 search_button_elem.click()
@@ -124,26 +124,26 @@ users_elem = driver.find_element_by_id("search_results")
 users = users_elem.find_elements_by_css_selector("a")[0]
 assert users.text == "testarn testsson (testarn)"
 users.click()
-time.sleep(0.1)
+time.sleep(0.5)
 
 ########################################
 # Add friend
 driver.find_element_by_id("friend_button").click()
-time.sleep(0.1)
+time.sleep(0.5)
 
 ########################################
 # Post on friends wall
 driver.find_element_by_link_text("Friends").click()
-time.sleep(0.1)
+time.sleep(0.5)
 
 driver.find_element_by_link_text("testarn testsson (testarn)").click()
-time.sleep(0.1)
+time.sleep(0.5)
 
 inputElement = driver.find_element_by_name("post")
 inputElement.send_keys("Test Message")
-time.sleep(0.1)
+time.sleep(0.5)
 inputElement.submit()
-time.sleep(0.1)
+time.sleep(0.5)
 
 
 messages = driver.find_elements_by_class_name("wallpost")

@@ -4,7 +4,7 @@ var assert = require('assert');
 
 require('../lib-coverage/main.js');
 
-var port = 8888;
+var port = 80;
 var endpoint = "http://localhost:" + port;
 
 describe("Server", function() {
@@ -39,11 +39,8 @@ describe("Server", function() {
     describe("POST register and login", function() {
         it("should return 200 OK", function(done) {
             request.post(endpoint + "/register?first_name=test&last_name=testsson&username=test&password=asd&password_repeat=asd&email=test@example.com").end(function(response) {
-                request.post(endpoint + "/login?username=test&password=asd").end(function(response) {
-                    
-                    response.status.should.equal(200);
-                    done();
-                });
+                response.status.should.equal(200);
+                done();
             });
         });
     });
@@ -77,6 +74,14 @@ describe("Server", function() {
     });
 
 
+    describe("POST /logout", function() {
+        it("should return 200 OK", function(done) {
+            request.post(endpoint + "/login?username=test&password=asd").end(function(response) {
+                response.status.should.equal(200);
+                done();
+            });
+        });
+    });
 });
 
 
