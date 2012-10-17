@@ -9,7 +9,7 @@ var sockets = {};
 
 function bind(server) {
 	io = io.listen(server);
-	io.set('origins', 'localhost:80');
+	io.set('origins', '*:80');
 
 	io.sockets.on("connection", function(socket) {
 		socket.on("init", function(data) {

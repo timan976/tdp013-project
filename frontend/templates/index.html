@@ -5,26 +5,37 @@
 	</p>
 
 	<div class="span5">
-		<form name="register" method="POST" action="/register" class="form-horizontal" id="register">
+		<form name="register" class="form-horizontal" id="register">
 			<legend>Become a member!</legend>
+
+			<div id="registration_error" class="alert alert-error">
+				<button type="button" class="close">x</button>
+				Couldn't complete registration. Please make sure all fields are filled in correctly.
+			</div>
+
+			<div id="registration_message" class="alert alert-success">
+				<button type="button" class="close">x</button>
+				Registration complete! Login to the right.
+			</div>
+
 			<div class="control-group">
 				<label class="control-label" for="first_name">First Name</label>
 				<div class="controls">
-					<input type="text" name="first_name" id="first_name" placeholder="John" />
+					<input type="text" name="first_name" id="first_name" placeholder="John" required />
 				</div>
 			</div>
 
 			<div class="control-group">
 				<label class="control-label" for="last_name">Last Name</label>
 				<div class="controls">
-					<input type="text" name="last_name" id="last_name" placeholder="Doe" />
+					<input type="text" name="last_name" id="last_name" placeholder="Doe" required />
 				</div>
 			</div>
 
 			<div class="control-group" id="register_control_group">
 				<label class="control-label" for="register_username">Username</label>
 				<div class="controls input-append">
-						<input type="text" name="username" id="register_username" placeholder="john_doe" /> 
+						<input type="text" name="username" id="register_username" placeholder="john_doe" required pattern="[A-Za-z_0-9]+"/> 
 						<span class="add-on"><i class="icon-minus-sign" id="username_icon"></i></span>
 				</div>
 			</div>
@@ -32,11 +43,11 @@
 			<div class="control-group" id="register_control_group">			
 				<label class="control-label" for="register_password">Password</label>
 				<div class="controls">                             
-						<input type="password" name="password" id="register_password" placeholder="Password" /> 
+						<input type="password" name="password" id="register_password" placeholder="Password" required /> 
 				</div>                                             
 				<br />                                             
 				<div class="controls">                             
-						<input type="password" name="password_repeat" id="password_repeat" placeholder="Repeat password" /> 
+						<input type="password" name="password_repeat" id="password_repeat" placeholder="Repeat password" required /> 
 				</div>                                             
 			</div>                                                 
                                                                    

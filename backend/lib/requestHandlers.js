@@ -337,6 +337,10 @@ function save_wallpost(request, response) {
 		var from_id = request.headers["user-id"];
 		var to_id = post_data["to_id"];
 		var post = post_data["post"];
+		if(post.trim().length == 0) {
+			response.writeHead(400);
+			return response.end();
+		}
 
 		model.add_wallpost(from_id, to_id, post, function(success, wallpost) {
 			if(!success) {
