@@ -128,181 +128,188 @@ if (! _$jscoverage['requestHandlers.js']) {
   _$jscoverage['requestHandlers.js'][140] = 0;
   _$jscoverage['requestHandlers.js'][141] = 0;
   _$jscoverage['requestHandlers.js'][142] = 0;
-  _$jscoverage['requestHandlers.js'][147] = 0;
+  _$jscoverage['requestHandlers.js'][143] = 0;
   _$jscoverage['requestHandlers.js'][148] = 0;
-  _$jscoverage['requestHandlers.js'][151] = 0;
+  _$jscoverage['requestHandlers.js'][149] = 0;
   _$jscoverage['requestHandlers.js'][152] = 0;
   _$jscoverage['requestHandlers.js'][153] = 0;
   _$jscoverage['requestHandlers.js'][154] = 0;
   _$jscoverage['requestHandlers.js'][155] = 0;
   _$jscoverage['requestHandlers.js'][156] = 0;
-  _$jscoverage['requestHandlers.js'][159] = 0;
+  _$jscoverage['requestHandlers.js'][157] = 0;
   _$jscoverage['requestHandlers.js'][160] = 0;
   _$jscoverage['requestHandlers.js'][161] = 0;
-  _$jscoverage['requestHandlers.js'][166] = 0;
+  _$jscoverage['requestHandlers.js'][162] = 0;
   _$jscoverage['requestHandlers.js'][167] = 0;
-  _$jscoverage['requestHandlers.js'][170] = 0;
+  _$jscoverage['requestHandlers.js'][168] = 0;
   _$jscoverage['requestHandlers.js'][171] = 0;
   _$jscoverage['requestHandlers.js'][172] = 0;
   _$jscoverage['requestHandlers.js'][173] = 0;
   _$jscoverage['requestHandlers.js'][174] = 0;
   _$jscoverage['requestHandlers.js'][175] = 0;
-  _$jscoverage['requestHandlers.js'][179] = 0;
+  _$jscoverage['requestHandlers.js'][176] = 0;
   _$jscoverage['requestHandlers.js'][180] = 0;
   _$jscoverage['requestHandlers.js'][181] = 0;
   _$jscoverage['requestHandlers.js'][182] = 0;
   _$jscoverage['requestHandlers.js'][183] = 0;
-  _$jscoverage['requestHandlers.js'][186] = 0;
+  _$jscoverage['requestHandlers.js'][184] = 0;
   _$jscoverage['requestHandlers.js'][187] = 0;
   _$jscoverage['requestHandlers.js'][188] = 0;
-  _$jscoverage['requestHandlers.js'][193] = 0;
+  _$jscoverage['requestHandlers.js'][189] = 0;
   _$jscoverage['requestHandlers.js'][194] = 0;
   _$jscoverage['requestHandlers.js'][195] = 0;
   _$jscoverage['requestHandlers.js'][196] = 0;
   _$jscoverage['requestHandlers.js'][197] = 0;
-  _$jscoverage['requestHandlers.js'][200] = 0;
+  _$jscoverage['requestHandlers.js'][198] = 0;
   _$jscoverage['requestHandlers.js'][201] = 0;
   _$jscoverage['requestHandlers.js'][202] = 0;
   _$jscoverage['requestHandlers.js'][203] = 0;
   _$jscoverage['requestHandlers.js'][204] = 0;
   _$jscoverage['requestHandlers.js'][205] = 0;
   _$jscoverage['requestHandlers.js'][206] = 0;
-  _$jscoverage['requestHandlers.js'][209] = 0;
+  _$jscoverage['requestHandlers.js'][207] = 0;
   _$jscoverage['requestHandlers.js'][210] = 0;
-  _$jscoverage['requestHandlers.js'][215] = 0;
+  _$jscoverage['requestHandlers.js'][211] = 0;
   _$jscoverage['requestHandlers.js'][216] = 0;
   _$jscoverage['requestHandlers.js'][217] = 0;
-  _$jscoverage['requestHandlers.js'][223] = 0;
+  _$jscoverage['requestHandlers.js'][218] = 0;
   _$jscoverage['requestHandlers.js'][224] = 0;
   _$jscoverage['requestHandlers.js'][225] = 0;
   _$jscoverage['requestHandlers.js'][226] = 0;
   _$jscoverage['requestHandlers.js'][227] = 0;
-  _$jscoverage['requestHandlers.js'][229] = 0;
-  _$jscoverage['requestHandlers.js'][234] = 0;
+  _$jscoverage['requestHandlers.js'][228] = 0;
+  _$jscoverage['requestHandlers.js'][230] = 0;
   _$jscoverage['requestHandlers.js'][235] = 0;
-  _$jscoverage['requestHandlers.js'][238] = 0;
+  _$jscoverage['requestHandlers.js'][236] = 0;
   _$jscoverage['requestHandlers.js'][239] = 0;
   _$jscoverage['requestHandlers.js'][240] = 0;
   _$jscoverage['requestHandlers.js'][241] = 0;
   _$jscoverage['requestHandlers.js'][242] = 0;
-  _$jscoverage['requestHandlers.js'][245] = 0;
+  _$jscoverage['requestHandlers.js'][243] = 0;
   _$jscoverage['requestHandlers.js'][246] = 0;
   _$jscoverage['requestHandlers.js'][247] = 0;
   _$jscoverage['requestHandlers.js'][248] = 0;
-  _$jscoverage['requestHandlers.js'][250] = 0;
+  _$jscoverage['requestHandlers.js'][249] = 0;
   _$jscoverage['requestHandlers.js'][251] = 0;
-  _$jscoverage['requestHandlers.js'][256] = 0;
+  _$jscoverage['requestHandlers.js'][252] = 0;
   _$jscoverage['requestHandlers.js'][257] = 0;
   _$jscoverage['requestHandlers.js'][258] = 0;
-  _$jscoverage['requestHandlers.js'][261] = 0;
-  _$jscoverage['requestHandlers.js'][266] = 0;
+  _$jscoverage['requestHandlers.js'][259] = 0;
+  _$jscoverage['requestHandlers.js'][262] = 0;
   _$jscoverage['requestHandlers.js'][267] = 0;
   _$jscoverage['requestHandlers.js'][268] = 0;
   _$jscoverage['requestHandlers.js'][269] = 0;
   _$jscoverage['requestHandlers.js'][270] = 0;
-  _$jscoverage['requestHandlers.js'][273] = 0;
+  _$jscoverage['requestHandlers.js'][271] = 0;
   _$jscoverage['requestHandlers.js'][274] = 0;
   _$jscoverage['requestHandlers.js'][275] = 0;
   _$jscoverage['requestHandlers.js'][276] = 0;
   _$jscoverage['requestHandlers.js'][277] = 0;
   _$jscoverage['requestHandlers.js'][278] = 0;
-  _$jscoverage['requestHandlers.js'][283] = 0;
+  _$jscoverage['requestHandlers.js'][279] = 0;
   _$jscoverage['requestHandlers.js'][284] = 0;
   _$jscoverage['requestHandlers.js'][285] = 0;
   _$jscoverage['requestHandlers.js'][286] = 0;
   _$jscoverage['requestHandlers.js'][287] = 0;
-  _$jscoverage['requestHandlers.js'][290] = 0;
+  _$jscoverage['requestHandlers.js'][288] = 0;
   _$jscoverage['requestHandlers.js'][291] = 0;
   _$jscoverage['requestHandlers.js'][292] = 0;
   _$jscoverage['requestHandlers.js'][293] = 0;
   _$jscoverage['requestHandlers.js'][294] = 0;
   _$jscoverage['requestHandlers.js'][295] = 0;
-  _$jscoverage['requestHandlers.js'][300] = 0;
+  _$jscoverage['requestHandlers.js'][296] = 0;
   _$jscoverage['requestHandlers.js'][301] = 0;
   _$jscoverage['requestHandlers.js'][302] = 0;
   _$jscoverage['requestHandlers.js'][303] = 0;
   _$jscoverage['requestHandlers.js'][304] = 0;
-  _$jscoverage['requestHandlers.js'][307] = 0;
+  _$jscoverage['requestHandlers.js'][305] = 0;
   _$jscoverage['requestHandlers.js'][308] = 0;
-  _$jscoverage['requestHandlers.js'][315] = 0;
+  _$jscoverage['requestHandlers.js'][309] = 0;
   _$jscoverage['requestHandlers.js'][316] = 0;
   _$jscoverage['requestHandlers.js'][317] = 0;
-  _$jscoverage['requestHandlers.js'][319] = 0;
+  _$jscoverage['requestHandlers.js'][318] = 0;
   _$jscoverage['requestHandlers.js'][320] = 0;
-  _$jscoverage['requestHandlers.js'][324] = 0;
+  _$jscoverage['requestHandlers.js'][321] = 0;
   _$jscoverage['requestHandlers.js'][325] = 0;
-  _$jscoverage['requestHandlers.js'][334] = 0;
+  _$jscoverage['requestHandlers.js'][326] = 0;
   _$jscoverage['requestHandlers.js'][335] = 0;
   _$jscoverage['requestHandlers.js'][336] = 0;
   _$jscoverage['requestHandlers.js'][337] = 0;
   _$jscoverage['requestHandlers.js'][338] = 0;
+  _$jscoverage['requestHandlers.js'][339] = 0;
   _$jscoverage['requestHandlers.js'][340] = 0;
   _$jscoverage['requestHandlers.js'][341] = 0;
   _$jscoverage['requestHandlers.js'][342] = 0;
-  _$jscoverage['requestHandlers.js'][343] = 0;
-  _$jscoverage['requestHandlers.js'][344] = 0;
+  _$jscoverage['requestHandlers.js'][345] = 0;
+  _$jscoverage['requestHandlers.js'][346] = 0;
   _$jscoverage['requestHandlers.js'][347] = 0;
   _$jscoverage['requestHandlers.js'][348] = 0;
   _$jscoverage['requestHandlers.js'][349] = 0;
+  _$jscoverage['requestHandlers.js'][352] = 0;
+  _$jscoverage['requestHandlers.js'][353] = 0;
   _$jscoverage['requestHandlers.js'][354] = 0;
-  _$jscoverage['requestHandlers.js'][355] = 0;
-  _$jscoverage['requestHandlers.js'][356] = 0;
-  _$jscoverage['requestHandlers.js'][357] = 0;
   _$jscoverage['requestHandlers.js'][359] = 0;
   _$jscoverage['requestHandlers.js'][360] = 0;
   _$jscoverage['requestHandlers.js'][361] = 0;
   _$jscoverage['requestHandlers.js'][362] = 0;
-  _$jscoverage['requestHandlers.js'][367] = 0;
-  _$jscoverage['requestHandlers.js'][368] = 0;
+  _$jscoverage['requestHandlers.js'][364] = 0;
+  _$jscoverage['requestHandlers.js'][365] = 0;
+  _$jscoverage['requestHandlers.js'][366] = 0;
   _$jscoverage['requestHandlers.js'][369] = 0;
   _$jscoverage['requestHandlers.js'][370] = 0;
   _$jscoverage['requestHandlers.js'][371] = 0;
   _$jscoverage['requestHandlers.js'][372] = 0;
-  _$jscoverage['requestHandlers.js'][373] = 0;
-  _$jscoverage['requestHandlers.js'][376] = 0;
   _$jscoverage['requestHandlers.js'][377] = 0;
   _$jscoverage['requestHandlers.js'][378] = 0;
+  _$jscoverage['requestHandlers.js'][379] = 0;
+  _$jscoverage['requestHandlers.js'][380] = 0;
+  _$jscoverage['requestHandlers.js'][381] = 0;
   _$jscoverage['requestHandlers.js'][382] = 0;
   _$jscoverage['requestHandlers.js'][383] = 0;
-  _$jscoverage['requestHandlers.js'][384] = 0;
-  _$jscoverage['requestHandlers.js'][385] = 0;
+  _$jscoverage['requestHandlers.js'][386] = 0;
+  _$jscoverage['requestHandlers.js'][387] = 0;
   _$jscoverage['requestHandlers.js'][388] = 0;
-  _$jscoverage['requestHandlers.js'][389] = 0;
-  _$jscoverage['requestHandlers.js'][390] = 0;
-  _$jscoverage['requestHandlers.js'][391] = 0;
+  _$jscoverage['requestHandlers.js'][392] = 0;
+  _$jscoverage['requestHandlers.js'][393] = 0;
   _$jscoverage['requestHandlers.js'][394] = 0;
   _$jscoverage['requestHandlers.js'][395] = 0;
-  _$jscoverage['requestHandlers.js'][396] = 0;
-  _$jscoverage['requestHandlers.js'][397] = 0;
   _$jscoverage['requestHandlers.js'][398] = 0;
   _$jscoverage['requestHandlers.js'][399] = 0;
+  _$jscoverage['requestHandlers.js'][400] = 0;
   _$jscoverage['requestHandlers.js'][401] = 0;
-  _$jscoverage['requestHandlers.js'][402] = 0;
-  _$jscoverage['requestHandlers.js'][403] = 0;
   _$jscoverage['requestHandlers.js'][404] = 0;
   _$jscoverage['requestHandlers.js'][405] = 0;
+  _$jscoverage['requestHandlers.js'][406] = 0;
+  _$jscoverage['requestHandlers.js'][407] = 0;
   _$jscoverage['requestHandlers.js'][408] = 0;
-  _$jscoverage['requestHandlers.js'][410] = 0;
-  _$jscoverage['requestHandlers.js'][417] = 0;
+  _$jscoverage['requestHandlers.js'][409] = 0;
+  _$jscoverage['requestHandlers.js'][411] = 0;
+  _$jscoverage['requestHandlers.js'][412] = 0;
+  _$jscoverage['requestHandlers.js'][413] = 0;
+  _$jscoverage['requestHandlers.js'][414] = 0;
+  _$jscoverage['requestHandlers.js'][415] = 0;
   _$jscoverage['requestHandlers.js'][418] = 0;
-  _$jscoverage['requestHandlers.js'][423] = 0;
-  _$jscoverage['requestHandlers.js'][424] = 0;
-  _$jscoverage['requestHandlers.js'][425] = 0;
-  _$jscoverage['requestHandlers.js'][426] = 0;
+  _$jscoverage['requestHandlers.js'][420] = 0;
   _$jscoverage['requestHandlers.js'][427] = 0;
   _$jscoverage['requestHandlers.js'][428] = 0;
-  _$jscoverage['requestHandlers.js'][429] = 0;
-  _$jscoverage['requestHandlers.js'][430] = 0;
-  _$jscoverage['requestHandlers.js'][431] = 0;
-  _$jscoverage['requestHandlers.js'][432] = 0;
   _$jscoverage['requestHandlers.js'][433] = 0;
   _$jscoverage['requestHandlers.js'][434] = 0;
   _$jscoverage['requestHandlers.js'][435] = 0;
   _$jscoverage['requestHandlers.js'][436] = 0;
   _$jscoverage['requestHandlers.js'][437] = 0;
   _$jscoverage['requestHandlers.js'][438] = 0;
+  _$jscoverage['requestHandlers.js'][439] = 0;
+  _$jscoverage['requestHandlers.js'][440] = 0;
+  _$jscoverage['requestHandlers.js'][441] = 0;
+  _$jscoverage['requestHandlers.js'][442] = 0;
+  _$jscoverage['requestHandlers.js'][443] = 0;
+  _$jscoverage['requestHandlers.js'][444] = 0;
+  _$jscoverage['requestHandlers.js'][445] = 0;
+  _$jscoverage['requestHandlers.js'][446] = 0;
+  _$jscoverage['requestHandlers.js'][447] = 0;
+  _$jscoverage['requestHandlers.js'][448] = 0;
 }
-_$jscoverage['requestHandlers.js'].source = ["var mongo = require('mongodb');","var util = require('util');","var model = require('./model');","var crypto = require('crypto');","var mu = require('mu2');","var url = require('url');","mu.root = __dirname + '../../../frontend/templates';","","function parse_post_data(request, callback) {","\tvar body = \"\";","\trequest.on(\"data\", function(data) {","\t\tbody += data;","\t});","","\trequest.on(\"end\", function() {","\t\tvar post_data = url.parse(request.url + \"?\" + body, true).query;","\t\tcallback(post_data);","\t});","}","","function base(req, res) {","\tmu.clearCache();","\tres.writeHead(200, {'Content-Type': 'text/html'});","\tvar stream = mu.compileAndRender(\"base.html\");","\tstream.pipe(res);","}","","function index(req, res) {","\tmu.clearCache();","\tres.writeHead(200, {'Content-Type': 'text/html'});","\tvar stream = mu.compileAndRender(\"index.html\");","\tstream.pipe(res);","}","","function valid(text) {","\treturn text != undefined &amp;&amp; text.length &gt; 0;","}","","function valid_username(request, response) {","\tvar q = url.parse(request.url, true).query;","\tif(typeof q[\"username\"] == \"undefined\") {","\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\tresponse.write(JSON.stringify({valid: false}));","\t\tresponse.end();","\t\treturn;","\t}","","\tmodel.username_exists(q.username, function(exists) {","\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\tresponse.write(JSON.stringify({valid: !exists}));","\t\tresponse.end();","\t});","}","","// User registration","function validate_register_input(fields, callback) {","\tif(!valid(fields.first_name)) return callback(false);","\tif(!valid(fields.last_name)) return callback(false);","\tif(!valid(fields.username)) return callback(false);","\tif(!valid(fields.password)) return callback(false);","\tif(!valid(fields.password_repeat)) return callback(false);","\tif(!valid(fields.email)) return callback(false);","","\tif(fields.password != fields.password_repeat)","\t\treturn callback(false);","","\tmodel.username_exists(fields.username, function(exists) {","\t\tcallback(!exists);","\t});","}","","function register(request, response) {","\tparse_post_data(request, function(fields) {","\t\t// Validate form","\t\tvalidate_register_input(fields, function(valid) {","\t\t\tif(!valid) {","\t\t\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\t\t\tresponse.write(JSON.stringify({success: false}));","\t\t\t\tresponse.end();","\t\t\t} else {","\t\t\t\t// Save user","\t\t\t\tvar user = fields;","\t\t\t\tdelete user[\"password_repeat\"];","","\t\t\t\t// Hash the users password","\t\t\t\tvar salt = crypto.createHash('sha1').update(user.username).digest('hex');","\t\t\t\tuser.password = crypto.createHash('sha1').update(user.password + salt).digest('hex');","","\t\t\t\t// Add a logged in flag to the user","\t\t\t\tuser[\"logged_in\"] = false;","","\t\t\t\t// Insert the user in the database","\t\t\t\tmodel.register_user(fields, function(error, record) {","\t\t\t\t\tif(error) {","\t\t\t\t\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\t\t\t\t\tresponse.write(JSON.stringify({success: false}));","\t\t\t\t\t\tresponse.end();","\t\t\t\t\t} else {","\t\t\t\t\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\t\t\t\t\tresponse.write(JSON.stringify({success: true}));","\t\t\t\t\t\tresponse.end();","\t\t\t\t\t}","\t\t\t\t});","\t\t\t}","\t\t});","\t});","}","","function login(request, response) {","    parse_post_data(request, function(post_data) {","        var user = post_data;","\t\tvar salt = crypto.createHash('sha1').update(user.username).digest('hex');","\t\tuser.password = crypto.createHash('sha1').update(user.password + salt).digest('hex');","","        model.validate_login(user, function(success, user_document) {","            if(!success) {","\t\t\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\t\t\tresponse.write(JSON.stringify({success: false}));","\t\t\t\tresponse.end();","\t\t\t} else {","\t\t\t\t// Update the database","\t\t\t\tmodel.login_user(user, function(error) {","\t\t\t\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\t\t\t\tresponse.write(JSON.stringify({","\t\t\t\t\t\tsuccess: !error,","\t\t\t\t\t\terror: error,","\t\t\t\t\t\tuser_id: user_document._id","\t\t\t\t\t}));","\t\t\t\t\tresponse.end();","\t\t\t\t});","\t\t    }","        });","    });","}","","function logout(request, response) {","\tparse_post_data(request, function(post_data) {","\t\tvar user_id = post_data.user_id;","\t\tmodel.logout_user(user_id, function(error) {","\t\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\t\tresponse.write(JSON.stringify({success: !error}));","\t\t\tresponse.end();","\t\t});","\t});","}","","function homepage(request, response) {","\tmu.clearCache();","","\t// Get user","\tvar user_id = request.headers[\"user-id\"];","\tmodel.find_user_by_id(user_id, function(success, user) {","\t\tif(!success) {","\t\t\tresponse.writeHead(500);","\t\t\tresponse.end();","\t\t\treturn;","\t\t}","","\t\tresponse.writeHead(200, {'Content-Type': 'text/html'});","\t\tvar stream = mu.compileAndRender('homepage.mustache', {user: user});","\t\tstream.pipe(response);","\t});","}","","// The logged in users wall","function wall(request, response) {","\tmu.clearCache();","","\t// Get user","\tvar user_id = request.headers[\"user-id\"];","\tmodel.find_user_by_id(user_id, function(success, user) {","\t\tif(!success) {","\t\t\tresponse.writeHead(500);","\t\t\tresponse.end();","\t\t\treturn;","\t\t}","","\t\t// Get wallposts","\t\tmodel.find_wallposts_to_user(user, function(success, wallposts) {","\t\t\tif(!success) {","\t\t\t\tresponse.writeHead(500);","\t\t\t\tresponse.end();","\t\t\t\treturn;","\t\t\t}","","\t\t\tresponse.writeHead(200, {'Content-Type': 'text/html'});","\t\t\tvar stream = mu.compileAndRender('wall.mustache', {wallposts: wallposts});","\t\t\tstream.pipe(response);","\t\t});","\t});","}","","function search_form(request, response) {","\tmu.clearCache();","\tresponse.writeHead(200, {'Content-Type': 'text/html'});","\tvar stream = mu.compileAndRender('search.mustache');","\tstream.pipe(response);","}","","function search(request, response) {","\tparse_post_data(request, function(post_data) {","\t\tvar query = post_data.query;","\t\tif(!query) {","\t\t\tresponse.writeHead(400);","\t\t\tresponse.end();","\t\t\treturn;","\t\t}","","\t\tmodel.search_users(query, function(error, results) {","\t\t\tvar vars = {","\t\t\t\tusers: results,","\t\t\t\tquery: query,","\t\t\t\tcount: results.length","\t\t\t};","\t\t\tresponse.writeHead(200, {'Content-Type': 'text/html'});","\t\t\tvar stream = mu.compileAndRender('search_results.mustache', vars);","\t\t\tstream.pipe(response);","\t\t});","\t});","}","","// Gets the wallposts to a specified user","function wallposts(request, response) {","\tvar params = url.parse(request.url, true).query;","\tvar user_id = params[\"user_id\"];","\tvar ignore_user_id = params[\"ignore\"];","\tvar last_updated = request.headers[\"if-modified-since\"];","\t","\tvar criteria = {","\t\tto_id: new mongo.BSONPure.ObjectID(user_id),","\t\tdate: {$gt: new Date(last_updated)}","\t};","","\tif(ignore_user_id != undefined) {","\t\tcriteria[\"from_id\"] = {$ne: new mongo.BSONPure.ObjectID(ignore_user_id)};","\t}","","\tmodel.find_wallposts(criteria, function(success, wallposts) {","\t\tif(!success) {","\t\t\tresponse.writeHead(500);","\t\t\tresponse.end();","\t\t\treturn;","\t\t}","","\t\tif(wallposts.length) {","\t\t\tvar content = \"\";","\t\t\tmu.compileAndRender('wallposts.mustache', {wallposts: wallposts}).on('data', function(data) {","\t\t\t\tcontent += data;","\t\t\t}).on('end', function() {","\t\t\t\tvar last_updated = wallposts[wallposts.length - 1].date;","\t\t\t\tvar data = {","\t\t\t\t\tcontent: content,","\t\t\t\t\tlast_updated: last_updated","\t\t\t\t};","","\t\t\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\t\t\tresponse.write(JSON.stringify(data));","\t\t\t\tresponse.end();","\t\t\t});","\t\t} else {","\t\t\tresponse.end();","\t\t}","\t});","}","","function show_user(request, response, username) {","\tif(!username) {","\t\tresponse.writeHead(400);","\t\tresponse.end();","\t\treturn;","\t}","","\tvar viewer_id = request.headers[\"user-id\"];","\tmodel.find_user_by_username(username, function(success, user) {","\t\tif(!success) {","\t\t\tresponse.writeHead(500);","\t\t\tresponse.end();","\t\t\treturn;","\t\t}","","\t\t// Fetch viewer so we can check if the two people","\t\t// are friends","\t\tmodel.find_user_by_id(viewer_id, function(success, viewer) {","\t\t\tif(!success) {","\t\t\t\tresponse.writeHead(500);","\t\t\t\tresponse.end();","\t\t\t\treturn;","\t\t\t}","","\t\t\tvar is_friend = false;","\t\t\tfor(var index in viewer.friends) {","\t\t\t\tvar friend = viewer.friends[index];","\t\t\t\tif(friend.user_id.equals(user._id)) {","\t\t\t\t\tis_friend = true;","\t\t\t\t\tbreak;","\t\t\t\t}","\t\t\t}","","\t\t\t// Fetch wallposts","\t\t\tmodel.find_wallposts_to_user(user, function(success, wallposts) {","\t\t\t\tif(!success) {","\t\t\t\t\tresponse.writeHead(500);","\t\t\t\t\tresponse.end();","\t\t\t\t\treturn;","\t\t\t\t}","","\t\t\t\tvar can_post = viewer_id != user._id;","\t\t\t\tvar vars = {","\t\t\t\t\tuser: user,","\t\t\t\t\twallposts: wallposts,","\t\t\t\t\tcan_post: can_post,","\t\t\t\t\tis_friend: is_friend","\t\t\t\t};","","\t\t\t\tvar html = \"\";","\t\t\t\tmu.compileAndRender('user_page.mustache', vars).on('data', function(data) {","\t\t\t\t\thtml += data.toString();","\t\t\t\t}).on('end', function() {","\t\t\t\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\t\t\t\tvar data = {","\t\t\t\t\t\tcontent: html,","\t\t\t\t\t\tuser_id: user._id","\t\t\t\t\t};","\t\t\t\t\tresponse.write(JSON.stringify(data));","\t\t\t\t\tresponse.end();","\t\t\t\t});","\t\t\t});","\t\t});","","\t});","","}","","function save_wallpost(request, response) {","\tparse_post_data(request, function(post_data) {","\t\tvar from_id = request.headers[\"user-id\"];","\t\tvar to_id = post_data[\"to_id\"];","\t\tvar post = post_data[\"post\"];","","\t\tmodel.add_wallpost(from_id, to_id, post, function(success, wallpost) {","\t\t\tif(!success) {","\t\t\t\tresponse.writeHead(500);","\t\t\t\tresponse.end();","\t\t\t\treturn;","\t\t\t}","","\t\t\tresponse.writeHead(200, {'Content-Type': 'text/html'});","\t\t\tvar stream = mu.compileAndRender('wallpost.mustache', wallpost);","\t\t\tstream.pipe(response);","\t\t});","\t});","}","","function add_friend(request, response) {","\tparse_post_data(request, function(post_data) {","\t\tvar user_id = request.headers[\"user-id\"];","\t\tvar friend_id = post_data[\"friend_id\"];","","\t\tmodel.add_friend(user_id, friend_id, function(success) {","\t\t\tresponse.writeHead(200, {'Content-Type': 'application/json'});","\t\t\tresponse.write(JSON.stringify({success: success}));","\t\t\tresponse.end();","\t\t});","\t});","}","","function friends(request, response) {","\tvar user_id = request.headers[\"user-id\"];","\tmodel.find_user_by_id(user_id, function(success, user) {","\t\tif(!success) {","\t\t\tresponse.writeHead(500);","\t\t\tresponse.end();","\t\t\treturn;","\t\t}","","\t\tresponse.writeHead(200, {'Content-Type': 'text/html'});","\t\tvar stream = mu.compileAndRender(\"friends.mustache\", {friends: user.friends});","\t\tstream.pipe(response);","\t});","}","","function chat(request, response, chat_id) {","\tif(!chat_id) {","\t\tresponse.writeHead(500);","\t\treturn response.end();","\t}","","\tmodel.find_chat_by_id(chat_id, function(success, chat) {","\t\tif(!success) {","\t\t\tresponse.writeHead(500);","\t\t\treturn response.end();","\t\t}","","\t\tvar user_id = request.headers[\"user-id\"];","\t\tmodel.find_user_by_id(user_id, function(success, user) {","\t\t\tvar member_list = [];","\t\t\tfor(var k in chat.members)","\t\t\t\tmember_list.push(chat.members[k]);","\t\t\tmember_list[member_list.length - 1].is_last = true;","","\t\t\tvar friends = [];","\t\t\tfor(var f in user.friends) {","\t\t\t\tvar friend = user.friends[f];","\t\t\t\tif(chat.members[friend.user_id] == undefined)","\t\t\t\t\tfriends.push(friend);","\t\t\t}","","\t\t\tconsole.log(friends);","","\t\t\tvar data = {","\t\t\t\tchat: chat,","\t\t\t\tmember_list: member_list,","\t\t\t\tfriends: friends,","\t\t\t\thas_friends: friends.length &gt; 0","\t\t\t};","","\t\t\tvar stream = mu.compileAndRender(\"chat.mustache\", data);","\t\t\tstream.pipe(response);","\t\t});","\t});","}","","exports.base = base;","exports.index = index;","exports.register = register;","exports.login = login;","exports.logout = logout;","exports.valid_username = valid_username;","exports.homepage = homepage;","exports.wall = wall;","exports.search_form = search_form;","exports.search = search;","exports.show_user = show_user;","exports.save_wallpost = save_wallpost;","exports.wallposts = wallposts;","exports.add_friend = add_friend;","exports.friends = friends;","exports.chat = chat;"];
+_$jscoverage['requestHandlers.js'].source = ["<span class=\"k\">var</span> mongo <span class=\"k\">=</span> require<span class=\"k\">(</span><span class=\"s\">'mongodb'</span><span class=\"k\">);</span>","<span class=\"k\">var</span> util <span class=\"k\">=</span> require<span class=\"k\">(</span><span class=\"s\">'util'</span><span class=\"k\">);</span>","<span class=\"k\">var</span> model <span class=\"k\">=</span> require<span class=\"k\">(</span><span class=\"s\">'./model'</span><span class=\"k\">);</span>","<span class=\"k\">var</span> crypto <span class=\"k\">=</span> require<span class=\"k\">(</span><span class=\"s\">'crypto'</span><span class=\"k\">);</span>","<span class=\"k\">var</span> mu <span class=\"k\">=</span> require<span class=\"k\">(</span><span class=\"s\">'mu2'</span><span class=\"k\">);</span>","<span class=\"k\">var</span> url <span class=\"k\">=</span> require<span class=\"k\">(</span><span class=\"s\">'url'</span><span class=\"k\">);</span>","mu<span class=\"k\">.</span>root <span class=\"k\">=</span> __dirname <span class=\"k\">+</span> <span class=\"s\">'../../../frontend/templates'</span><span class=\"k\">;</span>","","<span class=\"k\">function</span> parse_post_data<span class=\"k\">(</span>request<span class=\"k\">,</span> callback<span class=\"k\">)</span> <span class=\"k\">{</span>","\t<span class=\"k\">var</span> body <span class=\"k\">=</span> <span class=\"s\">\"\"</span><span class=\"k\">;</span>","\trequest<span class=\"k\">.</span>on<span class=\"k\">(</span><span class=\"s\">\"data\"</span><span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">(</span>data<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\tbody <span class=\"k\">+=</span> data<span class=\"k\">;</span>","\t<span class=\"k\">}</span><span class=\"k\">);</span>","","\trequest<span class=\"k\">.</span>on<span class=\"k\">(</span><span class=\"s\">\"end\"</span><span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">()</span> <span class=\"k\">{</span>","\t\t<span class=\"k\">var</span> post_data <span class=\"k\">=</span> url<span class=\"k\">.</span>parse<span class=\"k\">(</span>request<span class=\"k\">.</span>url <span class=\"k\">+</span> <span class=\"s\">\"?\"</span> <span class=\"k\">+</span> body<span class=\"k\">,</span> <span class=\"k\">true</span><span class=\"k\">).</span>query<span class=\"k\">;</span>","\t\tcallback<span class=\"k\">(</span>post_data<span class=\"k\">);</span>","\t<span class=\"k\">}</span><span class=\"k\">);</span>","<span class=\"k\">}</span>","","<span class=\"k\">function</span> base<span class=\"k\">(</span>req<span class=\"k\">,</span> res<span class=\"k\">)</span> <span class=\"k\">{</span>","\tmu<span class=\"k\">.</span>clearCache<span class=\"k\">();</span>","\tres<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">200</span><span class=\"k\">,</span> <span class=\"k\">{</span><span class=\"s\">'Content-Type'</span><span class=\"k\">:</span> <span class=\"s\">'text/html'</span><span class=\"k\">}</span><span class=\"k\">);</span>","\t<span class=\"k\">var</span> stream <span class=\"k\">=</span> mu<span class=\"k\">.</span>compileAndRender<span class=\"k\">(</span><span class=\"s\">\"base.html\"</span><span class=\"k\">);</span>","\tstream<span class=\"k\">.</span>pipe<span class=\"k\">(</span>res<span class=\"k\">);</span>","<span class=\"k\">}</span>","","<span class=\"k\">function</span> index<span class=\"k\">(</span>req<span class=\"k\">,</span> res<span class=\"k\">)</span> <span class=\"k\">{</span>","\tmu<span class=\"k\">.</span>clearCache<span class=\"k\">();</span>","\tres<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">200</span><span class=\"k\">,</span> <span class=\"k\">{</span><span class=\"s\">'Content-Type'</span><span class=\"k\">:</span> <span class=\"s\">'text/html'</span><span class=\"k\">}</span><span class=\"k\">);</span>","\t<span class=\"k\">var</span> stream <span class=\"k\">=</span> mu<span class=\"k\">.</span>compileAndRender<span class=\"k\">(</span><span class=\"s\">\"index.html\"</span><span class=\"k\">);</span>","\tstream<span class=\"k\">.</span>pipe<span class=\"k\">(</span>res<span class=\"k\">);</span>","<span class=\"k\">}</span>","","<span class=\"k\">function</span> valid<span class=\"k\">(</span>text<span class=\"k\">)</span> <span class=\"k\">{</span>","\t<span class=\"k\">return</span> text <span class=\"k\">!=</span> undefined <span class=\"k\">&amp;&amp;</span> text<span class=\"k\">.</span>length <span class=\"k\">&gt;</span> <span class=\"s\">0</span><span class=\"k\">;</span>","<span class=\"k\">}</span>","","<span class=\"k\">function</span> valid_username<span class=\"k\">(</span>request<span class=\"k\">,</span> response<span class=\"k\">)</span> <span class=\"k\">{</span>","\t<span class=\"k\">var</span> q <span class=\"k\">=</span> url<span class=\"k\">.</span>parse<span class=\"k\">(</span>request<span class=\"k\">.</span>url<span class=\"k\">,</span> <span class=\"k\">true</span><span class=\"k\">).</span>query<span class=\"k\">;</span>","\t<span class=\"k\">if</span><span class=\"k\">(</span><span class=\"k\">typeof</span> q<span class=\"k\">[</span><span class=\"s\">\"username\"</span><span class=\"k\">]</span> <span class=\"k\">==</span> <span class=\"s\">\"undefined\"</span><span class=\"k\">)</span> <span class=\"k\">{</span>","\t\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">200</span><span class=\"k\">,</span> <span class=\"k\">{</span><span class=\"s\">'Content-Type'</span><span class=\"k\">:</span> <span class=\"s\">'application/json'</span><span class=\"k\">}</span><span class=\"k\">);</span>","\t\tresponse<span class=\"k\">.</span>write<span class=\"k\">(</span>JSON<span class=\"k\">.</span>stringify<span class=\"k\">(</span><span class=\"k\">{</span>valid<span class=\"k\">:</span> <span class=\"k\">false</span><span class=\"k\">}</span><span class=\"k\">));</span>","\t\tresponse<span class=\"k\">.</span>end<span class=\"k\">();</span>","\t\t<span class=\"k\">return</span><span class=\"k\">;</span>","\t<span class=\"k\">}</span>","","\tmodel<span class=\"k\">.</span>username_exists<span class=\"k\">(</span>q<span class=\"k\">.</span>username<span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">(</span>exists<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">200</span><span class=\"k\">,</span> <span class=\"k\">{</span><span class=\"s\">'Content-Type'</span><span class=\"k\">:</span> <span class=\"s\">'application/json'</span><span class=\"k\">}</span><span class=\"k\">);</span>","\t\tresponse<span class=\"k\">.</span>write<span class=\"k\">(</span>JSON<span class=\"k\">.</span>stringify<span class=\"k\">(</span><span class=\"k\">{</span>valid<span class=\"k\">:</span> <span class=\"k\">!</span>exists<span class=\"k\">}</span><span class=\"k\">));</span>","\t\tresponse<span class=\"k\">.</span>end<span class=\"k\">();</span>","\t<span class=\"k\">}</span><span class=\"k\">);</span>","<span class=\"k\">}</span>","","<span class=\"c\">// User registration</span>","<span class=\"k\">function</span> validate_register_input<span class=\"k\">(</span>fields<span class=\"k\">,</span> callback<span class=\"k\">)</span> <span class=\"k\">{</span>","\t<span class=\"k\">if</span><span class=\"k\">(!</span>valid<span class=\"k\">(</span>fields<span class=\"k\">.</span>first_name<span class=\"k\">))</span> <span class=\"k\">return</span> callback<span class=\"k\">(</span><span class=\"k\">false</span><span class=\"k\">);</span>","\t<span class=\"k\">if</span><span class=\"k\">(!</span>valid<span class=\"k\">(</span>fields<span class=\"k\">.</span>last_name<span class=\"k\">))</span> <span class=\"k\">return</span> callback<span class=\"k\">(</span><span class=\"k\">false</span><span class=\"k\">);</span>","\t<span class=\"k\">if</span><span class=\"k\">(!</span>valid<span class=\"k\">(</span>fields<span class=\"k\">.</span>username<span class=\"k\">))</span> <span class=\"k\">return</span> callback<span class=\"k\">(</span><span class=\"k\">false</span><span class=\"k\">);</span>","\t<span class=\"k\">if</span><span class=\"k\">(!</span>valid<span class=\"k\">(</span>fields<span class=\"k\">.</span>password<span class=\"k\">))</span> <span class=\"k\">return</span> callback<span class=\"k\">(</span><span class=\"k\">false</span><span class=\"k\">);</span>","\t<span class=\"k\">if</span><span class=\"k\">(!</span>valid<span class=\"k\">(</span>fields<span class=\"k\">.</span>password_repeat<span class=\"k\">))</span> <span class=\"k\">return</span> callback<span class=\"k\">(</span><span class=\"k\">false</span><span class=\"k\">);</span>","\t<span class=\"k\">if</span><span class=\"k\">(!</span>valid<span class=\"k\">(</span>fields<span class=\"k\">.</span>email<span class=\"k\">))</span> <span class=\"k\">return</span> callback<span class=\"k\">(</span><span class=\"k\">false</span><span class=\"k\">);</span>","","\t<span class=\"k\">if</span><span class=\"k\">(</span>fields<span class=\"k\">.</span>password <span class=\"k\">!=</span> fields<span class=\"k\">.</span>password_repeat<span class=\"k\">)</span>","\t\t<span class=\"k\">return</span> callback<span class=\"k\">(</span><span class=\"k\">false</span><span class=\"k\">);</span>","","\tmodel<span class=\"k\">.</span>username_exists<span class=\"k\">(</span>fields<span class=\"k\">.</span>username<span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">(</span>exists<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\tcallback<span class=\"k\">(!</span>exists<span class=\"k\">);</span>","\t<span class=\"k\">}</span><span class=\"k\">);</span>","<span class=\"k\">}</span>","","<span class=\"k\">function</span> register<span class=\"k\">(</span>request<span class=\"k\">,</span> response<span class=\"k\">)</span> <span class=\"k\">{</span>","\tparse_post_data<span class=\"k\">(</span>request<span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">(</span>fields<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t<span class=\"c\">// Validate form</span>","\t\tvalidate_register_input<span class=\"k\">(</span>fields<span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">(</span>valid<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\t<span class=\"k\">if</span><span class=\"k\">(!</span>valid<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\t\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">200</span><span class=\"k\">,</span> <span class=\"k\">{</span><span class=\"s\">'Content-Type'</span><span class=\"k\">:</span> <span class=\"s\">'application/json'</span><span class=\"k\">}</span><span class=\"k\">);</span>","\t\t\t\tresponse<span class=\"k\">.</span>write<span class=\"k\">(</span>JSON<span class=\"k\">.</span>stringify<span class=\"k\">(</span><span class=\"k\">{</span>success<span class=\"k\">:</span> <span class=\"k\">false</span><span class=\"k\">}</span><span class=\"k\">));</span>","\t\t\t\tresponse<span class=\"k\">.</span>end<span class=\"k\">();</span>","\t\t\t<span class=\"k\">}</span> <span class=\"k\">else</span> <span class=\"k\">{</span>","\t\t\t\t<span class=\"c\">// Save user</span>","\t\t\t\t<span class=\"k\">var</span> user <span class=\"k\">=</span> fields<span class=\"k\">;</span>","\t\t\t\t<span class=\"k\">delete</span> user<span class=\"k\">[</span><span class=\"s\">\"password_repeat\"</span><span class=\"k\">];</span>","","\t\t\t\t<span class=\"c\">// Hash the users password</span>","\t\t\t\t<span class=\"k\">var</span> salt <span class=\"k\">=</span> crypto<span class=\"k\">.</span>createHash<span class=\"k\">(</span><span class=\"s\">'sha1'</span><span class=\"k\">).</span>update<span class=\"k\">(</span>user<span class=\"k\">.</span>username<span class=\"k\">).</span>digest<span class=\"k\">(</span><span class=\"s\">'hex'</span><span class=\"k\">);</span>","\t\t\t\tuser<span class=\"k\">.</span>password <span class=\"k\">=</span> crypto<span class=\"k\">.</span>createHash<span class=\"k\">(</span><span class=\"s\">'sha1'</span><span class=\"k\">).</span>update<span class=\"k\">(</span>user<span class=\"k\">.</span>password <span class=\"k\">+</span> salt<span class=\"k\">).</span>digest<span class=\"k\">(</span><span class=\"s\">'hex'</span><span class=\"k\">);</span>","","\t\t\t\t<span class=\"c\">// Add a logged in flag to the user</span>","\t\t\t\tuser<span class=\"k\">[</span><span class=\"s\">\"logged_in\"</span><span class=\"k\">]</span> <span class=\"k\">=</span> <span class=\"k\">false</span><span class=\"k\">;</span>","","\t\t\t\t<span class=\"c\">// Insert the user in the database</span>","\t\t\t\tmodel<span class=\"k\">.</span>register_user<span class=\"k\">(</span>fields<span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">(</span>error<span class=\"k\">,</span> record<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\t\t\t<span class=\"k\">if</span><span class=\"k\">(</span>error<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\t\t\t\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">200</span><span class=\"k\">,</span> <span class=\"k\">{</span><span class=\"s\">'Content-Type'</span><span class=\"k\">:</span> <span class=\"s\">'application/json'</span><span class=\"k\">}</span><span class=\"k\">);</span>","\t\t\t\t\t\tresponse<span class=\"k\">.</span>write<span class=\"k\">(</span>JSON<span class=\"k\">.</span>stringify<span class=\"k\">(</span><span class=\"k\">{</span>success<span class=\"k\">:</span> <span class=\"k\">false</span><span class=\"k\">}</span><span class=\"k\">));</span>","\t\t\t\t\t\tresponse<span class=\"k\">.</span>end<span class=\"k\">();</span>","\t\t\t\t\t<span class=\"k\">}</span> <span class=\"k\">else</span> <span class=\"k\">{</span>","\t\t\t\t\t\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">200</span><span class=\"k\">,</span> <span class=\"k\">{</span><span class=\"s\">'Content-Type'</span><span class=\"k\">:</span> <span class=\"s\">'application/json'</span><span class=\"k\">}</span><span class=\"k\">);</span>","\t\t\t\t\t\tresponse<span class=\"k\">.</span>write<span class=\"k\">(</span>JSON<span class=\"k\">.</span>stringify<span class=\"k\">(</span><span class=\"k\">{</span>success<span class=\"k\">:</span> <span class=\"k\">true</span><span class=\"k\">}</span><span class=\"k\">));</span>","\t\t\t\t\t\tresponse<span class=\"k\">.</span>end<span class=\"k\">();</span>","\t\t\t\t\t<span class=\"k\">}</span>","\t\t\t\t<span class=\"k\">}</span><span class=\"k\">);</span>","\t\t\t<span class=\"k\">}</span>","\t\t<span class=\"k\">}</span><span class=\"k\">);</span>","\t<span class=\"k\">}</span><span class=\"k\">);</span>","<span class=\"k\">}</span>","","<span class=\"k\">function</span> login<span class=\"k\">(</span>request<span class=\"k\">,</span> response<span class=\"k\">)</span> <span class=\"k\">{</span>","    parse_post_data<span class=\"k\">(</span>request<span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">(</span>post_data<span class=\"k\">)</span> <span class=\"k\">{</span>","        <span class=\"k\">var</span> user <span class=\"k\">=</span> post_data<span class=\"k\">;</span>","\t\t<span class=\"k\">var</span> salt <span class=\"k\">=</span> crypto<span class=\"k\">.</span>createHash<span class=\"k\">(</span><span class=\"s\">'sha1'</span><span class=\"k\">).</span>update<span class=\"k\">(</span>user<span class=\"k\">.</span>username<span class=\"k\">).</span>digest<span class=\"k\">(</span><span class=\"s\">'hex'</span><span class=\"k\">);</span>","\t\tuser<span class=\"k\">.</span>password <span class=\"k\">=</span> crypto<span class=\"k\">.</span>createHash<span class=\"k\">(</span><span class=\"s\">'sha1'</span><span class=\"k\">).</span>update<span class=\"k\">(</span>user<span class=\"k\">.</span>password <span class=\"k\">+</span> salt<span class=\"k\">).</span>digest<span class=\"k\">(</span><span class=\"s\">'hex'</span><span class=\"k\">);</span>","","        model<span class=\"k\">.</span>validate_login<span class=\"k\">(</span>user<span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">(</span>success<span class=\"k\">,</span> user_document<span class=\"k\">)</span> <span class=\"k\">{</span>","            <span class=\"k\">if</span><span class=\"k\">(!</span>success<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\t\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">200</span><span class=\"k\">,</span> <span class=\"k\">{</span><span class=\"s\">'Content-Type'</span><span class=\"k\">:</span> <span class=\"s\">'application/json'</span><span class=\"k\">}</span><span class=\"k\">);</span>","\t\t\t\tresponse<span class=\"k\">.</span>write<span class=\"k\">(</span>JSON<span class=\"k\">.</span>stringify<span class=\"k\">(</span><span class=\"k\">{</span>success<span class=\"k\">:</span> <span class=\"k\">false</span><span class=\"k\">}</span><span class=\"k\">));</span>","\t\t\t\tresponse<span class=\"k\">.</span>end<span class=\"k\">();</span>","\t\t\t<span class=\"k\">}</span> <span class=\"k\">else</span> <span class=\"k\">{</span>","\t\t\t\t<span class=\"c\">// Update the database</span>","\t\t\t\tmodel<span class=\"k\">.</span>login_user<span class=\"k\">(</span>user<span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">(</span>error<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\t\t\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">200</span><span class=\"k\">,</span> <span class=\"k\">{</span><span class=\"s\">'Content-Type'</span><span class=\"k\">:</span> <span class=\"s\">'application/json'</span><span class=\"k\">}</span><span class=\"k\">);</span>","\t\t\t\t\tresponse<span class=\"k\">.</span>write<span class=\"k\">(</span>JSON<span class=\"k\">.</span>stringify<span class=\"k\">(</span><span class=\"k\">{</span>","\t\t\t\t\t\tsuccess<span class=\"k\">:</span> <span class=\"k\">!</span>error<span class=\"k\">,</span>","\t\t\t\t\t\terror<span class=\"k\">:</span> error<span class=\"k\">,</span>","\t\t\t\t\t\tuser_id<span class=\"k\">:</span> user_document<span class=\"k\">.</span>_id","\t\t\t\t\t<span class=\"k\">}</span><span class=\"k\">));</span>","\t\t\t\t\tresponse<span class=\"k\">.</span>end<span class=\"k\">();</span>","\t\t\t\t<span class=\"k\">}</span><span class=\"k\">);</span>","\t\t    <span class=\"k\">}</span>","        <span class=\"k\">}</span><span class=\"k\">);</span>","    <span class=\"k\">}</span><span class=\"k\">);</span>","<span class=\"k\">}</span>","","<span class=\"k\">function</span> logout<span class=\"k\">(</span>request<span class=\"k\">,</span> response<span class=\"k\">)</span> <span class=\"k\">{</span>","\tparse_post_data<span class=\"k\">(</span>request<span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">(</span>post_data<span class=\"k\">)</span> <span class=\"k\">{</span>","            console<span class=\"k\">.</span>log<span class=\"k\">(</span>post_data<span class=\"k\">);</span>","\t\t<span class=\"k\">var</span> user_id <span class=\"k\">=</span> post_data<span class=\"k\">.</span>user_id<span class=\"k\">;</span>","\t\tmodel<span class=\"k\">.</span>logout_user<span class=\"k\">(</span>user_id<span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">(</span>error<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">200</span><span class=\"k\">,</span> <span class=\"k\">{</span><span class=\"s\">'Content-Type'</span><span class=\"k\">:</span> <span class=\"s\">'application/json'</span><span class=\"k\">}</span><span class=\"k\">);</span>","\t\t\tresponse<span class=\"k\">.</span>write<span class=\"k\">(</span>JSON<span class=\"k\">.</span>stringify<span class=\"k\">(</span><span class=\"k\">{</span>success<span class=\"k\">:</span> <span class=\"k\">!</span>error<span class=\"k\">}</span><span class=\"k\">));</span>","\t\t\tresponse<span class=\"k\">.</span>end<span class=\"k\">();</span>","\t\t<span class=\"k\">}</span><span class=\"k\">);</span>","\t<span class=\"k\">}</span><span class=\"k\">);</span>","<span class=\"k\">}</span>","","<span class=\"k\">function</span> homepage<span class=\"k\">(</span>request<span class=\"k\">,</span> response<span class=\"k\">)</span> <span class=\"k\">{</span>","\tmu<span class=\"k\">.</span>clearCache<span class=\"k\">();</span>","","\t<span class=\"c\">// Get user</span>","\t<span class=\"k\">var</span> user_id <span class=\"k\">=</span> request<span class=\"k\">.</span>headers<span class=\"k\">[</span><span class=\"s\">\"user-id\"</span><span class=\"k\">];</span>","\tmodel<span class=\"k\">.</span>find_user_by_id<span class=\"k\">(</span>user_id<span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">(</span>success<span class=\"k\">,</span> user<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t<span class=\"k\">if</span><span class=\"k\">(!</span>success<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">500</span><span class=\"k\">);</span>","\t\t\tresponse<span class=\"k\">.</span>end<span class=\"k\">();</span>","\t\t\t<span class=\"k\">return</span><span class=\"k\">;</span>","\t\t<span class=\"k\">}</span>","","\t\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">200</span><span class=\"k\">,</span> <span class=\"k\">{</span><span class=\"s\">'Content-Type'</span><span class=\"k\">:</span> <span class=\"s\">'text/html'</span><span class=\"k\">}</span><span class=\"k\">);</span>","\t\t<span class=\"k\">var</span> stream <span class=\"k\">=</span> mu<span class=\"k\">.</span>compileAndRender<span class=\"k\">(</span><span class=\"s\">'homepage.mustache'</span><span class=\"k\">,</span> <span class=\"k\">{</span>user<span class=\"k\">:</span> user<span class=\"k\">}</span><span class=\"k\">);</span>","\t\tstream<span class=\"k\">.</span>pipe<span class=\"k\">(</span>response<span class=\"k\">);</span>","\t<span class=\"k\">}</span><span class=\"k\">);</span>","<span class=\"k\">}</span>","","<span class=\"c\">// The logged in users wall</span>","<span class=\"k\">function</span> wall<span class=\"k\">(</span>request<span class=\"k\">,</span> response<span class=\"k\">)</span> <span class=\"k\">{</span>","\tmu<span class=\"k\">.</span>clearCache<span class=\"k\">();</span>","","\t<span class=\"c\">// Get user</span>","\t<span class=\"k\">var</span> user_id <span class=\"k\">=</span> request<span class=\"k\">.</span>headers<span class=\"k\">[</span><span class=\"s\">\"user-id\"</span><span class=\"k\">];</span>","\tmodel<span class=\"k\">.</span>find_user_by_id<span class=\"k\">(</span>user_id<span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">(</span>success<span class=\"k\">,</span> user<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t<span class=\"k\">if</span><span class=\"k\">(!</span>success<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">500</span><span class=\"k\">);</span>","\t\t\tresponse<span class=\"k\">.</span>end<span class=\"k\">();</span>","\t\t\t<span class=\"k\">return</span><span class=\"k\">;</span>","\t\t<span class=\"k\">}</span>","","\t\t<span class=\"c\">// Get wallposts</span>","\t\tmodel<span class=\"k\">.</span>find_wallposts_to_user<span class=\"k\">(</span>user<span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">(</span>success<span class=\"k\">,</span> wallposts<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\t<span class=\"k\">if</span><span class=\"k\">(!</span>success<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\t\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">500</span><span class=\"k\">);</span>","\t\t\t\tresponse<span class=\"k\">.</span>end<span class=\"k\">();</span>","\t\t\t\t<span class=\"k\">return</span><span class=\"k\">;</span>","\t\t\t<span class=\"k\">}</span>","","\t\t\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">200</span><span class=\"k\">,</span> <span class=\"k\">{</span><span class=\"s\">'Content-Type'</span><span class=\"k\">:</span> <span class=\"s\">'text/html'</span><span class=\"k\">}</span><span class=\"k\">);</span>","\t\t\t<span class=\"k\">var</span> stream <span class=\"k\">=</span> mu<span class=\"k\">.</span>compileAndRender<span class=\"k\">(</span><span class=\"s\">'wall.mustache'</span><span class=\"k\">,</span> <span class=\"k\">{</span>wallposts<span class=\"k\">:</span> wallposts<span class=\"k\">}</span><span class=\"k\">);</span>","\t\t\tstream<span class=\"k\">.</span>pipe<span class=\"k\">(</span>response<span class=\"k\">);</span>","\t\t<span class=\"k\">}</span><span class=\"k\">);</span>","\t<span class=\"k\">}</span><span class=\"k\">);</span>","<span class=\"k\">}</span>","","<span class=\"k\">function</span> search_form<span class=\"k\">(</span>request<span class=\"k\">,</span> response<span class=\"k\">)</span> <span class=\"k\">{</span>","\tmu<span class=\"k\">.</span>clearCache<span class=\"k\">();</span>","\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">200</span><span class=\"k\">,</span> <span class=\"k\">{</span><span class=\"s\">'Content-Type'</span><span class=\"k\">:</span> <span class=\"s\">'text/html'</span><span class=\"k\">}</span><span class=\"k\">);</span>","\t<span class=\"k\">var</span> stream <span class=\"k\">=</span> mu<span class=\"k\">.</span>compileAndRender<span class=\"k\">(</span><span class=\"s\">'search.mustache'</span><span class=\"k\">);</span>","\tstream<span class=\"k\">.</span>pipe<span class=\"k\">(</span>response<span class=\"k\">);</span>","<span class=\"k\">}</span>","","<span class=\"k\">function</span> search<span class=\"k\">(</span>request<span class=\"k\">,</span> response<span class=\"k\">)</span> <span class=\"k\">{</span>","\tparse_post_data<span class=\"k\">(</span>request<span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">(</span>post_data<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t<span class=\"k\">var</span> query <span class=\"k\">=</span> post_data<span class=\"k\">.</span>query<span class=\"k\">;</span>","\t\t<span class=\"k\">if</span><span class=\"k\">(!</span>query<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">400</span><span class=\"k\">);</span>","\t\t\tresponse<span class=\"k\">.</span>end<span class=\"k\">();</span>","\t\t\t<span class=\"k\">return</span><span class=\"k\">;</span>","\t\t<span class=\"k\">}</span>","","\t\tmodel<span class=\"k\">.</span>search_users<span class=\"k\">(</span>query<span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">(</span>error<span class=\"k\">,</span> results<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\t<span class=\"k\">var</span> vars <span class=\"k\">=</span> <span class=\"k\">{</span>","\t\t\t\tusers<span class=\"k\">:</span> results<span class=\"k\">,</span>","\t\t\t\tquery<span class=\"k\">:</span> query<span class=\"k\">,</span>","\t\t\t\tcount<span class=\"k\">:</span> results<span class=\"k\">.</span>length","\t\t\t<span class=\"k\">}</span><span class=\"k\">;</span>","\t\t\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">200</span><span class=\"k\">,</span> <span class=\"k\">{</span><span class=\"s\">'Content-Type'</span><span class=\"k\">:</span> <span class=\"s\">'text/html'</span><span class=\"k\">}</span><span class=\"k\">);</span>","\t\t\t<span class=\"k\">var</span> stream <span class=\"k\">=</span> mu<span class=\"k\">.</span>compileAndRender<span class=\"k\">(</span><span class=\"s\">'search_results.mustache'</span><span class=\"k\">,</span> vars<span class=\"k\">);</span>","\t\t\tstream<span class=\"k\">.</span>pipe<span class=\"k\">(</span>response<span class=\"k\">);</span>","\t\t<span class=\"k\">}</span><span class=\"k\">);</span>","\t<span class=\"k\">}</span><span class=\"k\">);</span>","<span class=\"k\">}</span>","","<span class=\"c\">// Gets the wallposts to a specified user</span>","<span class=\"k\">function</span> wallposts<span class=\"k\">(</span>request<span class=\"k\">,</span> response<span class=\"k\">)</span> <span class=\"k\">{</span>","\t<span class=\"k\">var</span> params <span class=\"k\">=</span> url<span class=\"k\">.</span>parse<span class=\"k\">(</span>request<span class=\"k\">.</span>url<span class=\"k\">,</span> <span class=\"k\">true</span><span class=\"k\">).</span>query<span class=\"k\">;</span>","\t<span class=\"k\">var</span> user_id <span class=\"k\">=</span> params<span class=\"k\">[</span><span class=\"s\">\"user_id\"</span><span class=\"k\">];</span>","\t<span class=\"k\">var</span> ignore_user_id <span class=\"k\">=</span> params<span class=\"k\">[</span><span class=\"s\">\"ignore\"</span><span class=\"k\">];</span>","\t<span class=\"k\">var</span> last_updated <span class=\"k\">=</span> request<span class=\"k\">.</span>headers<span class=\"k\">[</span><span class=\"s\">\"if-modified-since\"</span><span class=\"k\">];</span>","\t","\t<span class=\"k\">var</span> criteria <span class=\"k\">=</span> <span class=\"k\">{</span>","\t\tto_id<span class=\"k\">:</span> <span class=\"k\">new</span> mongo<span class=\"k\">.</span>BSONPure<span class=\"k\">.</span>ObjectID<span class=\"k\">(</span>user_id<span class=\"k\">),</span>","\t\tdate<span class=\"k\">:</span> <span class=\"k\">{</span>$gt<span class=\"k\">:</span> <span class=\"k\">new</span> Date<span class=\"k\">(</span>last_updated<span class=\"k\">)</span><span class=\"k\">}</span>","\t<span class=\"k\">}</span><span class=\"k\">;</span>","","\t<span class=\"k\">if</span><span class=\"k\">(</span>ignore_user_id <span class=\"k\">!=</span> undefined<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\tcriteria<span class=\"k\">[</span><span class=\"s\">\"from_id\"</span><span class=\"k\">]</span> <span class=\"k\">=</span> <span class=\"k\">{</span>$ne<span class=\"k\">:</span> <span class=\"k\">new</span> mongo<span class=\"k\">.</span>BSONPure<span class=\"k\">.</span>ObjectID<span class=\"k\">(</span>ignore_user_id<span class=\"k\">)</span><span class=\"k\">}</span><span class=\"k\">;</span>","\t<span class=\"k\">}</span>","","\tmodel<span class=\"k\">.</span>find_wallposts<span class=\"k\">(</span>criteria<span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">(</span>success<span class=\"k\">,</span> wallposts<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t<span class=\"k\">if</span><span class=\"k\">(!</span>success<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">500</span><span class=\"k\">);</span>","\t\t\tresponse<span class=\"k\">.</span>end<span class=\"k\">();</span>","\t\t\t<span class=\"k\">return</span><span class=\"k\">;</span>","\t\t<span class=\"k\">}</span>","","\t\t<span class=\"k\">if</span><span class=\"k\">(</span>wallposts<span class=\"k\">.</span>length<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\t<span class=\"k\">var</span> content <span class=\"k\">=</span> <span class=\"s\">\"\"</span><span class=\"k\">;</span>","\t\t\tmu<span class=\"k\">.</span>compileAndRender<span class=\"k\">(</span><span class=\"s\">'wallposts.mustache'</span><span class=\"k\">,</span> <span class=\"k\">{</span>wallposts<span class=\"k\">:</span> wallposts<span class=\"k\">}</span><span class=\"k\">).</span>on<span class=\"k\">(</span><span class=\"s\">'data'</span><span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">(</span>data<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\t\tcontent <span class=\"k\">+=</span> data<span class=\"k\">;</span>","\t\t\t<span class=\"k\">}</span><span class=\"k\">).</span>on<span class=\"k\">(</span><span class=\"s\">'end'</span><span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">()</span> <span class=\"k\">{</span>","\t\t\t\t<span class=\"k\">var</span> last_updated <span class=\"k\">=</span> wallposts<span class=\"k\">[</span>wallposts<span class=\"k\">.</span>length <span class=\"k\">-</span> <span class=\"s\">1</span><span class=\"k\">].</span>date<span class=\"k\">;</span>","\t\t\t\t<span class=\"k\">var</span> data <span class=\"k\">=</span> <span class=\"k\">{</span>","\t\t\t\t\tcontent<span class=\"k\">:</span> content<span class=\"k\">,</span>","\t\t\t\t\tlast_updated<span class=\"k\">:</span> last_updated","\t\t\t\t<span class=\"k\">}</span><span class=\"k\">;</span>","","\t\t\t\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">200</span><span class=\"k\">,</span> <span class=\"k\">{</span><span class=\"s\">'Content-Type'</span><span class=\"k\">:</span> <span class=\"s\">'application/json'</span><span class=\"k\">}</span><span class=\"k\">);</span>","\t\t\t\tresponse<span class=\"k\">.</span>write<span class=\"k\">(</span>JSON<span class=\"k\">.</span>stringify<span class=\"k\">(</span>data<span class=\"k\">));</span>","\t\t\t\tresponse<span class=\"k\">.</span>end<span class=\"k\">();</span>","\t\t\t<span class=\"k\">}</span><span class=\"k\">);</span>","\t\t<span class=\"k\">}</span> <span class=\"k\">else</span> <span class=\"k\">{</span>","\t\t\tresponse<span class=\"k\">.</span>end<span class=\"k\">();</span>","\t\t<span class=\"k\">}</span>","\t<span class=\"k\">}</span><span class=\"k\">);</span>","<span class=\"k\">}</span>","","<span class=\"k\">function</span> show_user<span class=\"k\">(</span>request<span class=\"k\">,</span> response<span class=\"k\">,</span> username<span class=\"k\">)</span> <span class=\"k\">{</span>","\t<span class=\"k\">if</span><span class=\"k\">(!</span>username<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">400</span><span class=\"k\">);</span>","\t\tresponse<span class=\"k\">.</span>end<span class=\"k\">();</span>","\t\t<span class=\"k\">return</span><span class=\"k\">;</span>","\t<span class=\"k\">}</span>","","\t<span class=\"k\">var</span> viewer_id <span class=\"k\">=</span> request<span class=\"k\">.</span>headers<span class=\"k\">[</span><span class=\"s\">\"user-id\"</span><span class=\"k\">];</span>","\tmodel<span class=\"k\">.</span>find_user_by_username<span class=\"k\">(</span>username<span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">(</span>success<span class=\"k\">,</span> user<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t<span class=\"k\">if</span><span class=\"k\">(!</span>success<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">500</span><span class=\"k\">);</span>","\t\t\tresponse<span class=\"k\">.</span>end<span class=\"k\">();</span>","\t\t\t<span class=\"k\">return</span><span class=\"k\">;</span>","\t\t<span class=\"k\">}</span>","","\t\t<span class=\"c\">// Fetch viewer so we can check if the two people</span>","\t\t<span class=\"c\">// are friends</span>","\t\tmodel<span class=\"k\">.</span>find_user_by_id<span class=\"k\">(</span>viewer_id<span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">(</span>success<span class=\"k\">,</span> viewer<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\t<span class=\"k\">if</span><span class=\"k\">(!</span>success<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\t\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">500</span><span class=\"k\">);</span>","\t\t\t\tresponse<span class=\"k\">.</span>end<span class=\"k\">();</span>","\t\t\t\t<span class=\"k\">return</span><span class=\"k\">;</span>","\t\t\t<span class=\"k\">}</span>","","\t\t\t<span class=\"k\">var</span> is_friend <span class=\"k\">=</span> <span class=\"k\">false</span><span class=\"k\">;</span>","\t\t\t<span class=\"k\">for</span><span class=\"k\">(</span><span class=\"k\">var</span> index <span class=\"k\">in</span> viewer<span class=\"k\">.</span>friends<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\t\t<span class=\"k\">var</span> friend <span class=\"k\">=</span> viewer<span class=\"k\">.</span>friends<span class=\"k\">[</span>index<span class=\"k\">];</span>","\t\t\t\t<span class=\"k\">if</span><span class=\"k\">(</span>friend<span class=\"k\">.</span>user_id<span class=\"k\">.</span>equals<span class=\"k\">(</span>user<span class=\"k\">.</span>_id<span class=\"k\">))</span> <span class=\"k\">{</span>","\t\t\t\t\tis_friend <span class=\"k\">=</span> <span class=\"k\">true</span><span class=\"k\">;</span>","\t\t\t\t\t<span class=\"k\">break</span><span class=\"k\">;</span>","\t\t\t\t<span class=\"k\">}</span>","\t\t\t<span class=\"k\">}</span>","","\t\t\t<span class=\"c\">// Fetch wallposts</span>","\t\t\tmodel<span class=\"k\">.</span>find_wallposts_to_user<span class=\"k\">(</span>user<span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">(</span>success<span class=\"k\">,</span> wallposts<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\t\t<span class=\"k\">if</span><span class=\"k\">(!</span>success<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\t\t\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">500</span><span class=\"k\">);</span>","\t\t\t\t\tresponse<span class=\"k\">.</span>end<span class=\"k\">();</span>","\t\t\t\t\t<span class=\"k\">return</span><span class=\"k\">;</span>","\t\t\t\t<span class=\"k\">}</span>","","\t\t\t\t<span class=\"k\">var</span> can_post <span class=\"k\">=</span> viewer_id <span class=\"k\">!=</span> user<span class=\"k\">.</span>_id<span class=\"k\">;</span>","\t\t\t\t<span class=\"k\">var</span> vars <span class=\"k\">=</span> <span class=\"k\">{</span>","\t\t\t\t\tuser<span class=\"k\">:</span> user<span class=\"k\">,</span>","\t\t\t\t\twallposts<span class=\"k\">:</span> wallposts<span class=\"k\">,</span>","\t\t\t\t\tcan_post<span class=\"k\">:</span> can_post<span class=\"k\">,</span>","\t\t\t\t\tis_friend<span class=\"k\">:</span> is_friend","\t\t\t\t<span class=\"k\">}</span><span class=\"k\">;</span>","","\t\t\t\t<span class=\"k\">var</span> html <span class=\"k\">=</span> <span class=\"s\">\"\"</span><span class=\"k\">;</span>","\t\t\t\tmu<span class=\"k\">.</span>compileAndRender<span class=\"k\">(</span><span class=\"s\">'user_page.mustache'</span><span class=\"k\">,</span> vars<span class=\"k\">).</span>on<span class=\"k\">(</span><span class=\"s\">'data'</span><span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">(</span>data<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\t\t\thtml <span class=\"k\">+=</span> data<span class=\"k\">.</span>toString<span class=\"k\">();</span>","\t\t\t\t<span class=\"k\">}</span><span class=\"k\">).</span>on<span class=\"k\">(</span><span class=\"s\">'end'</span><span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">()</span> <span class=\"k\">{</span>","\t\t\t\t\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">200</span><span class=\"k\">,</span> <span class=\"k\">{</span><span class=\"s\">'Content-Type'</span><span class=\"k\">:</span> <span class=\"s\">'application/json'</span><span class=\"k\">}</span><span class=\"k\">);</span>","\t\t\t\t\t<span class=\"k\">var</span> data <span class=\"k\">=</span> <span class=\"k\">{</span>","\t\t\t\t\t\tcontent<span class=\"k\">:</span> html<span class=\"k\">,</span>","\t\t\t\t\t\tuser_id<span class=\"k\">:</span> user<span class=\"k\">.</span>_id","\t\t\t\t\t<span class=\"k\">}</span><span class=\"k\">;</span>","\t\t\t\t\tresponse<span class=\"k\">.</span>write<span class=\"k\">(</span>JSON<span class=\"k\">.</span>stringify<span class=\"k\">(</span>data<span class=\"k\">));</span>","\t\t\t\t\tresponse<span class=\"k\">.</span>end<span class=\"k\">();</span>","\t\t\t\t<span class=\"k\">}</span><span class=\"k\">);</span>","\t\t\t<span class=\"k\">}</span><span class=\"k\">);</span>","\t\t<span class=\"k\">}</span><span class=\"k\">);</span>","","\t<span class=\"k\">}</span><span class=\"k\">);</span>","","<span class=\"k\">}</span>","","<span class=\"k\">function</span> save_wallpost<span class=\"k\">(</span>request<span class=\"k\">,</span> response<span class=\"k\">)</span> <span class=\"k\">{</span>","\tparse_post_data<span class=\"k\">(</span>request<span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">(</span>post_data<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t<span class=\"k\">var</span> from_id <span class=\"k\">=</span> request<span class=\"k\">.</span>headers<span class=\"k\">[</span><span class=\"s\">\"user-id\"</span><span class=\"k\">];</span>","\t\t<span class=\"k\">var</span> to_id <span class=\"k\">=</span> post_data<span class=\"k\">[</span><span class=\"s\">\"to_id\"</span><span class=\"k\">];</span>","\t\t<span class=\"k\">var</span> post <span class=\"k\">=</span> post_data<span class=\"k\">[</span><span class=\"s\">\"post\"</span><span class=\"k\">];</span>","\t\t<span class=\"k\">if</span><span class=\"k\">(!</span>post <span class=\"k\">||</span> post<span class=\"k\">.</span>trim<span class=\"k\">().</span>length <span class=\"k\">==</span> <span class=\"s\">0</span><span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">400</span><span class=\"k\">);</span>","\t\t\t<span class=\"k\">return</span> response<span class=\"k\">.</span>end<span class=\"k\">();</span>","\t\t<span class=\"k\">}</span>","","\t\tmodel<span class=\"k\">.</span>add_wallpost<span class=\"k\">(</span>from_id<span class=\"k\">,</span> to_id<span class=\"k\">,</span> post<span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">(</span>success<span class=\"k\">,</span> wallpost<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\t<span class=\"k\">if</span><span class=\"k\">(!</span>success<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\t\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">500</span><span class=\"k\">);</span>","\t\t\t\tresponse<span class=\"k\">.</span>end<span class=\"k\">();</span>","\t\t\t\t<span class=\"k\">return</span><span class=\"k\">;</span>","\t\t\t<span class=\"k\">}</span>","","\t\t\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">200</span><span class=\"k\">,</span> <span class=\"k\">{</span><span class=\"s\">'Content-Type'</span><span class=\"k\">:</span> <span class=\"s\">'text/html'</span><span class=\"k\">}</span><span class=\"k\">);</span>","\t\t\t<span class=\"k\">var</span> stream <span class=\"k\">=</span> mu<span class=\"k\">.</span>compileAndRender<span class=\"k\">(</span><span class=\"s\">'wallpost.mustache'</span><span class=\"k\">,</span> wallpost<span class=\"k\">);</span>","\t\t\tstream<span class=\"k\">.</span>pipe<span class=\"k\">(</span>response<span class=\"k\">);</span>","\t\t<span class=\"k\">}</span><span class=\"k\">);</span>","\t<span class=\"k\">}</span><span class=\"k\">);</span>","<span class=\"k\">}</span>","","<span class=\"k\">function</span> add_friend<span class=\"k\">(</span>request<span class=\"k\">,</span> response<span class=\"k\">)</span> <span class=\"k\">{</span>","\tparse_post_data<span class=\"k\">(</span>request<span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">(</span>post_data<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t<span class=\"k\">var</span> user_id <span class=\"k\">=</span> request<span class=\"k\">.</span>headers<span class=\"k\">[</span><span class=\"s\">\"user-id\"</span><span class=\"k\">];</span>","\t\t<span class=\"k\">var</span> friend_id <span class=\"k\">=</span> post_data<span class=\"k\">[</span><span class=\"s\">\"friend_id\"</span><span class=\"k\">];</span>","","\t\t<span class=\"k\">if</span><span class=\"k\">(!</span>user_id <span class=\"k\">||</span> <span class=\"k\">!</span>friend_id <span class=\"k\">||</span> user_id<span class=\"k\">.</span>length <span class=\"k\">!=</span> <span class=\"s\">24</span> <span class=\"k\">||</span> friend_id<span class=\"k\">.</span>length <span class=\"k\">!=</span> <span class=\"s\">24</span><span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">400</span><span class=\"k\">,</span> <span class=\"k\">{</span><span class=\"s\">'Content-Type'</span><span class=\"k\">:</span> <span class=\"s\">'application/json'</span><span class=\"k\">}</span><span class=\"k\">);</span>","\t\t\t<span class=\"k\">return</span> response<span class=\"k\">.</span>end<span class=\"k\">();</span>","\t\t<span class=\"k\">}</span>","","\t\tmodel<span class=\"k\">.</span>add_friend<span class=\"k\">(</span>user_id<span class=\"k\">,</span> friend_id<span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">(</span>success<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">200</span><span class=\"k\">,</span> <span class=\"k\">{</span><span class=\"s\">'Content-Type'</span><span class=\"k\">:</span> <span class=\"s\">'application/json'</span><span class=\"k\">}</span><span class=\"k\">);</span>","\t\t\tresponse<span class=\"k\">.</span>write<span class=\"k\">(</span>JSON<span class=\"k\">.</span>stringify<span class=\"k\">(</span><span class=\"k\">{</span>success<span class=\"k\">:</span> success<span class=\"k\">}</span><span class=\"k\">));</span>","\t\t\tresponse<span class=\"k\">.</span>end<span class=\"k\">();</span>","\t\t<span class=\"k\">}</span><span class=\"k\">);</span>","\t<span class=\"k\">}</span><span class=\"k\">);</span>","<span class=\"k\">}</span>","","<span class=\"k\">function</span> friends<span class=\"k\">(</span>request<span class=\"k\">,</span> response<span class=\"k\">)</span> <span class=\"k\">{</span>","\t<span class=\"k\">var</span> user_id <span class=\"k\">=</span> request<span class=\"k\">.</span>headers<span class=\"k\">[</span><span class=\"s\">\"user-id\"</span><span class=\"k\">];</span>","\tmodel<span class=\"k\">.</span>find_user_by_id<span class=\"k\">(</span>user_id<span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">(</span>success<span class=\"k\">,</span> user<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t<span class=\"k\">if</span><span class=\"k\">(!</span>success<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">500</span><span class=\"k\">);</span>","\t\t\tresponse<span class=\"k\">.</span>end<span class=\"k\">();</span>","\t\t\t<span class=\"k\">return</span><span class=\"k\">;</span>","\t\t<span class=\"k\">}</span>","","\t\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">200</span><span class=\"k\">,</span> <span class=\"k\">{</span><span class=\"s\">'Content-Type'</span><span class=\"k\">:</span> <span class=\"s\">'text/html'</span><span class=\"k\">}</span><span class=\"k\">);</span>","\t\t<span class=\"k\">var</span> stream <span class=\"k\">=</span> mu<span class=\"k\">.</span>compileAndRender<span class=\"k\">(</span><span class=\"s\">\"friends.mustache\"</span><span class=\"k\">,</span> <span class=\"k\">{</span>friends<span class=\"k\">:</span> user<span class=\"k\">.</span>friends<span class=\"k\">}</span><span class=\"k\">);</span>","\t\tstream<span class=\"k\">.</span>pipe<span class=\"k\">(</span>response<span class=\"k\">);</span>","\t<span class=\"k\">}</span><span class=\"k\">);</span>","<span class=\"k\">}</span>","","<span class=\"k\">function</span> chat<span class=\"k\">(</span>request<span class=\"k\">,</span> response<span class=\"k\">,</span> chat_id<span class=\"k\">)</span> <span class=\"k\">{</span>","\t<span class=\"k\">if</span><span class=\"k\">(!</span>chat_id<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">500</span><span class=\"k\">);</span>","\t\t<span class=\"k\">return</span> response<span class=\"k\">.</span>end<span class=\"k\">();</span>","\t<span class=\"k\">}</span>","","\tmodel<span class=\"k\">.</span>find_chat_by_id<span class=\"k\">(</span>chat_id<span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">(</span>success<span class=\"k\">,</span> chat<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t<span class=\"k\">if</span><span class=\"k\">(!</span>success<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\tresponse<span class=\"k\">.</span>writeHead<span class=\"k\">(</span><span class=\"s\">500</span><span class=\"k\">);</span>","\t\t\t<span class=\"k\">return</span> response<span class=\"k\">.</span>end<span class=\"k\">();</span>","\t\t<span class=\"k\">}</span>","","\t\t<span class=\"k\">var</span> user_id <span class=\"k\">=</span> request<span class=\"k\">.</span>headers<span class=\"k\">[</span><span class=\"s\">\"user-id\"</span><span class=\"k\">];</span>","\t\tmodel<span class=\"k\">.</span>find_user_by_id<span class=\"k\">(</span>user_id<span class=\"k\">,</span> <span class=\"k\">function</span><span class=\"k\">(</span>success<span class=\"k\">,</span> user<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\t<span class=\"k\">var</span> member_list <span class=\"k\">=</span> <span class=\"k\">[];</span>","\t\t\t<span class=\"k\">for</span><span class=\"k\">(</span><span class=\"k\">var</span> k <span class=\"k\">in</span> chat<span class=\"k\">.</span>members<span class=\"k\">)</span>","\t\t\t\tmember_list<span class=\"k\">.</span>push<span class=\"k\">(</span>chat<span class=\"k\">.</span>members<span class=\"k\">[</span>k<span class=\"k\">]);</span>","\t\t\tmember_list<span class=\"k\">[</span>member_list<span class=\"k\">.</span>length <span class=\"k\">-</span> <span class=\"s\">1</span><span class=\"k\">].</span>is_last <span class=\"k\">=</span> <span class=\"k\">true</span><span class=\"k\">;</span>","","\t\t\t<span class=\"k\">var</span> friends <span class=\"k\">=</span> <span class=\"k\">[];</span>","\t\t\t<span class=\"k\">for</span><span class=\"k\">(</span><span class=\"k\">var</span> f <span class=\"k\">in</span> user<span class=\"k\">.</span>friends<span class=\"k\">)</span> <span class=\"k\">{</span>","\t\t\t\t<span class=\"k\">var</span> friend <span class=\"k\">=</span> user<span class=\"k\">.</span>friends<span class=\"k\">[</span>f<span class=\"k\">];</span>","\t\t\t\t<span class=\"k\">if</span><span class=\"k\">(</span>chat<span class=\"k\">.</span>members<span class=\"k\">[</span>friend<span class=\"k\">.</span>user_id<span class=\"k\">]</span> <span class=\"k\">==</span> undefined<span class=\"k\">)</span>","\t\t\t\t\tfriends<span class=\"k\">.</span>push<span class=\"k\">(</span>friend<span class=\"k\">);</span>","\t\t\t<span class=\"k\">}</span>","","\t\t\tconsole<span class=\"k\">.</span>log<span class=\"k\">(</span>friends<span class=\"k\">);</span>","","\t\t\t<span class=\"k\">var</span> data <span class=\"k\">=</span> <span class=\"k\">{</span>","\t\t\t\tchat<span class=\"k\">:</span> chat<span class=\"k\">,</span>","\t\t\t\tmember_list<span class=\"k\">:</span> member_list<span class=\"k\">,</span>","\t\t\t\tfriends<span class=\"k\">:</span> friends<span class=\"k\">,</span>","\t\t\t\thas_friends<span class=\"k\">:</span> friends<span class=\"k\">.</span>length <span class=\"k\">&gt;</span> <span class=\"s\">0</span>","\t\t\t<span class=\"k\">}</span><span class=\"k\">;</span>","","\t\t\t<span class=\"k\">var</span> stream <span class=\"k\">=</span> mu<span class=\"k\">.</span>compileAndRender<span class=\"k\">(</span><span class=\"s\">\"chat.mustache\"</span><span class=\"k\">,</span> data<span class=\"k\">);</span>","\t\t\tstream<span class=\"k\">.</span>pipe<span class=\"k\">(</span>response<span class=\"k\">);</span>","\t\t<span class=\"k\">}</span><span class=\"k\">);</span>","\t<span class=\"k\">}</span><span class=\"k\">);</span>","<span class=\"k\">}</span>","","exports<span class=\"k\">.</span>base <span class=\"k\">=</span> base<span class=\"k\">;</span>","exports<span class=\"k\">.</span>index <span class=\"k\">=</span> index<span class=\"k\">;</span>","exports<span class=\"k\">.</span>register <span class=\"k\">=</span> register<span class=\"k\">;</span>","exports<span class=\"k\">.</span>login <span class=\"k\">=</span> login<span class=\"k\">;</span>","exports<span class=\"k\">.</span>logout <span class=\"k\">=</span> logout<span class=\"k\">;</span>","exports<span class=\"k\">.</span>valid_username <span class=\"k\">=</span> valid_username<span class=\"k\">;</span>","exports<span class=\"k\">.</span>homepage <span class=\"k\">=</span> homepage<span class=\"k\">;</span>","exports<span class=\"k\">.</span>wall <span class=\"k\">=</span> wall<span class=\"k\">;</span>","exports<span class=\"k\">.</span>search_form <span class=\"k\">=</span> search_form<span class=\"k\">;</span>","exports<span class=\"k\">.</span>search <span class=\"k\">=</span> search<span class=\"k\">;</span>","exports<span class=\"k\">.</span>show_user <span class=\"k\">=</span> show_user<span class=\"k\">;</span>","exports<span class=\"k\">.</span>save_wallpost <span class=\"k\">=</span> save_wallpost<span class=\"k\">;</span>","exports<span class=\"k\">.</span>wallposts <span class=\"k\">=</span> wallposts<span class=\"k\">;</span>","exports<span class=\"k\">.</span>add_friend <span class=\"k\">=</span> add_friend<span class=\"k\">;</span>","exports<span class=\"k\">.</span>friends <span class=\"k\">=</span> friends<span class=\"k\">;</span>","exports<span class=\"k\">.</span>chat <span class=\"k\">=</span> chat<span class=\"k\">;</span>"];
 _$jscoverage['requestHandlers.js'][1]++;
 var mongo = require("mongodb");
 _$jscoverage['requestHandlers.js'][2]++;
@@ -519,413 +526,429 @@ function logout(request, response) {
   _$jscoverage['requestHandlers.js'][137]++;
   parse_post_data(request, (function (post_data) {
   _$jscoverage['requestHandlers.js'][138]++;
-  var user_id = post_data.user_id;
+  console.log(post_data);
   _$jscoverage['requestHandlers.js'][139]++;
-  model.logout_user(user_id, (function (error) {
+  var user_id = post_data.user_id;
   _$jscoverage['requestHandlers.js'][140]++;
-  response.writeHead(200, {"Content-Type": "application/json"});
+  model.logout_user(user_id, (function (error) {
   _$jscoverage['requestHandlers.js'][141]++;
-  response.write(JSON.stringify({success: (! error)}));
+  response.writeHead(200, {"Content-Type": "application/json"});
   _$jscoverage['requestHandlers.js'][142]++;
+  response.write(JSON.stringify({success: (! error)}));
+  _$jscoverage['requestHandlers.js'][143]++;
   response.end();
 }));
 }));
 }
-_$jscoverage['requestHandlers.js'][147]++;
+_$jscoverage['requestHandlers.js'][148]++;
 function homepage(request, response) {
-  _$jscoverage['requestHandlers.js'][148]++;
+  _$jscoverage['requestHandlers.js'][149]++;
   mu.clearCache();
-  _$jscoverage['requestHandlers.js'][151]++;
-  var user_id = request.headers["user-id"];
   _$jscoverage['requestHandlers.js'][152]++;
-  model.find_user_by_id(user_id, (function (success, user) {
-  _$jscoverage['requestHandlers.js'][153]++;
-  if ((! success)) {
-    _$jscoverage['requestHandlers.js'][154]++;
-    response.writeHead(500);
-    _$jscoverage['requestHandlers.js'][155]++;
-    response.end();
-    _$jscoverage['requestHandlers.js'][156]++;
-    return;
-  }
-  _$jscoverage['requestHandlers.js'][159]++;
-  response.writeHead(200, {"Content-Type": "text/html"});
-  _$jscoverage['requestHandlers.js'][160]++;
-  var stream = mu.compileAndRender("homepage.mustache", {user: user});
-  _$jscoverage['requestHandlers.js'][161]++;
-  stream.pipe(response);
-}));
-}
-_$jscoverage['requestHandlers.js'][166]++;
-function wall(request, response) {
-  _$jscoverage['requestHandlers.js'][167]++;
-  mu.clearCache();
-  _$jscoverage['requestHandlers.js'][170]++;
   var user_id = request.headers["user-id"];
-  _$jscoverage['requestHandlers.js'][171]++;
+  _$jscoverage['requestHandlers.js'][153]++;
   model.find_user_by_id(user_id, (function (success, user) {
-  _$jscoverage['requestHandlers.js'][172]++;
+  _$jscoverage['requestHandlers.js'][154]++;
   if ((! success)) {
-    _$jscoverage['requestHandlers.js'][173]++;
+    _$jscoverage['requestHandlers.js'][155]++;
     response.writeHead(500);
-    _$jscoverage['requestHandlers.js'][174]++;
+    _$jscoverage['requestHandlers.js'][156]++;
     response.end();
-    _$jscoverage['requestHandlers.js'][175]++;
+    _$jscoverage['requestHandlers.js'][157]++;
     return;
   }
-  _$jscoverage['requestHandlers.js'][179]++;
-  model.find_wallposts_to_user(user, (function (success, wallposts) {
-  _$jscoverage['requestHandlers.js'][180]++;
-  if ((! success)) {
-    _$jscoverage['requestHandlers.js'][181]++;
-    response.writeHead(500);
-    _$jscoverage['requestHandlers.js'][182]++;
-    response.end();
-    _$jscoverage['requestHandlers.js'][183]++;
-    return;
-  }
-  _$jscoverage['requestHandlers.js'][186]++;
+  _$jscoverage['requestHandlers.js'][160]++;
   response.writeHead(200, {"Content-Type": "text/html"});
-  _$jscoverage['requestHandlers.js'][187]++;
-  var stream = mu.compileAndRender("wall.mustache", {wallposts: wallposts});
-  _$jscoverage['requestHandlers.js'][188]++;
+  _$jscoverage['requestHandlers.js'][161]++;
+  var stream = mu.compileAndRender("homepage.mustache", {user: user});
+  _$jscoverage['requestHandlers.js'][162]++;
   stream.pipe(response);
 }));
-}));
 }
-_$jscoverage['requestHandlers.js'][193]++;
-function search_form(request, response) {
-  _$jscoverage['requestHandlers.js'][194]++;
+_$jscoverage['requestHandlers.js'][167]++;
+function wall(request, response) {
+  _$jscoverage['requestHandlers.js'][168]++;
   mu.clearCache();
-  _$jscoverage['requestHandlers.js'][195]++;
-  response.writeHead(200, {"Content-Type": "text/html"});
-  _$jscoverage['requestHandlers.js'][196]++;
-  var stream = mu.compileAndRender("search.mustache");
-  _$jscoverage['requestHandlers.js'][197]++;
-  stream.pipe(response);
-}
-_$jscoverage['requestHandlers.js'][200]++;
-function search(request, response) {
-  _$jscoverage['requestHandlers.js'][201]++;
-  parse_post_data(request, (function (post_data) {
-  _$jscoverage['requestHandlers.js'][202]++;
-  var query = post_data.query;
-  _$jscoverage['requestHandlers.js'][203]++;
-  if ((! query)) {
-    _$jscoverage['requestHandlers.js'][204]++;
-    response.writeHead(400);
-    _$jscoverage['requestHandlers.js'][205]++;
+  _$jscoverage['requestHandlers.js'][171]++;
+  var user_id = request.headers["user-id"];
+  _$jscoverage['requestHandlers.js'][172]++;
+  model.find_user_by_id(user_id, (function (success, user) {
+  _$jscoverage['requestHandlers.js'][173]++;
+  if ((! success)) {
+    _$jscoverage['requestHandlers.js'][174]++;
+    response.writeHead(500);
+    _$jscoverage['requestHandlers.js'][175]++;
     response.end();
-    _$jscoverage['requestHandlers.js'][206]++;
+    _$jscoverage['requestHandlers.js'][176]++;
     return;
   }
-  _$jscoverage['requestHandlers.js'][209]++;
-  model.search_users(query, (function (error, results) {
-  _$jscoverage['requestHandlers.js'][210]++;
-  var vars = {users: results, query: query, count: results.length};
-  _$jscoverage['requestHandlers.js'][215]++;
+  _$jscoverage['requestHandlers.js'][180]++;
+  model.find_wallposts_to_user(user, (function (success, wallposts) {
+  _$jscoverage['requestHandlers.js'][181]++;
+  if ((! success)) {
+    _$jscoverage['requestHandlers.js'][182]++;
+    response.writeHead(500);
+    _$jscoverage['requestHandlers.js'][183]++;
+    response.end();
+    _$jscoverage['requestHandlers.js'][184]++;
+    return;
+  }
+  _$jscoverage['requestHandlers.js'][187]++;
   response.writeHead(200, {"Content-Type": "text/html"});
-  _$jscoverage['requestHandlers.js'][216]++;
-  var stream = mu.compileAndRender("search_results.mustache", vars);
-  _$jscoverage['requestHandlers.js'][217]++;
+  _$jscoverage['requestHandlers.js'][188]++;
+  var stream = mu.compileAndRender("wall.mustache", {wallposts: wallposts});
+  _$jscoverage['requestHandlers.js'][189]++;
   stream.pipe(response);
 }));
 }));
 }
-_$jscoverage['requestHandlers.js'][223]++;
+_$jscoverage['requestHandlers.js'][194]++;
+function search_form(request, response) {
+  _$jscoverage['requestHandlers.js'][195]++;
+  mu.clearCache();
+  _$jscoverage['requestHandlers.js'][196]++;
+  response.writeHead(200, {"Content-Type": "text/html"});
+  _$jscoverage['requestHandlers.js'][197]++;
+  var stream = mu.compileAndRender("search.mustache");
+  _$jscoverage['requestHandlers.js'][198]++;
+  stream.pipe(response);
+}
+_$jscoverage['requestHandlers.js'][201]++;
+function search(request, response) {
+  _$jscoverage['requestHandlers.js'][202]++;
+  parse_post_data(request, (function (post_data) {
+  _$jscoverage['requestHandlers.js'][203]++;
+  var query = post_data.query;
+  _$jscoverage['requestHandlers.js'][204]++;
+  if ((! query)) {
+    _$jscoverage['requestHandlers.js'][205]++;
+    response.writeHead(400);
+    _$jscoverage['requestHandlers.js'][206]++;
+    response.end();
+    _$jscoverage['requestHandlers.js'][207]++;
+    return;
+  }
+  _$jscoverage['requestHandlers.js'][210]++;
+  model.search_users(query, (function (error, results) {
+  _$jscoverage['requestHandlers.js'][211]++;
+  var vars = {users: results, query: query, count: results.length};
+  _$jscoverage['requestHandlers.js'][216]++;
+  response.writeHead(200, {"Content-Type": "text/html"});
+  _$jscoverage['requestHandlers.js'][217]++;
+  var stream = mu.compileAndRender("search_results.mustache", vars);
+  _$jscoverage['requestHandlers.js'][218]++;
+  stream.pipe(response);
+}));
+}));
+}
+_$jscoverage['requestHandlers.js'][224]++;
 function wallposts(request, response) {
-  _$jscoverage['requestHandlers.js'][224]++;
-  var params = url.parse(request.url, true).query;
   _$jscoverage['requestHandlers.js'][225]++;
-  var user_id = params.user_id;
+  var params = url.parse(request.url, true).query;
   _$jscoverage['requestHandlers.js'][226]++;
-  var ignore_user_id = params.ignore;
+  var user_id = params.user_id;
   _$jscoverage['requestHandlers.js'][227]++;
+  var ignore_user_id = params.ignore;
+  _$jscoverage['requestHandlers.js'][228]++;
   var last_updated = request.headers["if-modified-since"];
-  _$jscoverage['requestHandlers.js'][229]++;
+  _$jscoverage['requestHandlers.js'][230]++;
   var criteria = {to_id: new (mongo.BSONPure.ObjectID)(user_id), date: {$gt: new Date(last_updated)}};
-  _$jscoverage['requestHandlers.js'][234]++;
+  _$jscoverage['requestHandlers.js'][235]++;
   if ((ignore_user_id != undefined)) {
-    _$jscoverage['requestHandlers.js'][235]++;
+    _$jscoverage['requestHandlers.js'][236]++;
     criteria.from_id = {$ne: new (mongo.BSONPure.ObjectID)(ignore_user_id)};
   }
-  _$jscoverage['requestHandlers.js'][238]++;
-  model.find_wallposts(criteria, (function (success, wallposts) {
   _$jscoverage['requestHandlers.js'][239]++;
+  model.find_wallposts(criteria, (function (success, wallposts) {
+  _$jscoverage['requestHandlers.js'][240]++;
   if ((! success)) {
-    _$jscoverage['requestHandlers.js'][240]++;
-    response.writeHead(500);
     _$jscoverage['requestHandlers.js'][241]++;
-    response.end();
+    response.writeHead(500);
     _$jscoverage['requestHandlers.js'][242]++;
+    response.end();
+    _$jscoverage['requestHandlers.js'][243]++;
     return;
   }
-  _$jscoverage['requestHandlers.js'][245]++;
+  _$jscoverage['requestHandlers.js'][246]++;
   if (wallposts.length) {
-    _$jscoverage['requestHandlers.js'][246]++;
-    var content = "";
     _$jscoverage['requestHandlers.js'][247]++;
+    var content = "";
+    _$jscoverage['requestHandlers.js'][248]++;
     mu.compileAndRender("wallposts.mustache", {wallposts: wallposts}).on("data", (function (data) {
-  _$jscoverage['requestHandlers.js'][248]++;
+  _$jscoverage['requestHandlers.js'][249]++;
   content += data;
 })).on("end", (function () {
-  _$jscoverage['requestHandlers.js'][250]++;
-  var last_updated = wallposts[(wallposts.length - 1)].date;
   _$jscoverage['requestHandlers.js'][251]++;
+  var last_updated = wallposts[(wallposts.length - 1)].date;
+  _$jscoverage['requestHandlers.js'][252]++;
   var data = {content: content, last_updated: last_updated};
-  _$jscoverage['requestHandlers.js'][256]++;
-  response.writeHead(200, {"Content-Type": "application/json"});
   _$jscoverage['requestHandlers.js'][257]++;
-  response.write(JSON.stringify(data));
+  response.writeHead(200, {"Content-Type": "application/json"});
   _$jscoverage['requestHandlers.js'][258]++;
+  response.write(JSON.stringify(data));
+  _$jscoverage['requestHandlers.js'][259]++;
   response.end();
 }));
   }
   else {
-    _$jscoverage['requestHandlers.js'][261]++;
+    _$jscoverage['requestHandlers.js'][262]++;
     response.end();
   }
 }));
 }
-_$jscoverage['requestHandlers.js'][266]++;
+_$jscoverage['requestHandlers.js'][267]++;
 function show_user(request, response, username) {
-  _$jscoverage['requestHandlers.js'][267]++;
+  _$jscoverage['requestHandlers.js'][268]++;
   if ((! username)) {
-    _$jscoverage['requestHandlers.js'][268]++;
-    response.writeHead(400);
     _$jscoverage['requestHandlers.js'][269]++;
-    response.end();
+    response.writeHead(400);
     _$jscoverage['requestHandlers.js'][270]++;
+    response.end();
+    _$jscoverage['requestHandlers.js'][271]++;
     return;
   }
-  _$jscoverage['requestHandlers.js'][273]++;
-  var viewer_id = request.headers["user-id"];
   _$jscoverage['requestHandlers.js'][274]++;
-  model.find_user_by_username(username, (function (success, user) {
+  var viewer_id = request.headers["user-id"];
   _$jscoverage['requestHandlers.js'][275]++;
+  model.find_user_by_username(username, (function (success, user) {
+  _$jscoverage['requestHandlers.js'][276]++;
   if ((! success)) {
-    _$jscoverage['requestHandlers.js'][276]++;
-    response.writeHead(500);
     _$jscoverage['requestHandlers.js'][277]++;
-    response.end();
-    _$jscoverage['requestHandlers.js'][278]++;
-    return;
-  }
-  _$jscoverage['requestHandlers.js'][283]++;
-  model.find_user_by_id(viewer_id, (function (success, viewer) {
-  _$jscoverage['requestHandlers.js'][284]++;
-  if ((! success)) {
-    _$jscoverage['requestHandlers.js'][285]++;
     response.writeHead(500);
-    _$jscoverage['requestHandlers.js'][286]++;
+    _$jscoverage['requestHandlers.js'][278]++;
     response.end();
-    _$jscoverage['requestHandlers.js'][287]++;
+    _$jscoverage['requestHandlers.js'][279]++;
     return;
   }
-  _$jscoverage['requestHandlers.js'][290]++;
-  var is_friend = false;
+  _$jscoverage['requestHandlers.js'][284]++;
+  model.find_user_by_id(viewer_id, (function (success, viewer) {
+  _$jscoverage['requestHandlers.js'][285]++;
+  if ((! success)) {
+    _$jscoverage['requestHandlers.js'][286]++;
+    response.writeHead(500);
+    _$jscoverage['requestHandlers.js'][287]++;
+    response.end();
+    _$jscoverage['requestHandlers.js'][288]++;
+    return;
+  }
   _$jscoverage['requestHandlers.js'][291]++;
+  var is_friend = false;
+  _$jscoverage['requestHandlers.js'][292]++;
   for (var index in viewer.friends) {
-    _$jscoverage['requestHandlers.js'][292]++;
-    var friend = viewer.friends[index];
     _$jscoverage['requestHandlers.js'][293]++;
+    var friend = viewer.friends[index];
+    _$jscoverage['requestHandlers.js'][294]++;
     if (friend.user_id.equals(user._id)) {
-      _$jscoverage['requestHandlers.js'][294]++;
-      is_friend = true;
       _$jscoverage['requestHandlers.js'][295]++;
+      is_friend = true;
+      _$jscoverage['requestHandlers.js'][296]++;
       break;
     }
 }
-  _$jscoverage['requestHandlers.js'][300]++;
-  model.find_wallposts_to_user(user, (function (success, wallposts) {
   _$jscoverage['requestHandlers.js'][301]++;
+  model.find_wallposts_to_user(user, (function (success, wallposts) {
+  _$jscoverage['requestHandlers.js'][302]++;
   if ((! success)) {
-    _$jscoverage['requestHandlers.js'][302]++;
-    response.writeHead(500);
     _$jscoverage['requestHandlers.js'][303]++;
-    response.end();
+    response.writeHead(500);
     _$jscoverage['requestHandlers.js'][304]++;
+    response.end();
+    _$jscoverage['requestHandlers.js'][305]++;
     return;
   }
-  _$jscoverage['requestHandlers.js'][307]++;
-  var can_post = (viewer_id != user._id);
   _$jscoverage['requestHandlers.js'][308]++;
+  var can_post = (viewer_id != user._id);
+  _$jscoverage['requestHandlers.js'][309]++;
   var vars = {user: user, wallposts: wallposts, can_post: can_post, is_friend: is_friend};
-  _$jscoverage['requestHandlers.js'][315]++;
-  var html = "";
   _$jscoverage['requestHandlers.js'][316]++;
-  mu.compileAndRender("user_page.mustache", vars).on("data", (function (data) {
+  var html = "";
   _$jscoverage['requestHandlers.js'][317]++;
+  mu.compileAndRender("user_page.mustache", vars).on("data", (function (data) {
+  _$jscoverage['requestHandlers.js'][318]++;
   html += data.toString();
 })).on("end", (function () {
-  _$jscoverage['requestHandlers.js'][319]++;
-  response.writeHead(200, {"Content-Type": "application/json"});
   _$jscoverage['requestHandlers.js'][320]++;
+  response.writeHead(200, {"Content-Type": "application/json"});
+  _$jscoverage['requestHandlers.js'][321]++;
   var data = {content: html, user_id: user._id};
-  _$jscoverage['requestHandlers.js'][324]++;
-  response.write(JSON.stringify(data));
   _$jscoverage['requestHandlers.js'][325]++;
+  response.write(JSON.stringify(data));
+  _$jscoverage['requestHandlers.js'][326]++;
   response.end();
 }));
 }));
 }));
 }));
 }
-_$jscoverage['requestHandlers.js'][334]++;
+_$jscoverage['requestHandlers.js'][335]++;
 function save_wallpost(request, response) {
-  _$jscoverage['requestHandlers.js'][335]++;
-  parse_post_data(request, (function (post_data) {
   _$jscoverage['requestHandlers.js'][336]++;
-  var from_id = request.headers["user-id"];
+  parse_post_data(request, (function (post_data) {
   _$jscoverage['requestHandlers.js'][337]++;
-  var to_id = post_data.to_id;
+  var from_id = request.headers["user-id"];
   _$jscoverage['requestHandlers.js'][338]++;
+  var to_id = post_data.to_id;
+  _$jscoverage['requestHandlers.js'][339]++;
   var post = post_data.post;
   _$jscoverage['requestHandlers.js'][340]++;
-  model.add_wallpost(from_id, to_id, post, (function (success, wallpost) {
-  _$jscoverage['requestHandlers.js'][341]++;
-  if ((! success)) {
+  if (((! post) || (post.trim().length == 0))) {
+    _$jscoverage['requestHandlers.js'][341]++;
+    response.writeHead(400);
     _$jscoverage['requestHandlers.js'][342]++;
+    return response.end();
+  }
+  _$jscoverage['requestHandlers.js'][345]++;
+  model.add_wallpost(from_id, to_id, post, (function (success, wallpost) {
+  _$jscoverage['requestHandlers.js'][346]++;
+  if ((! success)) {
+    _$jscoverage['requestHandlers.js'][347]++;
     response.writeHead(500);
-    _$jscoverage['requestHandlers.js'][343]++;
+    _$jscoverage['requestHandlers.js'][348]++;
     response.end();
-    _$jscoverage['requestHandlers.js'][344]++;
+    _$jscoverage['requestHandlers.js'][349]++;
     return;
   }
-  _$jscoverage['requestHandlers.js'][347]++;
+  _$jscoverage['requestHandlers.js'][352]++;
   response.writeHead(200, {"Content-Type": "text/html"});
-  _$jscoverage['requestHandlers.js'][348]++;
+  _$jscoverage['requestHandlers.js'][353]++;
   var stream = mu.compileAndRender("wallpost.mustache", wallpost);
-  _$jscoverage['requestHandlers.js'][349]++;
+  _$jscoverage['requestHandlers.js'][354]++;
   stream.pipe(response);
 }));
 }));
 }
-_$jscoverage['requestHandlers.js'][354]++;
+_$jscoverage['requestHandlers.js'][359]++;
 function add_friend(request, response) {
-  _$jscoverage['requestHandlers.js'][355]++;
-  parse_post_data(request, (function (post_data) {
-  _$jscoverage['requestHandlers.js'][356]++;
-  var user_id = request.headers["user-id"];
-  _$jscoverage['requestHandlers.js'][357]++;
-  var friend_id = post_data.friend_id;
-  _$jscoverage['requestHandlers.js'][359]++;
-  model.add_friend(user_id, friend_id, (function (success) {
   _$jscoverage['requestHandlers.js'][360]++;
-  response.writeHead(200, {"Content-Type": "application/json"});
+  parse_post_data(request, (function (post_data) {
   _$jscoverage['requestHandlers.js'][361]++;
-  response.write(JSON.stringify({success: success}));
+  var user_id = request.headers["user-id"];
   _$jscoverage['requestHandlers.js'][362]++;
+  var friend_id = post_data.friend_id;
+  _$jscoverage['requestHandlers.js'][364]++;
+  if (((! user_id) || (! friend_id) || (user_id.length != 24) || (friend_id.length != 24))) {
+    _$jscoverage['requestHandlers.js'][365]++;
+    response.writeHead(400, {"Content-Type": "application/json"});
+    _$jscoverage['requestHandlers.js'][366]++;
+    return response.end();
+  }
+  _$jscoverage['requestHandlers.js'][369]++;
+  model.add_friend(user_id, friend_id, (function (success) {
+  _$jscoverage['requestHandlers.js'][370]++;
+  response.writeHead(200, {"Content-Type": "application/json"});
+  _$jscoverage['requestHandlers.js'][371]++;
+  response.write(JSON.stringify({success: success}));
+  _$jscoverage['requestHandlers.js'][372]++;
   response.end();
 }));
 }));
 }
-_$jscoverage['requestHandlers.js'][367]++;
+_$jscoverage['requestHandlers.js'][377]++;
 function friends(request, response) {
-  _$jscoverage['requestHandlers.js'][368]++;
+  _$jscoverage['requestHandlers.js'][378]++;
   var user_id = request.headers["user-id"];
-  _$jscoverage['requestHandlers.js'][369]++;
+  _$jscoverage['requestHandlers.js'][379]++;
   model.find_user_by_id(user_id, (function (success, user) {
-  _$jscoverage['requestHandlers.js'][370]++;
+  _$jscoverage['requestHandlers.js'][380]++;
   if ((! success)) {
-    _$jscoverage['requestHandlers.js'][371]++;
+    _$jscoverage['requestHandlers.js'][381]++;
     response.writeHead(500);
-    _$jscoverage['requestHandlers.js'][372]++;
+    _$jscoverage['requestHandlers.js'][382]++;
     response.end();
-    _$jscoverage['requestHandlers.js'][373]++;
+    _$jscoverage['requestHandlers.js'][383]++;
     return;
   }
-  _$jscoverage['requestHandlers.js'][376]++;
+  _$jscoverage['requestHandlers.js'][386]++;
   response.writeHead(200, {"Content-Type": "text/html"});
-  _$jscoverage['requestHandlers.js'][377]++;
+  _$jscoverage['requestHandlers.js'][387]++;
   var stream = mu.compileAndRender("friends.mustache", {friends: user.friends});
-  _$jscoverage['requestHandlers.js'][378]++;
+  _$jscoverage['requestHandlers.js'][388]++;
   stream.pipe(response);
 }));
 }
-_$jscoverage['requestHandlers.js'][382]++;
+_$jscoverage['requestHandlers.js'][392]++;
 function chat(request, response, chat_id) {
-  _$jscoverage['requestHandlers.js'][383]++;
+  _$jscoverage['requestHandlers.js'][393]++;
   if ((! chat_id)) {
-    _$jscoverage['requestHandlers.js'][384]++;
+    _$jscoverage['requestHandlers.js'][394]++;
     response.writeHead(500);
-    _$jscoverage['requestHandlers.js'][385]++;
+    _$jscoverage['requestHandlers.js'][395]++;
     return response.end();
   }
-  _$jscoverage['requestHandlers.js'][388]++;
+  _$jscoverage['requestHandlers.js'][398]++;
   model.find_chat_by_id(chat_id, (function (success, chat) {
-  _$jscoverage['requestHandlers.js'][389]++;
+  _$jscoverage['requestHandlers.js'][399]++;
   if ((! success)) {
-    _$jscoverage['requestHandlers.js'][390]++;
+    _$jscoverage['requestHandlers.js'][400]++;
     response.writeHead(500);
-    _$jscoverage['requestHandlers.js'][391]++;
+    _$jscoverage['requestHandlers.js'][401]++;
     return response.end();
   }
-  _$jscoverage['requestHandlers.js'][394]++;
+  _$jscoverage['requestHandlers.js'][404]++;
   var user_id = request.headers["user-id"];
-  _$jscoverage['requestHandlers.js'][395]++;
+  _$jscoverage['requestHandlers.js'][405]++;
   model.find_user_by_id(user_id, (function (success, user) {
-  _$jscoverage['requestHandlers.js'][396]++;
+  _$jscoverage['requestHandlers.js'][406]++;
   var member_list = [];
-  _$jscoverage['requestHandlers.js'][397]++;
+  _$jscoverage['requestHandlers.js'][407]++;
   for (var k in chat.members) {
-    _$jscoverage['requestHandlers.js'][398]++;
+    _$jscoverage['requestHandlers.js'][408]++;
     member_list.push(chat.members[k]);
 }
-  _$jscoverage['requestHandlers.js'][399]++;
+  _$jscoverage['requestHandlers.js'][409]++;
   member_list[(member_list.length - 1)].is_last = true;
-  _$jscoverage['requestHandlers.js'][401]++;
+  _$jscoverage['requestHandlers.js'][411]++;
   var friends = [];
-  _$jscoverage['requestHandlers.js'][402]++;
+  _$jscoverage['requestHandlers.js'][412]++;
   for (var f in user.friends) {
-    _$jscoverage['requestHandlers.js'][403]++;
+    _$jscoverage['requestHandlers.js'][413]++;
     var friend = user.friends[f];
-    _$jscoverage['requestHandlers.js'][404]++;
+    _$jscoverage['requestHandlers.js'][414]++;
     if ((chat.members[friend.user_id] == undefined)) {
-      _$jscoverage['requestHandlers.js'][405]++;
+      _$jscoverage['requestHandlers.js'][415]++;
       friends.push(friend);
     }
 }
-  _$jscoverage['requestHandlers.js'][408]++;
-  console.log(friends);
-  _$jscoverage['requestHandlers.js'][410]++;
-  var data = {chat: chat, member_list: member_list, friends: friends, has_friends: (friends.length > 0)};
-  _$jscoverage['requestHandlers.js'][417]++;
-  var stream = mu.compileAndRender("chat.mustache", data);
   _$jscoverage['requestHandlers.js'][418]++;
+  console.log(friends);
+  _$jscoverage['requestHandlers.js'][420]++;
+  var data = {chat: chat, member_list: member_list, friends: friends, has_friends: (friends.length > 0)};
+  _$jscoverage['requestHandlers.js'][427]++;
+  var stream = mu.compileAndRender("chat.mustache", data);
+  _$jscoverage['requestHandlers.js'][428]++;
   stream.pipe(response);
 }));
 }));
 }
-_$jscoverage['requestHandlers.js'][423]++;
-exports.base = base;
-_$jscoverage['requestHandlers.js'][424]++;
-exports.index = index;
-_$jscoverage['requestHandlers.js'][425]++;
-exports.register = register;
-_$jscoverage['requestHandlers.js'][426]++;
-exports.login = login;
-_$jscoverage['requestHandlers.js'][427]++;
-exports.logout = logout;
-_$jscoverage['requestHandlers.js'][428]++;
-exports.valid_username = valid_username;
-_$jscoverage['requestHandlers.js'][429]++;
-exports.homepage = homepage;
-_$jscoverage['requestHandlers.js'][430]++;
-exports.wall = wall;
-_$jscoverage['requestHandlers.js'][431]++;
-exports.search_form = search_form;
-_$jscoverage['requestHandlers.js'][432]++;
-exports.search = search;
 _$jscoverage['requestHandlers.js'][433]++;
-exports.show_user = show_user;
+exports.base = base;
 _$jscoverage['requestHandlers.js'][434]++;
-exports.save_wallpost = save_wallpost;
+exports.index = index;
 _$jscoverage['requestHandlers.js'][435]++;
-exports.wallposts = wallposts;
+exports.register = register;
 _$jscoverage['requestHandlers.js'][436]++;
-exports.add_friend = add_friend;
+exports.login = login;
 _$jscoverage['requestHandlers.js'][437]++;
-exports.friends = friends;
+exports.logout = logout;
 _$jscoverage['requestHandlers.js'][438]++;
+exports.valid_username = valid_username;
+_$jscoverage['requestHandlers.js'][439]++;
+exports.homepage = homepage;
+_$jscoverage['requestHandlers.js'][440]++;
+exports.wall = wall;
+_$jscoverage['requestHandlers.js'][441]++;
+exports.search_form = search_form;
+_$jscoverage['requestHandlers.js'][442]++;
+exports.search = search;
+_$jscoverage['requestHandlers.js'][443]++;
+exports.show_user = show_user;
+_$jscoverage['requestHandlers.js'][444]++;
+exports.save_wallpost = save_wallpost;
+_$jscoverage['requestHandlers.js'][445]++;
+exports.wallposts = wallposts;
+_$jscoverage['requestHandlers.js'][446]++;
+exports.add_friend = add_friend;
+_$jscoverage['requestHandlers.js'][447]++;
+exports.friends = friends;
+_$jscoverage['requestHandlers.js'][448]++;
 exports.chat = chat;

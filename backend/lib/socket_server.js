@@ -19,6 +19,8 @@ function bind(server) {
 
 			socket.set("user_id", data.user_id);
 			sockets[data.user_id] = socket;
+
+			socket.emit("inited");
 		});
 
 		socket.on("disconnect", function() {

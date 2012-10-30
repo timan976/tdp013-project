@@ -337,7 +337,7 @@ function save_wallpost(request, response) {
 		var from_id = request.headers["user-id"];
 		var to_id = post_data["to_id"];
 		var post = post_data["post"];
-		if(post.trim().length == 0) {
+		if(!post || post.trim().length == 0) {
 			response.writeHead(400);
 			return response.end();
 		}
@@ -360,6 +360,11 @@ function add_friend(request, response) {
 	parse_post_data(request, function(post_data) {
 		var user_id = request.headers["user-id"];
 		var friend_id = post_data["friend_id"];
+
+		if(!user_id || !friend_id || user_id.length != 24 || friend_id.length != 24) {
+			response.writeHead(400, {'Content-Type': 'application/json'});
+			return response.end();
+		}
 
 		model.add_friend(user_id, friend_id, function(success) {
 			response.writeHead(200, {'Content-Type': 'application/json'});
